@@ -8,7 +8,7 @@ In a project at work, I was asked to install a fully redondant cluster, and amon
 - over HTTP with no auth for GET method for developers   
 - over HTTPS with auth for any methods (PUT, DELETE, etc.) for Elastic admins
 
-The Elastic cluster is made of 8 nodes, two of them are acting as clients (no master nor data role) and are only accessibles from two Haproxy nodes (secured with iptables). 
+The Elastic cluster is orchestrated with Saltstack (I'll publish the states later) is made of 8 nodes, two of them are acting as clients (no master nor data role) and are only accessibles from two Haproxy nodes (secured with iptables). 
 
 This is the Haproxy configuration, tested on RHEL7.
 
