@@ -29,7 +29,8 @@ My workflow is this:
 
 - I edit articles in [MacDown] on Mac and [MarkdownX] on Android device
 - articles are pushed to my private [Syncthing] cloud and synchronized between devices
-- I wrote an Alfred workflow involving rsync allowing me to publish in a few seconds with a simple keyword
+- I commit changes to [Github] as a public backup
+- I wrote an [Alfred] workflow involving rsync allowing me to publish in a few seconds with a simple keyword
 - the article appears instantly
 
 ## Can't find anything here?
@@ -38,7 +39,7 @@ There is no content search engine on this platform. Try [this] kind of query ins
 ## About me
 I like building simple, powerful, resilient, secure and automated infrastructures. Preferably based on open tools and protocols. Privacy is a main concern.
 
-When I'm not on a computer, I travel, hike, camp and take photos.
+When I'm not busy on a computer, I travel, hike, camp and take photos.
 
 I work in Brussels, Belgium.
 
@@ -53,4 +54,6 @@ Please contact me!
 [wiki]: https://github.com/victorstanciu/Wikitten
 [markdownx]: https://play.google.com/store/apps/details?id=com.ryeeeeee.markdownx
 [macdown]: http://macdown.uranusjr.com/
+[Github]: https://github.com/sebw/posts
 [Syncthing]: https://syncthing.net/
+[Alfred]: https://www.alfredapp.com/
