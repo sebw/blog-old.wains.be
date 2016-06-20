@@ -5,7 +5,7 @@ A markdown based [wiki] about Linux, Open Source, VoIP and other geeky stuff.
 
 For those who have known me for a couple of years now, you've learned that I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk** for some time, back when I was managing 5 Linux servers or so.
 
-As of today, I manage about 200, so I'm spending a lot of time automating, centralizing and orchestrating management with **Saltstack**, **Rundeck**, **Jenkins**, **Nexus**, **Satellite**, **iTop** and **Graylog/Elasticsearch**. In the same vein, I'm a huge fan of **Automagic** on Android, and **Alfred** on Mac.
+As of today, I manage about 200, so I'm spending a lot of time automating, centralizing and orchestrating management with **Saltstack**, **Rundeck**, **Jenkins**, **Nexus**, **Satellite**, **iTop** and **Graylog**. In the same vein, I'm a huge fan of **Automagic** on Android, and **Alfred** on Mac.
 
 ## Why a wiki?
 
@@ -49,7 +49,7 @@ If you want to contact me, just look me [up].
 ## Found an error on this site?
 Please contact me!
 
-[this]: https://duckduckgo.com/?q=linux+site:blog.wains.be
+[this]: https://github.com/sebw/blog.wains.be/search?utf8=%E2%9C%93&q=postfix
 [up]: https://duckduckgo.com/?q=Sebastien+Wains
 [wiki]: https://github.com/victorstanciu/Wikitten
 [markdownx]: https://play.google.com/store/apps/details?id=com.ryeeeeee.markdownx
