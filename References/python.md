@@ -8,3 +8,11 @@ for key, value in d.iteritems():
     print key
     print value['servername']
 ```
+
+#### Iterate through a list
+```
+l = {'un','deux'}
+
+for value in l:
+    print value
+```
