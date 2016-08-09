@@ -36,4 +36,5 @@ browser.sessionstore.max_tabs_undo = 0
 security.ssl3.dhe_rsa_aes_128_sha = false
 security.ssl3.dhe_rsa_aes_256_sha = false
     https://www.eff.org/deeplinks/2015/10/how-to-protect-yourself-from-nsa-attacks-1024-bit-DH
+media.autoplay.enabled
 ```
