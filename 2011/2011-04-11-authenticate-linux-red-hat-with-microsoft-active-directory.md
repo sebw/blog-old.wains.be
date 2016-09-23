@@ -1,18 +1,10 @@
-
-
-
-date: 2011-04-11 21:05:45+00:00
-
+2011-04-11
 
 # Authenticate Linux Red Hat with Microsoft Active Directory
 
-categories:
-- Linux
-- Red Hat/CentOS
-- Windows
-
-
 _Tested with Active Directory 2003 and RHEL 6.0_
+
+_Tested with Active Directory 2012 and RHEL 7.2 (September 2016)_
 
 **What we want to do :**
 
@@ -23,29 +15,33 @@ _Tested with Active Directory 2003 and RHEL 6.0_
 - user homedir will be created at first log using pam_mkhomedir
 - still possible to log in using local accounts, in case AD is unavailable
 
-**Check if resolution works :**
+**Check if resolution works:**
 
-`# host -t srv _kerberos._tcp.intranet.example.org
-_kerberos._tcp.intranet.example.org has SRV record 0 100 88 ad01.intranet.example.org.
-_kerberos._tcp.intranet.example.org has SRV record 0 100 88 ad02.intranet.example.org.
-_kerberos._tcp.intranet.example.org has SRV record 0 100 88 ad03.intranet.example.org.`
+    # host -t srv _kerberos._tcp.intranet.example.org
+    _kerberos._tcp.intranet.example.org has SRV record 0 100 88 ad01.intranet.example.org.
+    _kerberos._tcp.intranet.example.org has SRV record 0 100 88 ad02.intranet.example.org.
+    _kerberos._tcp.intranet.example.org has SRV record 0 100 88 ad03.intranet.example.org.
 
-**Install necessary packages and enable Winbind at boot :**
+**Install necessary packages and enable Winbind at boot:**
 
-`# yum install samba-common pam_krb5 sudo authconfig
-# chkconfig winbind on`
+    # yum install samba-common pam_krb5 sudo authconfig
+    # chkconfig winbind on
 
-**Create directory where homedirs will be stored :**
+On RHEL7 for wbinfo you need this:
 
-`# mkdir /home/EXAMPLE
-# chmod 0777 /home/EXAMPLE`
+	# yum install samba-winbind-clients
+
+**Create directory where homedirs will be stored:**
+
+    # mkdir /home/EXAMPLE
+    # chmod 0777 /home/EXAMPLE
 
 IMPORTANT : before proceeding, we need to make sure "hostname -f" returns a FQDN, **THE SUBDOMAIN MUST MATCH THE AD DOMAIN**.
 
-`# hostname -f
-srv.intranet.example.org`
+	# hostname -f
+	srv.intranet.example.org
 
-**Enable authentication :**
+**Enable authentication:**
 
 `# authconfig 
   --disablecache 
@@ -76,7 +72,7 @@ authconfig will modify a couple of files : /etc/samba/smb.conf, /etc/pam.d/syste
 
 By default, UID/GID will be stored locally, and will differ from one system to another.
 
-**In order to always get the same UID/GID for our AD users/groups, we'll map the ID's against AD, by modifying /etc/samba/smb.conf :**
+**In order to always get the same UID/GID for our AD users/groups, we'll map the ID's against AD, by modifying /etc/samba/smb.conf:**
 
 From :
 
@@ -106,21 +102,21 @@ To :
    winbind use default domain = true
    winbind offline logon = false`
 
-**Now, in order to only allow members of linuxadmin group, edit :**
+**Now, in order to only allow members of linuxadmin group, edit:**
 
-For RHEL5.6 : /etc/pam.d/system-auth
-For RHEL6.0 : /etc/pam.d/password-auth
+- For RHEL5.6 : /etc/pam.d/system-auth  
+- For RHEL6.0 : /etc/pam.d/password-auth
 
 I'll also change the default homedir creation umask.
 
 
     
-    <code>#%PAM-1.0
+    #%PAM-1.0
     # This file is auto-generated.
     # User changes will be destroyed the next time authconfig is run.
     auth        required      pam_env.so
     auth        sufficient    pam_unix.so nullok try_first_pass
-    <strong>auth        requisite     pam_succeed_if.so user ingroup linuxadmin debug</strong>
+    auth        requisite     pam_succeed_if.so user ingroup linuxadmin debug
     auth        requisite     pam_succeed_if.so uid >= 500 quiet
     auth        sufficient    pam_krb5.so use_first_pass
     auth        sufficient    pam_winbind.so use_first_pass
@@ -145,47 +141,48 @@ I'll also change the default homedir creation umask.
     session     optional      pam_mkhomedir.so <strong>umask=0077</strong>
     session     [success=1 default=ignore] pam_succeed_if.so service in crond quiet use_uid
     session     required      pam_unix.so
-    session     optional      pam_krb5.so</code>
+    session     optional      pam_krb5.so
 
 
 
 **Restart Winbind :**
 
-`# service winbind restart`
+    # service winbind restart 
 
 **Now, join the machine to the domain, in this example user01 has domain admin permissions.**
 
-`# net ads join -U user01
-user01's password:
-Using short domain name -- example
-Joined 'SRV' to realm 'INTRANET.EXAMPLE.ORG'`
+    # net ads join -U user01
+    user01's password:
+    Using short domain name -- example
+    Joined 'SRV' to realm 'INTRANET.EXAMPLE.ORG'`
 
 When joining the domain, you could get error about DNS updates (maybe because the record already exists). This is not a problem.
 
 **Restart Winbind again :**
 
-`# service winbind restart`
+    # service winbind restart
 
 **Check if it works, by listing AD groups :**
 
-`# wbinfo -g`
+    # wbinfo -g
 
 **Now, allow users in the linuxadmin group to use sudo :**
 
-`# echo "%linuxadmin ALL=(ALL) ALL" >> /etc/sudoers`
+    # echo "%linuxadmin ALL=(ALL) ALL" >> /etc/sudoers
 
 **Test authentication using an AD account (in the linuxadmin group) and access to root account :**
 
-On the server check the logs : 
+On the server check the logs: 
 `tail -f /var/log/secure`
 
-On the client :
-`$ ssh user01@srv.intranet.example.org
-user01@srv.intranet.example.org's password: 
-Creating directory '/home/EXAMPLE/user01'.
-[user01@srv ~]$ sudo su -
-[sudo] password for user01: 
-[root@srv ~]# `
+On the client:
+
+    $ ssh user01@srv.intranet.example.org
+	user01@srv.intranet.example.org's password: 
+	Creating directory '/home/EXAMPLE/user01'.
+	[user01@srv ~]$ sudo su -
+	[sudo] password for user01: 
+	[root@srv ~]# `
 
 Test with another account, not being part of linuxadmin group, this time. User should be disconnected.
 
@@ -193,14 +190,14 @@ Test with another account, not being part of linuxadmin group, this time. User s
 Logs should look something like this :
 
     
-    <code>Apr 17 17:15:52 x sshd[27114]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.1  user=user-01
+    Apr 17 17:15:52 x sshd[27114]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.1  user=user-01
     Apr 17 17:15:52 x sshd[27114]: pam_krb5[27114]: authentication succeeds for 'user-01' (user-01@INTRANET.EXAMPLE.ORG)
     Apr 17 17:15:52 x sshd[27114]: pam_winbind(sshd:account): [pamh: 0x7f6910199390] ENTER: pam_sm_acct_mgmt (flags: 0x0000)
     Apr 17 17:15:52 x sshd[27114]: pam_winbind(sshd:account): user 'user-01' granted access
     Apr 17 17:15:52 x sshd[27114]: pam_winbind(sshd:account): [pamh: 0x7f6910199390] LEAVE: pam_sm_acct_mgmt returning 0 (PAM_SUCCESS)
     Apr 17 17:15:52 x sshd[27114]: pam_succeed_if(sshd:account): requirement "user ingroup linuxadmin" was met by user "user-01"
     Apr 17 17:15:52 x sshd[27114]: Accepted password for user-01 from 192.168.1.1 port 59369 ssh2
-    Apr 17 17:15:53 x sshd[27114]: pam_unix(sshd:session): session opened for user user-01 by (uid=0)</code>
+    Apr 17 17:15:53 x sshd[27114]: pam_unix(sshd:session): session opened for user user-01 by (uid=0)
 
 
 
@@ -210,7 +207,7 @@ Logs should look something like this :
 
 
     
-    <code># wbinfo -n user05
+    # wbinfo -n user05
     S-1-5-21-x-x-x-1129 User (1)
     
     # getent passwd user05
@@ -229,7 +226,7 @@ Logs should look something like this :
     Active Directory  : Yes
     Native            : Yes
     Primary           : Yes
-    Sequence          : -1</code>
+    Sequence          : -1
 
 
 
