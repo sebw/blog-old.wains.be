@@ -45,12 +45,34 @@ for key, value in d.iteritems():
     print key + ": " + value['servername']
 ```
 
-#### Iterate through a list
+#### Iterate through a list or set
 ```
 l = {'un','deux'}
 
 for value in l:
     print value
+```
+
+#### Insert or append items to a list
+```
+l = ['one','three']
+l.insert(1,'two')
+
+insert() takes two args, first one is zero based position, second is the value
+
+Result: ['one', 'two', 'three']
+
+l.append('four')
+
+Result: ['one', 'two', 'three', 'four'] 
+
+```
+#### Update a dict
+```
+d = {'one':1,'two':2}
+d.update({'three':3})
+
+Result: {'three': 3, 'two': 2, 'one': 1}
 ```
 
 #### Transform a dict in list
