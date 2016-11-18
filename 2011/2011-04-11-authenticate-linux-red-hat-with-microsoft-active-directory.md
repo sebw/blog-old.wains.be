@@ -24,7 +24,7 @@ _Tested with Active Directory 2012 and RHEL 7.2 (September 2016)_
 
 **Install necessary packages and enable Winbind at boot:**
 
-    # yum install samba-common pam_krb5 sudo authconfig
+    # yum install samba samba-winbind pam_krb5 sudo authconfig krb5-workstation
     # chkconfig winbind on
 
 On RHEL7 for wbinfo you need this:
@@ -42,25 +42,7 @@ IMPORTANT : before proceeding, we need to make sure "hostname -f" returns a FQDN
 	srv.intranet.example.org
 
 **Enable authentication:**
-
-`# authconfig 
-  --disablecache 
-  --enablewinbind 
-  --enablewinbindauth 
-  --smbsecurity=ads 
-  --smbworkgroup=EXAMPLE 
-  --smbrealm=INTRANET.EXAMPLE.ORG 
-  --enablewinbindusedefaultdomain 
-  --winbindtemplatehomedir=/home/EXAMPLE/%U 
-  --winbindtemplateshell=/bin/bash 
-  --enablekrb5 
-  --krb5realm=INTRANET.EXAMPLE.ORG 
-  --enablekrb5kdcdns 
-  --enablekrb5realmdns 
-  --enablelocauthorize 
-  --enablemkhomedir 
-  --enablepamaccess 
-  --updateall`
+	DOMAIN_SHORT=EXAMPLE	DOMAIN_LONG=INTRANET.EXAMPLE.ORG	authconfig \  		--disablecache \  		--enablewinbind \  		--enablewinbindauth \		--smbsecurity=ads \  		--smbworkgroup=${DOMAIN_SHORT} \  		--smbrealm=${DOMAIN_LONG} \  		--enablewinbindusedefaultdomain \  		--winbindtemplatehomedir=/home/${DOMAIN_SHORT}/%U \  		--winbindtemplateshell=/bin/bash \  		--enablekrb5 \  		--krb5realm=${DOMAIN_LONG} \  		--enablekrb5kdcdns \ 		--enablekrb5realmdns \  		--enablelocauthorize \  		--enablemkhomedir \  		--enablepamaccess \  		--updateall
 
 **Under RHEL 5.0, authconfig didn't have the enablemkhomedir and enablepamaccess options. (you'll get "authconfig: error: no such option: --enablemkhomedir")**
 
@@ -68,7 +50,12 @@ Winbind should restart by itself, if not :
 
 `# service winbind restart`
 
-authconfig will modify a couple of files : /etc/samba/smb.conf, /etc/pam.d/system-auth, /etc/nsswitch.conf, etc.
+authconfig will modify a couple of files:
+
+- /etc/samba/smb.conf
+- /etc/pam.d/system-auth
+- /etc/nsswitch.conf
+- /etc/krb5.conf
 
 By default, UID/GID will be stored locally, and will differ from one system to another.
 
@@ -76,31 +63,31 @@ By default, UID/GID will be stored locally, and will differ from one system to a
 
 From :
 
-`   workgroup = EXAMPLE
-   realm = INTRANET.EXAMPLE.ORG
-   security = ads
-   idmap uid = 16777216-33554431
-   idmap gid = 16777216-33554431
-   template homedir = /home/EXAMPLE/%U
-   template shell = /bin/bash
-   winbind use default domain = true
-   winbind offline logon = false`
+	   workgroup = EXAMPLE
+	   realm = INTRANET.EXAMPLE.ORG
+	   security = ads
+	   idmap uid = 16777216-33554431
+	   idmap gid = 16777216-33554431
+	   template homedir = /home/EXAMPLE/%U
+	   template shell = /bin/bash
+	   winbind use default domain = true
+	   winbind offline logon = false
 
 To :
 
-`   workgroup = EXAMPLE
-   realm = INTRANET.EXAMPLE.ORG
-   security = ads
-**   idmap domains = EXAMPLE
-   idmap config EXAMPLE:backend      = rid
-   idmap config EXAMPLE:base_rid     = 500
-   idmap config EXAMPLE:range        = 500-1000000
-   #idmap uid = 16777216-33554431
-   #idmap gid = 16777216-33554431**
-   template homedir = /home/EXAMPLE/%U
-   template shell = /bin/bash
-   winbind use default domain = true
-   winbind offline logon = false`
+	   workgroup = EXAMPLE
+	   realm = INTRANET.EXAMPLE.ORG
+	   security = ads
+	   idmap domains = EXAMPLE
+	   idmap config EXAMPLE:backend      = rid
+	   idmap config EXAMPLE:base_rid     = 500
+	   idmap config EXAMPLE:range        = 500-1000000
+	   #idmap uid = 16777216-33554431
+	   #idmap gid = 16777216-33554431
+	   template homedir = /home/EXAMPLE/%U
+	   template shell = /bin/bash
+	   winbind use default domain = true
+	   winbind offline logon = false
 
 **Now, in order to only allow members of linuxadmin group, edit:**
 
