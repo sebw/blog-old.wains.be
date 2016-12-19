@@ -5,7 +5,7 @@ A markdown based [wiki] about Linux, Open Source, VoIP and other geeky stuff.
 
 For those who have known me for a couple of years now, you've learned that I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk** for some time, back when I was managing 5 Linux servers or so.
 
-As of today, I manage about 200, so I'm spending a lot of time automating, centralizing and orchestrating management with **Saltstack**, **Rundeck**, **Jenkins**, **Nexus**, **Satellite**, **iTop** and **Graylog**. In the same vein, I'm a huge fan of **Automagic** on Android, and **Alfred** on Mac.
+As of today, I manage about 200, so I'm spending a lot of time automating, centralizing and orchestrating management with **Saltstack**, **Salt Cloud**, **Rundeck**, **Jenkins**, **Nexus**, **Satellite**, **iTop** and **Graylog**. In the same vein, I'm a huge fan of **Automagic** on Android, and **Alfred** on Mac.
 
 ## Why a wiki?
 
