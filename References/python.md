@@ -5,8 +5,10 @@
 ```
 List: ['value1', 'value2']  
 Dict: {'key1':'value1', 'key2':'value2'}  
-Set: {'key1', 'key2'}
-Tuple: ('value1', 'value2')  
+Set (unordered list):
+    settest = set('This is a test')
+    set(['a', ' ', 'e', 'i', 'h', 's', 'T', 't'])
+Tuple (immutable list): ('value1', 'value2')  
 ```
 
 #### Importing
@@ -43,6 +45,22 @@ d = {'site1': {'servername': 'test.org', 'serveralias': 'www.test.org'}}
 
 for key, value in d.iteritems():
     print key + ": " + value['servername']
+```
+
+#### Check for a value in a list
+
+```
+>>> grains = ["role1","role2","role3"]
+>>> "role2" in grains
+True
+```
+
+#### Check for a value in a dict
+
+``` 
+>>> grains = {"roles": ["role1", "role2", "role3"]}
+>>> "role2" in grains["roles"]
+True
 ```
 
 #### Iterate through a list or set
@@ -89,10 +107,10 @@ type(l)
 
 Not to be confused with iteritems(), an iterator over the key and values of a dict.
 
-#### args vs kwargs (arguments vs keyword arguments)
+#### Args vs. kwargs (arguments vs keyword arguments)
 
-*args is a tuple  
-**kwargs is a dict
+`*args` is a tuple  
+`**kwargs` is a dict
 
 ##### args
 
@@ -138,7 +156,18 @@ Bonsoir, Elliot
 
 `list_args('Bonsoir')` would return a `list_args() takes exactly 2 arguments (1 given)`
 
+#### Print a sequence of integers
 
+range() returns a list
+
+takes two args maximum.
+
+```
+>>> range(10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> range(0,20)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+```
 
 #### Simple regexp matching
 
