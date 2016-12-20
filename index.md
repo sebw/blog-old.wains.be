@@ -27,11 +27,10 @@ It is also very easy to automate publications.
 
 My workflow is this:
 
-- I edit articles in [MacDown]
-- articles are pushed to my private [Syncthing] cloud and synchronized between devices
-- I commit changes to [Github] as a public backup
-- I wrote an [Alfred] workflow involving rsync allowing me to publish in a few seconds with a simple keyword
-- the article appears instantly
+- I edit articles locally with [MacDown]
+- I commit changes to [Github]
+- The server git pulls changes
+- Article is online
 
 ## Can't find anything here?
 There is no content search engine on this platform. Try [this] kind of query instead, it should point you to the right page.
