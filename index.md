@@ -21,15 +21,15 @@ This site has gone through four design revisions: [2005](https://blog.wains.be/N
 
 ## Why Markdown?
 
-Markdown is great because every articles of this site are stored on my MacBook. It is plain text so Spotlight indexes the content, and I can just look up a word and I will get to the article source immediately. I can grep, sed, awk the hell out of them and bring correction very quickly.
+Markdown is great because every articles of this site are stored on my MacBook. It is plain text so Alfred/Spotlight indexes the content, and I can just look up a word and I will get to the article source immediately. I can grep, sed, awk the hell out of them and bring correction very quickly.
 
 It is also very easy to automate publications.
 
-My workflow is this:
+My workflow comes as follow:
 
 - I edit articles locally with [MacDown]
-- I commit changes to [Github]
-- The server git pulls changes
+- I commit changes to [GitHub] using GitHub Desktop
+- I trigger a "git pull" with an [Alfred] workflow
 - Article is online
 
 ## Can't find anything here?
@@ -53,6 +53,5 @@ Please contact me!
 [wiki]: https://github.com/victorstanciu/Wikitten
 [markdownx]: https://play.google.com/store/apps/details?id=com.ryeeeeee.markdownx
 [macdown]: http://macdown.uranusjr.com/
-[Github]: https://github.com/sebw/posts
-[Syncthing]: https://syncthing.net/
+[GitHub]: https://github.com/sebw/posts
 [Alfred]: https://www.alfredapp.com/
