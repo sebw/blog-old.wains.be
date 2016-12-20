@@ -27,7 +27,7 @@ It is also very easy to automate publications.
 
 My workflow is this:
 
-- I edit articles in [MacDown] on Mac and [MarkdownX] on Android device
+- I edit articles in [MacDown]
 - articles are pushed to my private [Syncthing] cloud and synchronized between devices
 - I commit changes to [Github] as a public backup
 - I wrote an [Alfred] workflow involving rsync allowing me to publish in a few seconds with a simple keyword
