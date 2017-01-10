@@ -38,7 +38,9 @@ There is no content search engine on this platform. Try [this] kind of query ins
 ## About me
 I like building simple, powerful, resilient, secure and automated infrastructures. Preferably based on open tools and protocols. Privacy is a main concern.
 
-When I'm not busy on a computer, I travel, hike, camp and take photos.
+When I'm not busy at a computer, I travel, hike, camp out and take photos.
+
+I'm an [INTJ]: INTJs are known as the "Systems Builders" of the types, perhaps in part because they possess the unusual trait of combining imagination and reliability. ~ [Marina Margaret Heiss](http://typelogic.com/intj.html)
 
 I work in Brussels, Belgium.
 
@@ -55,3 +57,4 @@ Please contact me!
 [macdown]: http://macdown.uranusjr.com/
 [GitHub]: https://github.com/sebw/posts
 [Alfred]: https://www.alfredapp.com/
+[INTJ]: https://en.wikipedia.org/wiki/INTJ
