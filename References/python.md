@@ -47,6 +47,15 @@ for key, value in d.iteritems():
     print key + ": " + value['servername']
 ```
 
+#### Iterate through a more complex dictionary
+
+```
+map = { 'plugins':[{'plugin1':[{'name':'/etc/plugin1'},{'hash':'fdklsjfdklj'}]},{'plugin2':[{'name':'/etc/plugin2'},{'hash':'fdslkjdf'}]}] }for plugin in map['plugins']:   for plugin_id, plugin_options in plugin.items():       print plugin_id + ":"       for options in plugin_options:           for option, valeur in options.items():               print "  " + option + ": " + valeur
+```
+
+Returns:```plugin1:  name: /etc/plugin1  hash: fdklsjfdkljplugin2:  name: /etc/plugin2  hash: fdslkjdf
+```
+
 #### Check for a value in a list
 
 ```
