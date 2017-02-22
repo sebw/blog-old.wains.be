@@ -14,9 +14,9 @@ Instead of using the command `salt-cloud`, we use `salt-run` like this:
 
 ```
 salt-run state.orchestrate orch_vmware.createvm \ 
-pillar="{event_data: {post: {master: 'master', instances: 'vmname', \
-clonefrom: 'redhat7', datastore: 'datastore1', num_cpu: 2, memory: 4096, \
-datacenter: 'level3', cluster: 'cluster1', vlan: 'VLAN10', ip: '192.168.1.10', \
-subnet_mask: '255.255.255.0', gateway: '192.168.1.1', ssh_username: 'root', \
-password: 'example'}}}"
+	pillar="{event_data: {post: {master: 'master', instances: 'vmname', \
+	clonefrom: 'redhat7', datastore: 'datastore1', num_cpu: 2, memory: 4096, \
+	datacenter: 'level3', cluster: 'cluster1', vlan: 'VLAN10', ip: '192.168.1.10', \
+	subnet_mask: '255.255.255.0', gateway: '192.168.1.1', ssh_username: 'root', \
+	password: 'example'}}}"
 ```
