@@ -5,7 +5,9 @@ A markdown based [wiki] about Linux, Open Source, VoIP and other geeky stuff.
 
 For those who have known me for a couple of years now, you've learned that I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk** for some time, back when I was managing 5 Linux servers or so.
 
-As of today, I manage about 260, so I'm spending a lot of time automating, centralizing and orchestrating management with **Saltstack**, **Salt Cloud**, **Rundeck**, **Jenkins**, **Nexus**, **Satellite**, **iTop** and **Graylog**. In the same vein, I'm a huge fan of **Automagic** on Android, and **Alfred** on Mac.
+As of today, I manage about 260, so I'm spending a lot of time automating, centralizing and orchestrating management with **Saltstack**, **Salt Cloud**, **Git** and **Gitlab**, **Rundeck**, **Jenkins**, **Nexus**, **Redhat Satellite**, **iTop** and **Graylog**. In the same vein, I'm a huge fan of **Automagic** on Android, and **Alfred** on Mac.
+
+My work computer is running Fedora with [i3 tiling window manager](https://i3wm.org/). I'm a die-hard shortcut keyboard user.
 
 ## Why a wiki?
 
@@ -21,15 +23,17 @@ This site has gone through four design revisions: [2005](https://blog.wains.be/N
 
 ## Why Markdown?
 
-Markdown is great because every articles of this site are stored on my MacBook. It is plain text so Alfred/Spotlight indexes the content, and I can just look up a word and I will get to the article source immediately. I can grep, sed, awk the hell out of them and bring correction very quickly.
+I write articles on my personal computer, a MacBook.
 
-It is also very easy to automate publications.
+Markdown is great because every articles of this site are stored on disk. It is plain text, so Alfred/Spotlight indexes the content, and I can just look up a word and I will get to the article source immediately. I can grep, sed, awk the hell out of them and bring correction very quickly.
+
+It is also very easy to publish automatically.
 
 My workflow comes as follow:
 
 - I edit articles locally with [MacDown]
-- I commit changes to [GitHub] using GitHub Desktop
-- I trigger a "git pull" with an [Alfred] workflow
+- I commit changes to my [GitHub] using [GitX](https://rowanj.github.io/gitx/)
+- I trigger a "git pull" on my VPS from an [Alfred] workflow
 - Article is online
 
 ## Can't find anything here?
