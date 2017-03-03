@@ -11,6 +11,8 @@ systemctl restart auditd.service
 
 Then run `journalctl -b -0` while attempting access to the ressource that is being blocked by SELinux.
 
+Run sealert as advised in the logs.
+
 **Troubleshooting with GUI**
 
 Get an overview of SELinux status, booleans, file labels, user mapping, users, network ports, policy module and process domains in one interface.
