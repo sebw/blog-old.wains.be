@@ -5,9 +5,23 @@ A markdown based [wiki] about Linux, Open Source, VoIP and other geeky stuff.
 
 For those who have known me for a couple of years now, you've learned that I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk** for some time, back when I was managing 5 Linux servers or so.
 
-As of today, I manage about 260, so I'm spending a lot of time automating, centralizing and orchestrating management with **Saltstack**, **Salt Cloud**, **Git** and **Gitlab**, **Rundeck**, **Jenkins**, **Nexus**, **Redhat Satellite**, **iTop** and **Graylog**. In the same vein, I'm a huge fan of **Automagic** on Android, and **Alfred** on Mac.
+As of today, I manage about 260. I spend a lot of time automating, centralizing and orchestrating management with some of those tools:
 
-My work computer is running Fedora with [i3 tiling window manager](https://i3wm.org/). I'm a die-hard shortcut keyboard user.
+- **[Saltstack]**
+- **Salt Cloud**
+- **Git, [Gitlab CE] and [tig]**
+- **[Rundeck]**
+- **Jenkins**
+- **Artifactory**
+- **Nexus**
+- **[Postman]**
+- **Redhat Satellite**
+- **[iTop]**
+- **[Graylog]**
+
+In the same vein of automation at a personal level, I'm a huge fan of **[Automagic]** on Android, and **[Alfred]** on Mac, and hackable connected objects like WeMo devices.
+
+My work environnement is based on Fedora with **[i3]** tiling window manager, running as a KVM on a libvirt RHEL7 host. I'm a die-hard shortcut keyboard user.
 
 ## Why a wiki?
 
@@ -61,4 +75,13 @@ Please contact me!
 [macdown]: http://macdown.uranusjr.com/
 [GitHub]: https://github.com/sebw/posts
 [Alfred]: https://www.alfredapp.com/
+[Automagic]: https://automagic4android.com/
+[Rundeck]: http://www.rundeck.org
+[Gitlab CE]: https://about.gitlab.com/downloads/
+[Saltstack]: https://www.saltstack.com
+[iTop]: https://www.combodo.com/itop-193
 [INTJ]: https://en.wikipedia.org/wiki/INTJ
+[Graylog]: https://www.graylog.org/
+[i3]: https://i3wm.org/
+[Postman]: https://www.getpostman.com/
+[tig]: http://jonas.nitro.dk/tig/
