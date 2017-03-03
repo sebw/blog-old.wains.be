@@ -33,4 +33,4 @@ To enable the transparent proxying, type this :
 
 **Squid 2.6 and later :**
 
-[http://blog.wains.be/post/squid-26-transparent-proxy/](http://blog.wains.be/post/squid-26-transparent-proxy/)
+[https://blog.wains.be/2007/2007-10-27-squid-26-transparent-proxy.md](https://blog.wains.be/2007/2007-10-27-squid-26-transparent-proxy.md)
