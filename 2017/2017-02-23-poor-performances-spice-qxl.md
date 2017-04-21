@@ -8,7 +8,7 @@ I use virt-manager to connect to the guest over Spice.
 
 It turns out, video performances were terrible. For some reason QXL drivers were not loaded on Linux Mint. It was impossible to load those drivers.
 
-I could have been bothering of compiling those drivers and see if I could fix it that way, but I didn't have to run Mint for any specific reason.
+I could have been bothering recompiling those drivers and see if I could fix it that way, but I didn't have to run Mint for any specific reason.
 
 I decided to check Fedora 25 workstation. Under Gnome 3 it was somewhat faster, but still not blazing fast, and displaying artifacts like bad jpeg compression. The problem there was Wayland.
 
