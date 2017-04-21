@@ -46,7 +46,7 @@ It is also very easy to publish automatically.
 My workflow comes as follow:
 
 - I edit articles locally with [MacDown]
-- I commit changes to my [GitHub] using [GitX](https://rowanj.github.io/gitx/)
+- I commit changes to my [GitHub] 
 - I trigger a "git pull" on my VPS from an [Alfred] workflow
 - Article is online
 
