@@ -1,7 +1,11 @@
 # Firefox recommended about:config configuration
 The following is a recommended setup for Firefox as of September 2015 by [https://www.privacytools.io/#about_config](https://www.privacytools.io/#about_config) and [https://www.eff.org/deeplinks/2015/10/how-to-protect-yourself-from-nsa-attacks-1024-bit-DH](https://www.eff.org/deeplinks/2015/10/how-to-protect-yourself-from-nsa-attacks-1024-bit-DH)
 
+[http://kb.mozillazine.org/Network.IDN_show_punycode](http://kb.mozillazine.org/Network.IDN_show_punycode)
+
 ```
+network.IDN_show_punycode = true
+	Display the “raw”, punycode version of internationalized domain names.
 privacy.trackingprotection.enabled = true
     This is Mozilla’s new built in tracking protection.
 geo.enabled = false
