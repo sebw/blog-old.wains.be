@@ -210,3 +210,7 @@ Example with Syncthing API
 ```
 curl --silent -X GET -H "X-API-Key: xyz" http://127.0.0.1:8384/rest/system/status | python -mjson.tool	
 ```
+
+#### Python Algorithms
+
+[https://github.com/keon/algorithms](https://github.com/keon/algorithms)
