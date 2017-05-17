@@ -5,7 +5,7 @@ A markdown based [wiki] about Linux, Open Source, VoIP and other geeky stuff.
 
 For those who have known me for a couple of years now, you've learned that I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk** for some time, back when I was managing 5 Linux servers or so.
 
-As of today, I manage about 260. I spend a lot of time automating, centralizing and orchestrating management with some of those tools:
+As of today, I manage about 300. I spend a lot of time automating, centralizing and orchestrating management with some of those tools:
 
 - **[Saltstack]**
 - **Salt Cloud**
@@ -22,6 +22,8 @@ As of today, I manage about 260. I spend a lot of time automating, centralizing 
 In the same vein of automation at a personal level, I'm a huge fan of **[Automagic]** on Android, and **[Alfred]** on Mac, and hackable connected objects like WeMo devices.
 
 My work environnement is based on Fedora with **[i3]** tiling window manager, running as a KVM on a libvirt RHEL7 host. I'm a die-hard shortcut keyboard user.
+
+I talked about [SaltStack] at [Jeudis du Libre] conference. Check my Github for the decks.
 
 ## Why a wiki?
 
@@ -45,7 +47,7 @@ It is also very easy to publish automatically.
 
 My workflow comes as follow:
 
-- I edit articles locally with [MacDown]
+- I edit articles locally with [Visual Studio Code] (yes, it is an open source Microsoft product)
 - I commit changes to my [GitHub] 
 - I trigger a "git pull" on my VPS from an [Alfred] workflow
 - Article is online
@@ -73,7 +75,7 @@ Please contact me!
 [wiki]: https://github.com/victorstanciu/Wikitten
 [markdownx]: https://play.google.com/store/apps/details?id=com.ryeeeeee.markdownx
 [macdown]: http://macdown.uranusjr.com/
-[GitHub]: https://github.com/sebw/posts
+[GitHub]: https://github.com/sebw/
 [Alfred]: https://www.alfredapp.com/
 [Automagic]: https://automagic4android.com/
 [Rundeck]: http://www.rundeck.org
@@ -85,3 +87,5 @@ Please contact me!
 [i3]: https://i3wm.org/
 [Postman]: https://www.getpostman.com/
 [tig]: http://jonas.nitro.dk/tig/
+[Visual Studio Code]: https://code.visualstudio.com/
+[Jeudis du Libre]: http://www.jeudisdulibre.be
