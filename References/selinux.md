@@ -1,6 +1,6 @@
 # SELinux
 
-**Troubleshooting SELinux easily**
+**Troubleshooting SELinux easily from CLI**
 
 On Fedora use dnf instead of yum
 
@@ -26,6 +26,19 @@ yum install xorg-x11-xauth bitmap-fixed-fonts policycoreutils-gui
 From your workstation:
 
 `ssh -Y` to the server and run `system-config-selinux`
+
+**Displaying all SELinux rules applied to a service**
+
+For example for haproxy:
+
+```
+setenforce 0 (if service doesn't start and you need to troubleshoot)
+systemctl start haproxy
+ps auxZ haproxy | grep haproxy
+  --> returns system_u:system_r:haproxy_t:s0
+sesearch -d -A -s haproxy_t
+setenforce 1
+```
 
 **Enabling SELinux on a system that had it disabled**
 
