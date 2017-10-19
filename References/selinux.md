@@ -37,6 +37,11 @@ systemctl start haproxy
 ps auxZ haproxy | grep haproxy
   --> returns system_u:system_r:haproxy_t:s0
 sesearch -d -A -s haproxy_t
+
+If you are getting a `name_bind` error in audit logs:
+
+sesearch -d -A -s haproxy_t -p "name_bind"
+
 setenforce 1
 ```
 
@@ -91,3 +96,7 @@ Using the context of directory to index.html:
 `setsebool -P httpd_enable_homedirs 1`
 
 1 = persist
+
+**Getting ports applied to a context**
+
+semanage port -l
