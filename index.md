@@ -47,7 +47,7 @@ It is also very easy to publish automatically.
 
 My workflow comes as follow:
 
-- I edit articles locally with [Visual Studio Code] (yes, it is an open source Microsoft product)
+- I edit articles locally with [Visual Studio Code] (yes, it is an open source Microsoft product, and it is very good)
 - I commit changes to my [GitHub] 
 - I trigger a "git pull" on my VPS from an [Alfred] workflow
 - Article is online
