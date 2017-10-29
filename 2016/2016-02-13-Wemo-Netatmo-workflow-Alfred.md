@@ -6,7 +6,7 @@ I just published my two first [Alfred](https://www.alfredapp.com/) workflows on 
 
 Wemo v0.2 allows to get the status of your Wemo switches and changing their status with a simple click.
 
-![](https://blog.wains.be/library/images/alfred-wemo.png)
+![](https://blog.wains.be/images/alfred-wemo.png)
 
 It is based on a bash script found [here](http://moderntoil.com/?p=839) in the comments.
 
@@ -14,7 +14,7 @@ It is based on a bash script found [here](http://moderntoil.com/?p=839) in the c
 
 Netatmo v0.2 retrieves weather information from your indoor and outdoor modules.
 
-![](https://blog.wains.be/library/images/alfred-netatmo.png)
+![](https://blog.wains.be/images/alfred-netatmo.png)
 
 It is based on a PHP script found a long time ago on [http://maison-et-domotique.com](http://maison-et-domotique.com).
 

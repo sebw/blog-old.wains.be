@@ -13,7 +13,7 @@ categories:
 
 I'll explain how I enabled SSH on my Synology DS-101 box.
 
-![Synology DS-101](https://blog.wains.be/library/images/00-imageshack.jpg)
+![Synology DS-101](https://blog.wains.be/images/00-imageshack.jpg)
 
 This guide is based on Nicolas' work : [http://www.dotmana.com/index.php/?p=91](http://www.dotmana.com/index.php/?p=91)
 

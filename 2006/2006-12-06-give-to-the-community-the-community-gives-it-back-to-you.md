@@ -14,4 +14,4 @@ And this is what I got today :)
 
 This is a reward for helping a friend with Linux and some networking stuff :-D
 
-![](https://blog.wains.be/library/images/reward.jpg)
+![](https://blog.wains.be/images/reward.jpg)

@@ -101,7 +101,7 @@ sensors-applet doesn't support nvidia probes in Ubuntu 7.10
 
 I've built sensors-applet with nvidia support for i386 : [http://blog.wains.be/pub/sensors-applet_2.2.1-1_i386.deb](http://blog.wains.be/pub/sensors-applet_2.2.1-1_i386.deb)
 
-[![Image Hosted by ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)  
+[![Image Hosted by ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)  
 
 _After installing sensors-applet with nvidia support (CPU, HDD, nvidia)_
 

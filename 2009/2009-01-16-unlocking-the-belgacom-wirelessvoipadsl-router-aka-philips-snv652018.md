@@ -11,7 +11,7 @@ categories:
 - VoIP
 
 
-![Belgacom Philips SNV6520/18](https://blog.wains.be/library/images/00-imageshack.jpg)
+![Belgacom Philips SNV6520/18](https://blog.wains.be/images/00-imageshack.jpg)
 
 **THE BORING PART :**
 

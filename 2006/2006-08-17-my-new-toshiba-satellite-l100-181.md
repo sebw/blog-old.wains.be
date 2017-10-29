@@ -12,7 +12,7 @@ categories:
 
 This is my new laptop
 
-[![Free Image Hosting at www.ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+[![Free Image Hosting at www.ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)
 
 I can't swear it is fully Linux compatible, I haven't tested the modem yet.
 EDIT 24 jan 07 : Sound issue was fixed by installing the latest alsa drivers manually (I currently am under Ubunbu 6.10)

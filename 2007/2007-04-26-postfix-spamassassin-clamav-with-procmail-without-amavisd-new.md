@@ -102,4 +102,4 @@ Thanks to mjhall.org for their howto about clamassassin : [http://www.mjhall.org
 
 This is the swap space state, can you guess when I stopped using amavis and switched to clamassassin ? 
 
-[![Image Hosted by ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+[![Image Hosted by ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)

@@ -16,7 +16,7 @@ According to the seller, the unit was brand new and had never been used, as it w
 
 The exact model I got was a WAG54G-E2 (hardware version 2) with firmware 1.00.43.
 
-[![](https://blog.wains.be/library/images/00-imageshack.jpg)
+[![](https://blog.wains.be/images/00-imageshack.jpg)
 _The WAG54G-E2 v2 looked like this_
 
 **The problems**
@@ -62,7 +62,7 @@ This is where the troubles begin.
 I can't find any info on the WAG54G version 3, it looks like a WAG200G but not exactly similar.
 Anyhow, it looks like this model is doing a great job. **(edit 14 June : the DDNS feature is still messing up... It would update the IP when the unit is booting, but if the IP changes it says it has updated successfully, but actually it hasn't, I have to either reboot or click "update" in the web GUI...I'm giving up on it and I'm now running a DynDNS client on my NAS server instead)**
 
-[![Free Image Hosting at www.ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+[![Free Image Hosting at www.ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)
 _The WAG54G-E2 v3 looks like this but has an antenna and the power button on the front, the model on the pic is a WAG200G.. confusing_
 
 It appears the WAG54G-E2 with firmware 1.00.43 was a model sent by Linksys in RMA only.

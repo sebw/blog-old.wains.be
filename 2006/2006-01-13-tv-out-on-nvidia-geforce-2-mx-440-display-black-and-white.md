@@ -26,10 +26,10 @@ WHQL Certified
 
 OS : Windows XP SP2
 
-![Peritel](https://blog.wains.be/library/images/peritel.jpg)
+![Peritel](https://blog.wains.be/images/peritel.jpg)
 _The scart plug_
 
-![S-VHS cable](https://blog.wains.be/library/images/svhs.jpg)
+![S-VHS cable](https://blog.wains.be/images/svhs.jpg)
 _Connectors from the S-VHS cable_
 
 The $10 fix : get a coax cable, it'll work on coax...
@@ -39,10 +39,10 @@ The $0 fix :
 - Set the TV as the main display
 
 Then right click the TV icon and go to advanced settings for the TV format :
-![](https://blog.wains.be/library/images/nvidia1.gif)
+![](https://blog.wains.be/images/nvidia1.gif)
 
 Set the output as composite even though you actually use S-VHS :
-![](https://blog.wains.be/library/images/nvidia2.gif)
+![](https://blog.wains.be/images/nvidia2.gif)
 
 It should work now !
 

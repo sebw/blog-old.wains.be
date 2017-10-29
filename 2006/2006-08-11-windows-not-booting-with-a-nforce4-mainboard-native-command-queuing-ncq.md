@@ -18,6 +18,6 @@ I had to disable Native Command Queuing (NCQ) to avoid the problem, the maxtor h
 [http://en.wikipedia.org/wiki/Native_command_queueing](http://en.wikipedia.org/wiki/Native_command_queueing)
 
 Where to disable NCQ under Windows XP (under an admin account) :
-[![Free Image Hosting at www.ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+[![Free Image Hosting at www.ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)
 
 

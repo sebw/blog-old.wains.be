@@ -18,7 +18,7 @@ If you are fortunate enough and leave your pointer over the hour for a few secon
 
 Check this out :
 
-[![Image Hosted by ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+[![Image Hosted by ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)
 
 Gosh I love Windows XP... you need administrative privileges to check the date out.
 

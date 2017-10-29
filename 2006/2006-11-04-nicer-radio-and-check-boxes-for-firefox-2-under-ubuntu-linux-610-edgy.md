@@ -17,10 +17,10 @@ While I run Beryl and XGL and have an eye candy desktop, I found the radio and c
 I packaged all you need to get nicer boxes...
 
 Before :
-![Image Hosted by ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+![Image Hosted by ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)
 
 After :
-![Image Hosted by ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+![Image Hosted by ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)
 
 Download the package : [http://blog.wains.be/pub/firefox-widgets.tar.gz](http://blog.wains.be/pub/firefox-widgets.tar.gz)
 

@@ -246,7 +246,7 @@ So you can either save the XML file locally, or you can call it from a URL. That
 
 
 
-[![](https://blog.wains.be/library/images/Screen-Shot-2012-12-03-at-23.04.10-206x300.png)
+[![](https://blog.wains.be/images/Screen-Shot-2012-12-03-at-23.04.10-206x300.png)
 
 
 

@@ -41,7 +41,7 @@ Fa0/12      10,20,30
 
 **Configure the WAP4410N as such :**
 
-![Screen Shot 2013-06-30 at 11.12.06](https://blog.wains.be/library/images/Screen-Shot-2013-06-30-at-11.12.06-300x172.png)
+![Screen Shot 2013-06-30 at 11.12.06](https://blog.wains.be/images/Screen-Shot-2013-06-30-at-11.12.06-300x172.png)
 
 The IP in "Setup > Basic Setup" should be in the subnet of VLAN 20. It allows you to manage the unit remotely.
 

@@ -18,7 +18,7 @@ I decided to give it a try tonight.
 
 The sticker on the back of the reader says "ACR38U-SPC-FDT (FW104)".
 
-![Free Image Hosting at www.ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+![Free Image Hosting at www.ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)
 
 I first blindly tried to install some packages (beidgui to read my card info) but ran into several problems.
 

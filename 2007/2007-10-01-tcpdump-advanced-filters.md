@@ -662,7 +662,7 @@ tcpdump udp dst port 53
 ### ICMP header
 See different ICMP messages:
 
-![](https://blog.wains.be/library/images/icmp.png)
+![](https://blog.wains.be/images/icmp.png)
 
 We will usually filter the type (1 byte) and code (1 byte) of the ICMP messages.
 

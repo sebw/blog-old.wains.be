@@ -16,4 +16,4 @@ Any "string A" in a web page will be replaced by "string B".
 
 In the output you would see this:
 
-	[+] Caught server -> client packet.    Applying rule s/string%20A/string%20B...	[*] Done 1 replacements, forwarding packet of size 1453 (orig 1452).
+	[+] Caught server -> client packet.    Applying rule s/string%20A/string%20B...	[*] Done 1 replacements, forwarding packet of size 1453 (orig 1452).

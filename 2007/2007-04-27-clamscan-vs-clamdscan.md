@@ -12,9 +12,9 @@ categories:
 
 If you're wondering what is best...
 
-![Image Hosted by ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+![Image Hosted by ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)
 
-![Image Hosted by ImageShack.us](https://blog.wains.be/library/images/00-imageshack.jpg)
+![Image Hosted by ImageShack.us](https://blog.wains.be/images/00-imageshack.jpg)
 
 I switched back to clamdscan at 5pm.
 Actually my system was using clamdscan under amavisd-new.
