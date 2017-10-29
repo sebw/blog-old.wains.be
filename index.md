@@ -10,6 +10,7 @@ As of today, I manage about 300. I spend a lot of time automating, centralizing 
 - **[Saltstack]**
 - **Salt Cloud**
 - **Git, [Gitlab CE] and [tig]**
+- **[Mkdocs]**
 - **[Rundeck]**
 - **Jenkins**
 - **Artifactory**
@@ -35,7 +36,11 @@ Today, my focus has changed. I want to publish things quickly. From anywhere in 
 
 So here we are, almost exactly 10 years later, I moved from a blog to a wiki platform in **July 2015**. The content is still there and I hope you find useful stuff.
 
-This site has gone through four design revisions: [2005](https://blog.wains.be/Nostalgy/2005.png), [2008](https://blog.wains.be/Nostalgy/2008.png), [2011](https://blog.wains.be/Nostalgy/2011.png) and [2015](https://blog.wains.be/Nostalgy/2015.png).
+This site has gone through five design revisions: [2005](https://blog.wains.be/Nostalgy/2005.png), [2008](https://blog.wains.be/Nostalgy/2008.png), [2011](https://blog.wains.be/Nostalgy/2011.png), [2015](https://blog.wains.be/Nostalgy/2015.png) and [2017](https://blog.wains.be/Nostalgy/2017.png)
+
+In 2015, I was running [Wikitten](https://github.com/victorstanciu/Wikitten).
+
+In 2017 revision, I moved to [Mkdocs].
 
 ## Why Markdown?
 
@@ -50,6 +55,7 @@ My workflow comes as follow:
 - I edit articles locally with [Visual Studio Code] (yes, it is an open source Microsoft product, and it is very good)
 - I commit changes to my [GitHub] 
 - I trigger a "git pull" on my VPS from an [Alfred] workflow
+- Mkdocs starts rebuilding the documentation
 - Article is online
 
 ## Can't find anything here?
@@ -72,7 +78,8 @@ Please contact me!
 
 [this]: https://github.com/sebw/blog.wains.be/search?utf8=%E2%9C%93&q=postfix
 [up]: https://duckduckgo.com/?q=Sebastien+Wains
-[wiki]: https://github.com/victorstanciu/Wikitten
+[wiki]: http://www.mkdocs.org/
+[Mkdocs]: http://www.mkdocs.org/
 [markdownx]: https://play.google.com/store/apps/details?id=com.ryeeeeee.markdownx
 [macdown]: http://macdown.uranusjr.com/
 [GitHub]: https://github.com/sebw/
