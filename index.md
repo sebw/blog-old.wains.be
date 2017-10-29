@@ -40,7 +40,7 @@ This site has gone through five design revisions: [2005](https://blog.wains.be/N
 
 In 2015, I was running [Wikitten](https://github.com/victorstanciu/Wikitten).
 
-In 2017 revision, I moved to [Mkdocs].
+In 2017 revision, I moved to [Mkdocs] as Wikitten didn't have a search engine.
 
 ## Why Markdown?
 
@@ -57,9 +57,6 @@ My workflow comes as follow:
 - I trigger a "git pull" on my VPS from an [Alfred] workflow
 - Mkdocs starts rebuilding the documentation
 - Article is online
-
-## Can't find anything here?
-There is no content search engine on this platform. Try [this] kind of query instead, it should point you to the right page.
 
 ## About me
 I like building simple, powerful, resilient, secure and automated infrastructures. Preferably based on open tools and protocols. Privacy is a main concern.
