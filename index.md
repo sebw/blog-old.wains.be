@@ -64,8 +64,9 @@ This is my current publication workflow:
 
 - I edit articles locally with [Visual Studio Code] (yes, it is an open source Microsoft product, and it is very good)
 - I commit changes to my [GitHub] 
-- I trigger a "git pull" on my VPS from an [Alfred] workflow
-- On the VPS, Mkdocs starts rebuilding the documentation
+- With an Alfred workflow, I connect to my VPS and do:
+    - a "git pull" to retrieve updates
+    - rebuild the doc (which is served as static files by the HTTP server)
 - Article is online
 
 ## About me
