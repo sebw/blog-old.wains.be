@@ -81,7 +81,7 @@ I work in Brussels, Belgium.
 If you want to contact me, just look me [up].
 
 ## Found an error on this site?
-Please contact me!
+Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new)
 
 [this]: https://github.com/sebw/blog.wains.be/search?utf8=%E2%9C%93&q=postfix
 [up]: https://duckduckgo.com/?q=Sebastien+Wains
