@@ -79,6 +79,12 @@ id -Z
 ps -Z
 ```
 
+**Check context for specific files**
+
+Let's assume you install BIND and want to check where logs should be sent.
+
+`semanage fcontext -l | grep named | grep log`
+
 **Change context**
 
 `chcon -t context /var/www/html/index.html`
