@@ -23,7 +23,7 @@ This script will parse the RIPE database and generate the iptables rules automat
 
 <!-- more -->
 
-Download the script here : [http://www.wains.be/pub/update_country_block_list](http://www.wains.be/pub/update_country_block_list)
+Download the script here : [https://www.wains.be/pub/update_country_block_list](https://www.wains.be/pub/update_country_block_list)
 
 The output would look like this :
 
