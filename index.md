@@ -25,7 +25,7 @@ Today, I manage more than 300. I spend a lot of time automating, centralizing an
 - **[iTop]**
 - **[Graylog]**
 
-In the same vein of automation at a personal level, I'm a huge fan of **[Automagic]** on Android, **[Alfred]** on Mac, and hackable connected devices.
+In the same vein of automation at a personal level, I'm a huge fan of **[Automagic]** on Android, **[Alfred]** on Mac, **[Albert]** on Linux, and hackable connected devices.
 
 My work environnement is based on Fedora with **[i3]** tiling window manager, running as a KVM on a libvirt RHEL7 host. I'm a die-hard shortcut keyboard user.
 
@@ -92,6 +92,7 @@ Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new)
 [macdown]: http://macdown.uranusjr.com/
 [GitHub]: https://github.com/sebw/
 [Alfred]: https://www.alfredapp.com/
+[Albert]: https://albertlauncher.github.io/
 [Automagic]: https://automagic4android.com/
 [Rundeck]: http://www.rundeck.org
 [Gitlab CE]: https://about.gitlab.com/downloads/
