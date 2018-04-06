@@ -1,10 +1,10 @@
 # Gogs - a lightweight alternative to Gitlab
 
-If you need to self-host small Git repositories, I suggest you give [Gogs](https://gogs.io/) a try.
+If you need to self-hosted and lightweight Github or Gitlab alternative, I suggest you give [Gogs](https://gogs.io/) a try.
 
 Gogs provides Docker images here: [https://hub.docker.com/r/gogs/gogs/](https://hub.docker.com/r/gogs/gogs/)
 
-Start the image, put an Apache or Nginx reverse proxy on front, secure with Let's Encrypt, and you should be up and running in a couple of minutes.
+Start the image, put a reverse proxy in front, secure the whole thing with Let's Encrypt, and you should be up and running in a couple of minutes.
 
 If you're hosting a couple of repos and a few users, you can use a sqlite backend.
 
