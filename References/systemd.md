@@ -47,8 +47,10 @@ systemctl reboot
 
 ### Manage service target
 
-```systemctl start postfix.service
+```
+systemctl start postfix.service
 systemctl stop postfix.service
 systemctl status postfix.service
 systemctl enable postfix.service
-systemctl disable postfix.service```
+systemctl disable postfix.service
+```
