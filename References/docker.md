@@ -1,4 +1,6 @@
-# Docker useful commands
+# Docker
+
+## Useful commands
 
 #### Get Docker version
 
@@ -78,7 +80,7 @@ docker run --net mynet123 --ip 172.18.0.22 -it ubuntu bash
 ```
 docker run -it centos /bin/bash (will download and enter the image immediately)
 Make some changes on the image, for example "mkdir /srv/salt"
-docker commit $id_du_conteneur sebastienw/centos7-salt
+docker commit name_of_container your_name/centos7-salt
 ```
 
 #### Start a CentOS image
