@@ -9,7 +9,7 @@ You can't comment here but you can open an issue or submit a merge request on Gi
 
 ## What I'm up to today (and tomorrow)
 
-![https://blog.wains.be/images/redhat.png]()
+![](https://blog.wains.be/images/redhat.png)
 
 Starting August 1st 2018, I'll start a new exciting job at Red Hat, the Open Source company. I will work as a Senior Consultant.
 
