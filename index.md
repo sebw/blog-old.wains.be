@@ -5,31 +5,39 @@ Sources of this site are available on [Github].
 
 You can't comment here but you can open an issue or submit a merge request on Github if something is incorrect or requires clarification.
 
-## What I'm up to today
+**Opinions expressed here represent my own and not those of my employer.**
 
-For those who have known me for a couple of years now, you've learned that I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk** for some time, back when I was managing 5 Linux servers or so.
+## What I'm up to today (and tomorrow)
 
-Today, I manage more than 300. I spend a lot of time automating, centralizing and orchestrating system administration and management with those tools:
+![https://blog.wains.be/images/redhat.png]()
 
-- **[Saltstack]**
-- **Salt Cloud**
-- **Python**
-- **Git, [Gitlab CE] and [tig]**
-- **[Mkdocs]**
-- **[Rundeck]**
-- **Jenkins**
-- **Artifactory**
-- **Nexus**
-- **[Postman]**
-- **Redhat Satellite**
-- **[iTop]**
-- **[Graylog]**
+Starting August 1st 2018, I'll start a new exciting job at Red Hat, the Open Source company. I will work as a Senior Consultant.
 
-In the same vein of automation at a personal level, I'm a huge fan of **[Automagic]** on Android, **[Alfred]** on Mac, **[Albert]** on Linux, and hackable connected devices.
+I will work with modern technologies like OpenShift, OpenStack, Cloudforms, Gluster, Ansible or IPA.
 
-My work environnement is based on Fedora with **[i3]** tiling window manager, running as a KVM on a libvirt RHEL7 host. I'm a die-hard shortcut keyboard user.
+To learn more about Red Hat consulting check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
+
+## What I have been up to in the past
+
+For those who have been following me from the start, you've heard that I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk** for some time, back when I was managing 5 Linux servers or so.
+
+Then I changed jobs a couple of times and, and eventually managed more than 330 servers. In my last position before starting at Red Hat, I spent a lot of time automating, centralizing and orchestrating system administration and management with those tools:
+
+[Saltstack], Salt Cloud, Python, Git, [Gitlab CE] and [tig], [Mkdocs], [Rundeck], Jenkins, Artifactory, Nexus, [Postman], Redhat Satellite, iTop, [Graylog].
 
 I talked about [SaltStack] at [Jeudis du Libre] conference. Check my [Github] for the decks.
+
+## On the personal level
+
+I automate things at the personal level too! I'm a huge fan of **[Automagic]** on Android, **[Alfred]** on Mac, **[Albert]** on Linux, and hackable connected devices.
+
+## My work environment
+
+I work in a virtual machine running the latest Fedora with **[i3]** tiling window manager.
+
+The VM runs on top of a RHEL7 host running libvirt. 
+
+I'm a die-hard shortcut keyboard user.
 
 ## Why a wiki?
 
@@ -75,8 +83,6 @@ I like building simple, powerful, resilient, secure and automated infrastructure
 When I'm not busy at the computer, I travel, hike, ski, camp out and take photos.
 
 I'm an [INTJ]: INTJs are known as the "Systems Builders" of the types, perhaps in part because they possess the unusual trait of combining imagination and reliability. ~ [Marina Margaret Heiss](http://typelogic.com/intj.html)
-
-I work in Brussels, Belgium.
 
 ## Contacts
 If you want to contact me, just look me [up].
