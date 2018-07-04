@@ -97,7 +97,11 @@ Using the context of directory to index.html:
 
 **Change context so it survives a relabel**
 
-`semanage fcontext -a -t ${context} "/var/www/html(/.*)?"`
+`semanage fcontext -a system_u -t public_content_t "/ftp(/.*)?"`
+
+This new rule will be stored under `/etc/selinux/targeted/contexts/files/file_contexts.local`
+
+See `man semanage-fcontext` for examples.
 
 **Getting SELinux booleans**
 
