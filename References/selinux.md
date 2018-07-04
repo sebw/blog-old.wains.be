@@ -87,11 +87,17 @@ Let's assume you install BIND and want to check where logs should be sent.
 
 **Change context**
 
-`chcon -t context /var/www/html/index.html`
+Changes made with chcon would not survive a relabel!
+
+`chcon -t ${context} /var/www/html/index.html`
 
 Using the context of directory to index.html:
 
 `chcon --reference /var/www/html /var/www/html/index.html`
+
+**Change context so it survives a relabel**
+
+`semanage fcontext -a -t ${context} "/var/www/html(/.*)?"`
 
 **Getting SELinux booleans**
 
