@@ -12,7 +12,7 @@ LVM partitions don't need to be formatted in any way. That's the LV that will be
 +------+------+------+
 | LV01 | LV02 | LV03 |
 +------+-------------+
-|     volumegroup01    | volumegroup02 |
+| VG01 |     VG02    |
 +------+-------------+
 | PV01 | PV02 | PV03 |
 +------+------+------+
