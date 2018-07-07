@@ -21,9 +21,13 @@
 
 See symlink /etc/systemd/system/default.target
 
-### Set default target
+### Set default target to CLi
 
 `systemctl set-default multi-user.target`
+
+### Set default target to graphical
+
+`systemctl set-default graphical.target`
 
 ### Change target from GUI to CLI
 
