@@ -25,7 +25,7 @@ Then I changed jobs a couple of times and, and eventually managed more than 330 
 
 I talked about [SaltStack] at [Jeudis du Libre] conference. Check my [Github] for the decks.
 
-## On the personal level
+## At the personal level
 
 I automate things at the personal level too! I'm a huge fan of **[Automagic]** on Android, **[Alfred]** on Mac, **[Albert]** on Linux, and hackable connected devices.
 
