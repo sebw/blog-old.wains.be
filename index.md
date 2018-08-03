@@ -7,15 +7,15 @@ You can't comment here but you can open an issue or submit a merge request on Gi
 
 **Opinions expressed here represent my own and not those of my employer.**
 
-## What I'm up to today (and tomorrow)
+## What I'm up to today
 
 ![](https://blog.wains.be/images/redhat.png)
 
-Starting August 1st 2018, I'll start a new exciting job at Red Hat, the Open Source company. I will work as a Senior Consultant.
+I'm a senior consultant at Red Hat, the Open Source company. I will work as a Senior Consultant.
 
-I will work with modern technologies like OpenShift, OpenStack, Cloudforms, Gluster, Ansible or IPA.
+I will work with modern technologies like OpenShift, OpenStack, Cloudforms, Gluster, Ansible or IDM.
 
-To learn more about Red Hat consulting check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
+To learn more about our consulting service, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
 
 ## What I have been up to in the past
 
@@ -35,7 +35,7 @@ I automate things at the personal level too! I'm a huge fan of **[Automagic]** o
 
 I work in a virtual machine running the latest Fedora with **[i3]** tiling window manager.
 
-The VM runs on top of a RHEL7 host running libvirt. 
+The VM runs on top of a Red Hat Enterprise Linux host running libvirt. 
 
 I'm a die-hard shortcut keyboard user.
 
