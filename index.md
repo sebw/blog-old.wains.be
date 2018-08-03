@@ -11,9 +11,7 @@ You can't comment here but you can open an issue or submit a merge request on Gi
 
 ![](https://blog.wains.be/images/redhat.png)
 
-I'm a senior consultant at Red Hat, the Open Source company. I will work as a Senior Consultant.
-
-I will work with modern technologies like OpenShift, OpenStack, Cloudforms, Gluster, Ansible or IDM.
+I'm a senior consultant at Red Hat, the Open Source company.
 
 To learn more about our consulting service, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
 
