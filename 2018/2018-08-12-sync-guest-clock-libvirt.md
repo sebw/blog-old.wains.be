@@ -47,7 +47,7 @@ Since automatic clock sync doesn't work for me, I have to force sync manually.
 
 From the host:
 
-`virsh qemu-agent-command Fedora '{"execute":"guest-set-time"}'
+`virsh qemu-agent-command Fedora '{"execute":"guest-set-time"}'`
 
 Or from the guest:
 
@@ -65,11 +65,11 @@ My host is synced with NTP, of course.
 
 I have checked a lot of documentations, among them:
 
-https://www.redhat.com/archives/libvirt-users/2015-September/msg00099.html
+[https://www.redhat.com/archives/libvirt-users/2015-September/msg00099.html](https://www.redhat.com/archives/libvirt-users/2015-September/msg00099.html)
 
-https://serverfault.com/questions/334698/how-to-keep-time-on-resumed-kvm-guest-with-libvirt
+[https://serverfault.com/questions/334698/how-to-keep-time-on-resumed-kvm-guest-with-libvirt](https://serverfault.com/questions/334698/how-to-keep-time-on-resumed-kvm-guest-with-libvirt)
 
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/chap-kvm_guest_timing_management
+[https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/chap-kvm_guest_timing_management](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/chap-kvm_guest_timing_management)
 
 That last link states:
 
