@@ -85,6 +85,10 @@ I'm an [INTJ]: INTJs are known as the "Systems Builders" of the types, perhaps i
 ## Contacts
 If you want to contact me, just look me [up].
 
+## Copyrights
+
+Red Hat, Red Hat Enterprise Linux, the Shadowman logo, and JBoss are trademarks or registered trademarks of Red Hat, Inc. or its subsidiaries in the United States and other countries.
+
 ## Found an error on this site?
 Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new)
 
