@@ -32,11 +32,13 @@ My SSH key was RSA 8192, I regenerated a 4096 key and the SSH problem (Pass app 
 
 The Nextcloud problem was still present, and interestingly, it was limited to uploads. Downloading 4-10MB pictures was fine, uploading a 1MB file was not.
 
-Digging deeper, I realized that the problem was not limited to Nextcloud. I could not upload pictures to my Lychee instance (photo platform running in a container on the very same VPS) from Chrome. The upload was always getting stuck around 10-11%.
+Digging deeper, I realized that the problem was not limited to Nextcloud. I could not upload pictures to my Lychee instance (photo platform running in a container on the very same VPS) from Chrome. The upload was always getting stuck around 10-11%. Again the Macbook had no problem with that.
 
-I wanted to rule out the Wi-Fi antennas (Ubiquiti Unifi), so I started my old Linksys AP: same problem, Ubiquiti antennas not at fault. From that point on, I was pretty convinced that the router was the issue (or Scaleway running some weird IDS doing device fingerprints).
+I tested upload from my old Motorola G5 and it was able to upload to Nextcloud or Lychee from Chrome!
 
-I still wanted to rule out Docker from the equation, so I made a small PHP upload form (running on Apache on the VPS) and tested some more. I could upload a tiny file (751 bytes) but a 1.54 kB file would not upload and I would get a timeout.
+I wanted to rule out the Wi-Fi antennas (Ubiquiti Unifi UAP Lite and Pro controled by Unifi Controller running on a different VPS (not container)), so I started my old Linksys AP: same problem, Ubiquiti antennas not at fault. From that point on, I was pretty convinced that either the router was the issue or Scaleway doing some weird IDS stuff.
+
+I still wanted to rule out Docker from the equation, so I made a small PHP upload form (running directly on Apache on the VPS) and tested some more. I could upload a tiny file (751 bytes) but a 1.54 kB file would not upload and I would get a timeout.
 
 For many hours, I had been thinking it was some crypto related problems (because SSH problem with 2 apps and Nextcloud being over SSL), so I wanted to rule out SSL (I have HSTS enabled for my domains). I made the form available on HTTP only on the VPS IP: same problem. SSL not at fault.
 
@@ -46,11 +48,11 @@ It seemed like a weird QoS problem, but didn't have any rule applied.
 
 ### The solution
 
-After looking up for long hours, I stumbled upon a [forum post from 2017](https://community.ubnt.com/t5/EdgeRouter/UAP-Pro-can-t-reach-remote-controller-behind-ER-X-works-fine/m-p/2142678/highlight/true#M186119). I was the author of the post! At the time I was complaining how my Android phone (Moto G 1st gen at the time) could not upload to Nextcloud on my Scaleway VPS... Someone asked me if I had mss clamping set to 1452 on the pppoe interface. I applied the recommended setting to no luck and they exchange stopped there.
+After looking up for a couple hours including keywords like timeout, hang, upload stuck, etc., I stumbled upon a [forum post from 2017](https://community.ubnt.com/t5/EdgeRouter/UAP-Pro-can-t-reach-remote-controller-behind-ER-X-works-fine/m-p/2142678/highlight/true#M186119). I was the author of the post! At the time I was complaining how my Android phone (Moto G 1st gen at the time) could not upload to Nextcloud on my Scaleway VPS... Someone asked me if I had mss clamping set to 1452 on the pppoe interface. I applied the recommended setting to no luck and the exchange stopped there.
 
-I somewhat forgot that I already had upload issues with Nextcloud, but I figured it was a bug in the app at the time.
+I somewhat forgot that I already had upload issues with Nextcloud, but I figured it was a bug in the app at the time (there were many issues opened regarding uploads and developers were working on fixes)
 
-Investing this MSS clamping thing on Ubiquiti forums, I find a post where someone recommended to apply the setting to ALL interfaces. Which I did:
+Investigating this MSS clamping thing deeper on Ubiquiti forums, I find a post where someone recommended to apply the setting to ALL interfaces. Which I did:
 
 ```
 set firewall options mss-clamp interface-type all
@@ -58,14 +60,17 @@ set firewall options mss-clamp mss 1452
 commit
 ```
 
-Problem gone! I can upload to Nextcloud, I can upload through the PHP form (SSL or not).
+**Problem gone!** I can now upload to Nextcloud, I can upload through the PHP form (SSL or not), I can SSH to the VPS.
+
+Even a speed test looks better.
+
+Interestingly, it seems only this specific Android device was concerned by this misconfiguration. If anyone has a clue, hit me up on Github!
 
 ### Some other things I have investigated: 
 
-- Apache reqtimeout
-- Apache time out settings
-- Tried Nginx as reverse proxy instead of Apache
-- Could upload to Nextcloud from my old Motorola G5 via browser
+- Apache reqtimeout module and timeout settings
+- Tried Nginx as SSL reverse proxy instead of Apache
+- Could upload to Nextcloud or Lychee from my old Motorola G5 via browser
 - recreated my Let's encrypt certs to a single wildcard one
-- Moved Nextcloud from Scaleway VPS to OVH VPS: worked
-- used my Synology NAS as SSL reverse proxy (on a Comodo cert) in front of the VPS --> that worked so for a while I was thinking Let's encrypt was at fault and actually bought a new Comodo cert for Nextcloud (which didn't help, but at least I'm good for two years without renewing every 3 months :))
+- used my Synology NAS as SSL reverse proxy (on a Comodo cert) in front of the VPS: worked
+- bought Comodo cert to put on Nextcloud: didn't help
