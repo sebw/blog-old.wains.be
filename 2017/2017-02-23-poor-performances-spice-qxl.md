@@ -1,8 +1,8 @@
-# Poor performances with Spice and QXL
+# Poor performances with Spice and QXL and mouse in KVM
 
 We entered the 21st century at work and got new workstations.
 
-I decided to install Redhat Enterprise 7 as a virtualization host, running my usual Linux Mint LMDE as guest.
+I decided to install Red Hat Enterprise 7 as a virtualization host, running my usual Linux Mint LMDE as guest.
 
 I use virt-manager to connect to the guest over Spice.
 
@@ -27,5 +27,12 @@ On the guest, check those with:
 - `ps aux | spice-vdagent` should output something
 - `lsmod | grep -i qxl` too
 
+### Mouse doesn't feel fast?
 
-[https://www.ovirt.org/develop/infra/testing/spice/](https://www.ovirt.org/develop/infra/testing/spice/) put me on the right track
+If you feel your mouse is laggish in your VM, make sure you have `EvTouch USB Graphics Tablet` as input device on your VM.
+
+### Sources
+
+[https://www.ovirt.org/develop/infra/testing/spice/](https://www.ovirt.org/develop/infra/testing/spice/)
+
+[https://www.linuxquestions.org/questions/slackware-14/mouse-cursor-in-kvm-guest-4175575243/](https://www.linuxquestions.org/questions/slackware-14/mouse-cursor-in-kvm-guest-4175575243/)
