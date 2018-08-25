@@ -11,7 +11,7 @@ You can't comment here but you can open an issue or submit a merge request on Gi
 
 ![](https://blog.wains.be/images/redhat.png)
 
-I'm a senior consultant at Red Hat, the Open Source company.
+I'm a cloud and infrastructure senior consultant at Red Hat, the Open Source company.
 
 To learn more about our consulting service, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
 
