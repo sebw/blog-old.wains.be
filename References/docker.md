@@ -86,3 +86,9 @@ docker commit name_of_container your_name/centos7-salt
 #### Start a CentOS image
 
 `docker run --privileged -it --name test centos /bin/bash`
+
+### Useful containers
+
+curl to check backend access:
+
+`docker run --rm appropriate/curl -f https://172.17.0.13:443`
