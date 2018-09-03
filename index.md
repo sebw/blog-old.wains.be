@@ -15,6 +15,8 @@ I'm a cloud and infrastructure senior consultant at Red Hat, the Open Source com
 
 To learn more about our consulting service, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
 
+To have a look at my certifications, go to [https://www.redhat.com/rhtapps/services/verify?certId=180-189-052](https://www.redhat.com/rhtapps/services/verify?certId=180-189-052).
+
 ## What I have been up to in the past
 
 For those who have been following me from the start, you've heard that I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk** for some time, back when I was managing 5 Linux servers or so.
