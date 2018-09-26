@@ -15,7 +15,7 @@ I'm a cloud and infrastructure senior consultant at Red Hat, the Open Source com
 
 To learn more about our consulting service, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
 
-To have a look at my certifications, go to [https://www.redhat.com/rhtapps/services/verify?certId=180-189-052](https://www.redhat.com/rhtapps/services/verify/?certId=110-643-822).
+To have a look at my certifications, go to [https://www.redhat.com/rhtapps/services/verify/?certId=110-643-822](https://www.redhat.com/rhtapps/services/verify/?certId=110-643-822).
 
 ## What I have been up to in the past
 
