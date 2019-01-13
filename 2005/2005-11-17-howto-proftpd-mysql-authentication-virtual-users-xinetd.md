@@ -1,16 +1,4 @@
-
-
-
-date: 2005-11-17 22:21:10+00:00
-
-
 # 'HOWTO : Proftpd + mysql authentication (virtual users) + xinetd'
-
-categories:
-- Howto
-- Linux
-- SQL
-
 
 **Compilation & installation**
 

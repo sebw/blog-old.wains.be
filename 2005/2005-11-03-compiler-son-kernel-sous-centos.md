@@ -1,15 +1,4 @@
-
-
-
-date: 2005-11-03 02:05:15+00:00
-
-
 # Kernel compilation under CentOS
-
-categories:
-- Howto
-- Linux
-
 
 The package kernel-sources is needed
 

@@ -1,15 +1,4 @@
-
-
-
-date: 2005-12-14 08:30:30+00:00
-
-
 # 'Script : check services status easily'
-
-categories:
-- Linux
-- Scripts
-
 
 Since arpwatch and spamassassin crashed for some unknown reasons (probably bugs) lately, I needed a tool that would monitor services status on a regular basis.
 

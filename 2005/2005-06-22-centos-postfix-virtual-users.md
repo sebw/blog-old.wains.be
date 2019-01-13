@@ -1,21 +1,5 @@
 # CentOS 3.6 + Postfix 2.0.16 MySQL + Courier-imap + SquirrelMail + vmail + SpamAssassin + attachments filtering + RBL filtering + vacation message + auto disclaimer/signature
 
-Last update: June 22, 2005
-
-Categories:
-
-- Bash
-- Debian/Ubuntu
-- Howto
-- Linux
-- Postfix
-- Red Hat/CentOS
-- RHCE
-- SQL
-
-
-
-
 I manage a network of around 30 computers (25 active clients win/linux, 7 servers win/linux)
 
 I have implemented an email solution based on CentOS and Postfix to easier mail exchange internally and avoid slowness of our ex host.
@@ -24,8 +8,6 @@ This article is not really meant to be an howto but an overview of our current c
 It may give you ideas or help figuring out some parameters. Some stuff may be missing as well..
 
 If you have any questions, leave a note..
-
-
 
 - SpamAssassin : [http://spamassassin.apache.org](http://spamassassin.apache.org)
 - Postfix : [http://www.postfix.org](http://www.postfix.org)

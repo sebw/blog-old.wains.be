@@ -1,14 +1,4 @@
-
-
-
-date: 2005-11-01 14:19:18+00:00
-
-
 # Unknown key pressed, use 'setkeycodes'
-
-categories:
-- Linux
-
 
 Under Ubuntu Breezy, I kept getting an error message fulfilling **/var/log/messages** whenever I was pressing any arrow keys :
 

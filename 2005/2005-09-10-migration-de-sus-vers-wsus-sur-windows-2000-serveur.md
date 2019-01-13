@@ -1,20 +1,8 @@
-
-
-
-date: 2005-09-10 14:58:49+00:00
-
-
 # Migrate from SUS to WSUS under Windows 2000 Server
-
-categories:
-- Windows
-
 
 SUS had been working pretty well for the last two years to deploy updates througout a network of around 30 clients under Win2000/XP.
 
 Given the notification of the end of support of SUS by the 6th of June, I dived into the migration of the new release, the so called WSUS.
-
-<!-- more -->
 
 BE AWARE : migrate SUS during off peak hours, the server will be rebooted several times to complete the installation (critical apps, go to hell)
 

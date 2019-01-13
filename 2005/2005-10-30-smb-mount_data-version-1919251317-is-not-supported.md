@@ -1,18 +1,6 @@
-
-
-
-date: 2005-10-30 10:22:29+00:00
-
-
 # 'SMB : mount_data version 1919251317 is not supported'
 
-categories:
-- Linux
-
-
 Under a fresh install of Ubuntu 5.10, I had an error when trying to mount a SMB share on my CentOS 3.5 server :
-
-<!-- more -->
 
 `user@host:/media$ sudo mount -t smbfs //server/path /media/path -o rw,username=username,password=password
 mount: wrong fs type, bad option, bad superblock on //server/path,

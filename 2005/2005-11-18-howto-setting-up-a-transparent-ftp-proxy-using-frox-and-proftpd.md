@@ -1,17 +1,4 @@
-
-
-
-date: 2005-11-18 19:01:29+00:00
-
-
-# 'HOWTO : Setting up a transparent FTP proxy using frox'
-
-categories:
-- Howto
-- Linux
-- Proxy
-- Security
-
+# 'How to set up a transparent FTP proxy using frox'
 
 Running a transparent FTP proxy is an easy way to control FTP connections made by people on your network (using ACL's)
 If you are already running Squid as a transparent (web) proxy, it cannot act as a transparent FTP proxy along, thus you have to use another tool for FTP proxying : frox will do the job

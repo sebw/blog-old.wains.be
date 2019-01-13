@@ -1,19 +1,6 @@
-
-
-
-date: 2005-10-27 23:31:45+00:00
-
-
 # Install CentOS from the web
 
-categories:
-- Linux
-- Red Hat/CentOS
-
-
 This could work under Fedora and other RHEL flavored distributions...
-
-<!-- more -->
 
 - Download the first CD of CentOS 
 

@@ -1,15 +1,4 @@
-
-
-
-date: 2005-11-05 01:49:45+00:00
-
-
 # Get a 1024x768 VESA tty console under Ubuntu
-
-categories:
-- Linux
-- Red Hat/CentOS
-
 
 Just add "vga=792" to the end of the line "kernel" under /boot/grub/menu.lst
 

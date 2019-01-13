@@ -1,15 +1,4 @@
-
-
-
-date: 2005-10-29 17:23:29+00:00
-
-
 # 'sh/bin bad interpreter: No such file or directory'
-
-categories:
-- Bash
-- Linux
-
 
 If a script you are trying to run returns :
 

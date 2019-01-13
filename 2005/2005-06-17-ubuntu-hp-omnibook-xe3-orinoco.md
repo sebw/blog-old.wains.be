@@ -1,14 +1,4 @@
-
-
-
-date: 2005-06-17 12:02:49+00:00
-
-
 # Ubuntu + HP Omnibook XE3 + Orinoco
-
-categories:
-- Misc
-
 
 I run Ubuntu on a HP laptop recently bought on eBay.
 

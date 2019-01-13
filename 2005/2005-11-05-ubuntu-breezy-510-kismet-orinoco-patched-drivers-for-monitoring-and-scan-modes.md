@@ -1,22 +1,7 @@
-
-
-
-date: 2005-11-05 01:23:56+00:00
-
-
-# Ubuntu Breezy (5.10) + Kismet + Orinoco patched drivers for monitoring and
-  scan modes
-
-categories:
-- Howto
-- Linux
-- Wifi
-
+# Ubuntu Breezy (5.10) + Kismet + Orinoco patched drivers for monitoring and scan modes
 
 I installed a fresh copy of Ubuntu Breezy on my laptop
 I had to recompile the orinoco drivers to get the monitoring capabilities of the card...
-
-<!-- more -->
 
 This is the how-to :
 

@@ -1,14 +1,4 @@
-
-
-
-date: 2005-09-27 11:05:46+00:00
-
-
 # RRDWeather 0.20 is out !
-
-categories:
-- RRDWeather
-
 
 What is RRDWeather ?
 

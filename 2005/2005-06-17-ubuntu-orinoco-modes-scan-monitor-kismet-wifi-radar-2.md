@@ -1,15 +1,4 @@
-
-
-
-date: 2005-06-17 16:15:06+00:00
-
-
 # Ubuntu + Orinoco + Modes Scan & Monitor + Kismet + Wifi-Radar
-
-categories:
-- Howto
-- Wifi
-
 
 Since writing this article, I switched my laptop to CentOS 4
 My Orinoco experiences under CentOS are available at : [http://blog.wains.be/?p=68](http://blog.wains.be/?p=68)
@@ -18,8 +7,6 @@ My Orinoco experiences under CentOS are available at : [http://blog.wains.be/?p=
 
 I've been using the default ubuntu drivers for my orinoco card for a while.
 I used a patch available on kismet website to get monitor capabilities.
-
-<!-- more -->
 
 [http://www.kismetwireless.net/code/orinoco-2.6.9-rfmon-dragorn-1.diff](http://www.kismetwireless.net/code/orinoco-2.6.9-rfmon-dragorn-1.diff)
 

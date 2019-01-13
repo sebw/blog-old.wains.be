@@ -1,22 +1,9 @@
 
-
-
-date: 2005-06-27 12:38:50+00:00
-
-
 # How to fix a broken GRUB
-
-categories:
-- Howto
-- Linux
-- Red Hat/CentOS
-
 
 **The story :**
 
-For 3 days in a row, one of our Linux CentOS servers (small squid, DNS, MRTG, apache server running on a P3 450/192 Mb) had rebooted. After the usual checkup, I came to the conclusion it wasn't a power outtage nor a UPS issue and the box hadn't been hacked,.. The SMART table had critical values recorded, the hard drive was about to faint (a 1999 maxtor unit)
-
-<!-- more -->
+For 3 days in a row, one of our Linux CentOS servers (small squid, DNS, MRTG, apache server running on a P3 450/192 Mb) has been randomly rebooting. After the usual checkup, I came to the conclusion it wasn't a power outtage nor a UPS issue and the box hadn't been hacked,.. The SMART table had critical values recorded, the hard drive was about to faint (a 1999 maxtor unit)
 
 I only had a 4 Gb Western Digital drive available around to replace the faulty unit.
 

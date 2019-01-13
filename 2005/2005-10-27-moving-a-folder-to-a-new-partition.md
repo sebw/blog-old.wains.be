@@ -1,18 +1,6 @@
-
-
-
-date: 2005-10-27 18:28:37+00:00
-
-
 # Moving a folder to a new partition
 
-categories:
-- Linux
-
-
 Let's say you have enough remaining free diskspace on your harddrive, you may want to move directories like /home or /tmp to a new partition...
-
-<!-- more -->
 
 **YOU MUST BE ROOT UNDER TTY AND ANY OTHER USER MUST BE LOGGED OFF**
 

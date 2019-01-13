@@ -1,19 +1,7 @@
-
-
-
-date: 2005-12-13 00:45:22+00:00
-
-
 # 'SpamAssassin 3.1.0 crashed : tcp timeout issue'
-
-categories:
-- Linux
-
 
 SpamAssassin 3.1.0 crashed last week.
 I looked up the logs and found out these errors
-
-<!-- more -->
 
 `Dec  5 00:15:04 fedora spamd[29470]: tcp timeout at
 /usr/lib/perl5/site_perl/5.8.0/Mail/SpamAssassin/SpamdForkScaling.pm line 195.

@@ -1,14 +1,4 @@
-
-
-
-date: 2005-10-26 21:31:48+00:00
-
-
 # '"disabling IRQ 5" error when installing Red Hat/CentOS on a ASUS P4P800'
-
-categories:
-- Linux
-
 
 When starting the Red Hat/CentOS installer, it kept giving me an error, over and over :
 "disabling IRQ 5"

@@ -1,14 +1,4 @@
-
-
-
-date: 2005-06-17 18:00:41+00:00
-
-
 # Hacking the Orinoco Silver into an Orinoco Gold
-
-categories:
-- Howto
-- Wifi
 
 When inserting my Orinoco card into my laptop, dmesg was telling my card was able to do WEP 128 bits. After several failed attempts, I went with WEP 64 bits that worked fine.
 
@@ -29,7 +19,7 @@ Google led me to the article named "Hacking the Orinoco Silver into an Orinoco G
 
 The site owner explains he's been able to turn his Orinoco Silver into a Gold very easily.
 
-Here are the steps to follow, at your own risks of course, make sure the firmware update is available for your card :
+Here are the steps to follow, at your own risks of course, make sure the firmware update is available for your card:
 
 1. download Alchemy 1.0.1 at [http://www.lincomatic.com/wireless/software.html](http://www.lincomatic.com/wireless/software.html)
 2. edit the PDA file thanks to Alchemy, answers the questions. Accept the modifications made to the PDA file and refuse all modifications to serial number, MAC address, etc. You'll get a copy of your old PDA file and the new one (backup the old PDA file before doing anything to your card!!!)
