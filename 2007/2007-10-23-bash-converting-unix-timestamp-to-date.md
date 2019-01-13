@@ -16,7 +16,7 @@ Under Debian or RHEL4 and later, it can be as simple as :
 `$ date -d @1193144433
 Tue Oct 23 15:00:33 CEST 2007`
 
-But that command doesn't work under Redhat EL 3, so you should use the following :
+But that command doesn't work under Red Hat EL 3, so you should use the following :
 
 `$ date --date "1970-01-01 1193144433 sec" "+%Y-%m-%d %T"
 2007-10-23 15:00:33`

@@ -17,7 +17,7 @@ The database files (BDB type) were actually corrupted...
 
 This is how to fix the issue and recover the DB :
 
-- install db4-utils (under RedHat)
+- install db4-utils (under Red Hat)
 - cd /var/lib/ldap (or whatever directory in which the DB files are located)
 - /etc/init.d/ldap stop
 - run /usr/sbin/slapd_db_recover in the directory

@@ -39,7 +39,7 @@ You need to enable connection tracking for FTP on port 21 and 2121 :
 
 Now, connecting to a FTP server through frox should work :-)
 
-If you run a RedHat based system, running "service iptables restart" will get rid of the ip_conntrack_ftp module, you should tweak the init file (/etc/init.d/iptables) to force the module like this :
+If you run a Red Hat based system, running "service iptables restart" will get rid of the ip_conntrack_ftp module, you should tweak the init file (/etc/init.d/iptables) to force the module like this :
 
 
     

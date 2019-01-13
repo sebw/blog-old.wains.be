@@ -93,7 +93,7 @@ machine A : /etc/openvpn/vpn.conf
 	chroot /var/empty
 	user nobody
 	group nogroup
-	# If using RedHat replace with
+	# If using Red Hat replace with
 	# group nobody 
 	log vpn.log
 	verb 1
@@ -117,7 +117,7 @@ machine B : /etc/openvpn/vpn.conf
 	chroot /var/empty 
 	user nobody
 	group nogroup
-	# If using RedHat replace with
+	# If using Red Hat replace with
 	# group nobody 
 	log vpn.log
 	verb 1

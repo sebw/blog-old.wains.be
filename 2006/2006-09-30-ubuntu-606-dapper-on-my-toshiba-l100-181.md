@@ -34,6 +34,6 @@ Despite being based on Debian, I would have to say Ubuntu 6.06 is the best distr
 
 I'm not a Debian boy, I'm still having a hard time with packet management and deb CLI management.. I kinda miss yum and rpm at this stage, but that's the only drawback I found in using Ubuntu as a desktop system.
 
-Yeah, me, the RedHat boy, is actually enjoying using Ubuntu ! 
+Yeah, me, the Red Hat boy, is actually enjoying using Ubuntu ! 
 I can't wait to test RHEL5 and Ubuntu 6.10, which I'll test under a virtual machine on my Ubuntu 6.06 system :)
 

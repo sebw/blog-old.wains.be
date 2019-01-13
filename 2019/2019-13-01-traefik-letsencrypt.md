@@ -1,6 +1,6 @@
 # Traefik reverse proxy for containers with Let's Encrypt
 
-With Traefik, you can easily reverse proxy your containers, and automatically generate a Let's Encrypt certiicate for them. It's pretty awesome. No more complicated Nginx containers coupled with another Let's Encrypt companion!
+With Traefik, you can easily reverse proxy your containers, and automatically generate a Let's Encrypt certificate for them. It's pretty awesome. No more complicated Nginx containers coupled with another Let's Encrypt companion!
 
 In the following setup, the name of the container will be used for the certificate generation.
 

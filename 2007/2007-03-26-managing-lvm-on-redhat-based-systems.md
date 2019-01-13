@@ -4,7 +4,7 @@
 date: 2007-03-26 12:40:13+00:00
 
 
-# Managing LVM on Redhat-based systems
+# Managing LVM on Red Hat based systems
 
 categories:
 - RHCE

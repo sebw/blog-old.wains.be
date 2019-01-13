@@ -27,7 +27,7 @@ Copy the scripts that will help us generate all the necessary files (certificate
     <code>Under Debian :
     # cp -aR /usr/share/doc/openvpn/examples/easy-rsa/2.0 /etc/openvpn/pki
     
-    Under RedHat :
+    Under Red Hat :
     # cp -aR /usr/share/doc/openvpn-2.0.9/easy-rsa/2.0 /etc/openvpn/pki</code>
 
 

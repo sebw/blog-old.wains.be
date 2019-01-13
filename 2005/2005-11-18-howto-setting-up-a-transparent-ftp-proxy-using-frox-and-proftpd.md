@@ -53,9 +53,9 @@ ACL Allow 192.168.0.3/255.255.255.255 - 193.190.198.20 21 <-- this will allow 19
 ACL Allow 192.168.0.4/255.255.255.255 - 192.168.0.1 21 <-- this will allow 192.168.0.4 to access the internal server
 ACL Deny 192.168.254.0/255.255.255.0 - * 21 <-- this will block anything else from the subdomain`
 
-**Redhat/Fedora/CentOS init script**
+**Red Hat/Fedora/CentOS init script**
 
-I made a pretty short init script to start frox as a service on RedHat based machines
+I made a pretty short init script to start frox as a service on Red Hat based machines
 
 Save the following script under **/etc/init.d/frox :**
 ``### /etc/init.d/frox ###

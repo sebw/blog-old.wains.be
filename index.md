@@ -23,7 +23,7 @@ For those who have been following me from the start, you've heard that I was rea
 
 Then I changed jobs a couple of times and, and eventually managed more than 330 servers. In my last position before starting at Red Hat, I spent a lot of time automating, centralizing and orchestrating system administration and management with those tools:
 
-[Saltstack], Salt Cloud, Python, Git, [Gitlab CE] and [tig], [Mkdocs], [Rundeck], Jenkins, Artifactory, Nexus, [Postman], Redhat Satellite, iTop, [Graylog].
+[Saltstack], Salt Cloud, Python, Git, [Gitlab CE] and [tig], [Mkdocs], [Rundeck], Jenkins, Artifactory, Nexus, [Postman], Red Hat Satellite, iTop, [Graylog].
 
 I talked about [SaltStack] at [Jeudis du Libre] conference. Check my [Github] for the decks.
 

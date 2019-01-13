@@ -55,4 +55,4 @@ arpwatch : running
 xinetd : running
 named : up and running
 
-This should work on many Redhat flavors, if you take a look at the code, named doesn't output a regular "service is (running|stopped)", I needed to make a special line for this service
+This should work on many Red Hat flavors, if you take a look at the code, named doesn't output a regular "service is (running|stopped)", I needed to make a special line for this service

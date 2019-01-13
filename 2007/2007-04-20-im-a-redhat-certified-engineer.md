@@ -1,7 +1,7 @@
 date: 2007-04-20 15:50:26+00:00
 
 
-# I'm a Redhat Certified Engineer!
+# I'm a Red Hat Certified Engineer!
 
 ```
 Dear Sebastien Wains:

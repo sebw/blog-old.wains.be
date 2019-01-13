@@ -4,7 +4,7 @@
 date: 2007-08-23 22:47:34+00:00
 
 
-# Why I'm switching from RedHat (and friends) to Debian (and friends)
+# Why I'm switching from Red Hat (and friends) to Debian (and friends)
 
 categories:
 - Debian/Ubuntu
@@ -16,7 +16,7 @@ Yeah, I decided I'll be switching my servers to Debian.
 
 It slowly started with my desktop OS, when I moved from Fedora to Ubuntu. (and CentOS before Fedora, until came the need for wireless with ipw3945 on my new laptop [[was using Orinoco Gold on my old CentOS 4 laptop](http://blog.wains.be/post/centos-42-orinoco-monitorscan/)]).
 
-There was a reason why I chose to try something else. First, the (french) translation under Fedora was somewhat broken back then, sometimes resulting in frenglish sentences. But the most tedious problem in Fedora was (and still is) actually the point of the Fedora project : it is a testing field for RedHat, meaning a lot of updates (I've had 100MB+ updates waiting when not booting for a few days), it also meant a lot of kernel updates, and at every kernel release, wireless support (provided by a 3rd party repo due to patent issue) and some other stuff would go kaboom. From there, you have two choices, sticking with the "old" kernel until support is brought up by some good fella out there, or rebuild/recompile that stuff that just broke.
+There was a reason why I chose to try something else. First, the (french) translation under Fedora was somewhat broken back then, sometimes resulting in frenglish sentences. But the most tedious problem in Fedora was (and still is) actually the point of the Fedora project : it is a testing field for Red Hat, meaning a lot of updates (I've had 100MB+ updates waiting when not booting for a few days), it also meant a lot of kernel updates, and at every kernel release, wireless support (provided by a 3rd party repo due to patent issue) and some other stuff would go kaboom. From there, you have two choices, sticking with the "old" kernel until support is brought up by some good fella out there, or rebuild/recompile that stuff that just broke.
 
 In the end, you spend more time building/compiling/tweaking/figuring out/etc. than doing some actual work.
 
@@ -45,7 +45,7 @@ Cons :
 - no real "yum provides" function in dpkg or apt-get.. have to search on packages.debian.org to find which package provide a file.
 - a minor one, but vim by default doesn't turn syntax coloring on.. Under RHEL, I just needed to install vim-enhanced and I was done. I'll need to make a universal vimrc config file and distribute it..
 - I prefer "service postfix restart" than "/etc/init.d/postfix restart"
-- I also liked chkconfig under RedHat
+- I also liked chkconfig under Red Hat
 
 Edit :
 
@@ -82,7 +82,7 @@ udp 0 0 0.0.0.0:631 0.0.0.0:* 0 6079 1906/cupsd
 
 **After using Debian for more than a month, here are my views :**
 
-- iptables : no init script provided by default ? I liked the init script and /etc/sysconfig/iptables under RedHat. Now I will need to put a memo on this site.
+- iptables : no init script provided by default ? I liked the init script and /etc/sysconfig/iptables under Red Hat. Now I will need to put a memo on this site.
 - libapache2-mod-auth-mysql not in the stable repository ? This is an essential component of any serious LAMP setup
 - vim : by default, no "set paste" and "syntax on" option. This is a minor one, easily fixed, but I don't see the reason why I don't get colored syntax when I use VIM instead of VI. It's supposed to be "enhanced". About the "set paste" option, I may be totally wrong but who wants the default behaviour (tab at every line of a pasted block) ?
 - I miss chkconfig !!!

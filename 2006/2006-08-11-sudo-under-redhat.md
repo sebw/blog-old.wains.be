@@ -4,7 +4,7 @@
 date: 2006-08-11 01:13:57+00:00
 
 
-# sudo under RedHat based systems
+# sudo under Red Hat based systems
 
 categories:
 - Linux
