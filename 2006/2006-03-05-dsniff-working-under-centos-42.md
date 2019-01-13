@@ -1,22 +1,8 @@
-
-
-
-date: 2006-03-05 15:41:21+00:00
-
-
 # dsniff working under CentOS 4.2
-
-categories:
-- Linux
-- Networks
-- Security
-
 
 I've been able to get dsniff working under CentOS 4.2..
 
 I just needed to find the right packages, right versions, etc
-
-
 
 You'll need to downgrade some packages version and it may break your system !
 - Ethereal will stop working after applying these packages.

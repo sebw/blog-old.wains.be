@@ -1,16 +1,4 @@
-
-
-
-date: 2006-07-15 14:17:22+00:00
-
-
-# 'Introduction to SVN : importing a new project'
-
-categories:
-- Howto
-- Linux
-- Versioning
-
+# Introduction to SVN : importing a new project
 
 This post is aimed to those (like me) who can easily forget the SVN syntax :
 

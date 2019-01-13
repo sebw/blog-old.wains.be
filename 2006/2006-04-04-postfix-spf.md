@@ -1,26 +1,12 @@
-
-
-
-date: 2006-04-04 20:42:41+00:00
-
-
 # Postfix + SPF
-
-categories:
-- Howto
-- Linux
-- Postfix
-
 
 Enable SPF if you believe you need it..
 For your information, SPF is not widely used
 
-
-
 You'll need Mail::SPF::Query :
 `1. perl -MCPAN -e shell
-2. Under CPAN : install Mail::SPF::Query
-3. Quit CPAN after installation of the library`
+1. Under CPAN : install Mail::SPF::Query
+2. Quit CPAN after installation of the library`
 
 Install libspf2-1.0.4 and libspf2-devel-1.0.4 from http://www.city-fan.org/ftp/contrib/libraries/
 

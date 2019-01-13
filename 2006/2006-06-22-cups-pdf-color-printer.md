@@ -1,16 +1,4 @@
-
-
-
-date: 2006-06-22 23:40:32+00:00
-
-
 # A Cups PDF color printer for your Windows clients
-
-categories:
-- Howto
-- Linux
-- Windows
-
 
 We suppose you already have a properly configured and running CUPS system.
 

@@ -1,16 +1,4 @@
-
-
-
-date: 2006-04-04 21:03:55+00:00
-
-
 # Postfix + TLS
-
-categories:
-- Howto
-- Linux
-- Postfix
-
 
 This document describes how to install a mail server based on postfix that is capable of TLS. I tested it on CentOS 3.6 and 4.2.
 

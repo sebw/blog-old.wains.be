@@ -1,14 +1,4 @@
-
-
-
-date: 2006-02-28 15:40:57+00:00
-
-
 # The wonders of WinXP
-
-categories:
-- Windows
-
 
 My sound card stopped working for some unknown reason just in the middle of a session...
 

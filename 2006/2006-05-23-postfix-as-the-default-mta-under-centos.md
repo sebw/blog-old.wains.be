@@ -1,17 +1,4 @@
-
-
-
-date: 2006-05-23 00:14:15+00:00
-
-
 # Postfix as the default MTA under CentOS
-
-categories:
-- Howto
-- Linux
-- Postfix
-- Red Hat/CentOS
-
 
 Make sure both sendmail and postfix packages are installed
 

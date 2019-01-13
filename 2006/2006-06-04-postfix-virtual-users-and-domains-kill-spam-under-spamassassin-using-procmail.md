@@ -1,17 +1,4 @@
-
-
-
-date: 2006-06-04 13:31:12+00:00
-
-
-# 'Postfix + virtual users/domains : kill or forward spam under SpamAssassin
-  using procmail'
-
-categories:
-- Howto
-- Linux
-- Postfix
-
+# Postfix + virtual users/domains: kill or forward spam under SpamAssassin using procmail
 
 I needed to be able to kill spam reaching a certain score on my email gateway, which only delivers to virtual users and virtual domains...
 

@@ -1,17 +1,4 @@
-
-
-
-date: 2006-07-27 09:31:42+00:00
-
-
 # Installing Modsecurity
-
-categories:
-- Apache
-- Howto
-- Linux
-- Security
-
 
 From http://michael-and-mary.net/?q=node/1261
 

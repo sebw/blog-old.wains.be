@@ -1,14 +1,4 @@
-
-
-
-date: 2006-01-16 00:57:55+00:00
-
-
 # RRDweather 0.36 is out
-
-categories:
-- RRDWeather
-
 
 Version 0.36 of RRDWeather is out...
 

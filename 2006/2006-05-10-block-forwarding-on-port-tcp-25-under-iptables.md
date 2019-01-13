@@ -1,19 +1,6 @@
-
-
-
-date: 2006-05-10 23:13:01+00:00
-
-
-# Block viruses and protect yourself from spammers by blocking port 25 under
-  Linux + iptables (just like ISP's do !)
-
-categories:
-- Howto
-- Iptables
-- Linux
-- Proxy
-- Security
-
+# Block viruses and protect yourself from spammers by blocking port 25 under Linux + iptables 
+  
+Just like ISP's do!
 
 **Find out viruses on your network and prevent spammers from abusing your wireless network ! With simple iptables rulesets...**
 

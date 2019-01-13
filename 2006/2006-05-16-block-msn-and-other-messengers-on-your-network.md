@@ -1,18 +1,4 @@
-
-
-
-date: 2006-05-16 09:03:34+00:00
-
-
 # Block MSN and other messengers on your network
-
-categories:
-- Howto
-- Iptables
-- Linux
-- Proxy
-- Security
-
 
 **1. Iptables**
 

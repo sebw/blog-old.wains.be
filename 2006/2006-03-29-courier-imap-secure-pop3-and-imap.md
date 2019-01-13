@@ -1,28 +1,16 @@
-
-
-
-date: 2006-03-29 22:35:58+00:00
-
-
-# 'courier-imap : secure pop3 and imap'
-
-categories:
-- Howto
-- Linux
-- Security
-
+# courier-imap : secure pop3 and imap
 
 **Generate the key :**
 $ openssl genrsa -out imap.key 1024
 
-Result : 
-`Generating RSA private key, 1024 bit long modulus
+Result:
+
+```
+Generating RSA private key, 1024 bit long modulus
 ..............++++++
 ................................................................................................++++++
 e is 65537 (0x10001)
-`
-
-
+```
 
 **We need to generate a CSR :**
 $ openssl req -new -key imap.key -out imap.csr

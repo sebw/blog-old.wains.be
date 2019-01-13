@@ -1,16 +1,4 @@
-
-
-
-date: 2006-04-01 12:35:34+00:00
-
-
 # An OpenLDAP addressbook/directory for Thunderbird
-
-categories:
-- Howto
-- LDAP
-- Linux
-
 
 This guide will help you setting up an LDAP directory under RHEL 4/CentOS 4 systems, 100 % compatible with Mozilla Thunderbird 1.5. Management of the LDAP directory will be done with phpLdapAdmin.
 
@@ -36,7 +24,7 @@ This guide will help you setting up an LDAP directory under RHEL 4/CentOS 4 syst
 **7. Make a backup of the default config**
 `# mv /etc/openldap/slapd.conf /etc/openldap/slapd.conf.bak`
 
-8. **Create and edit /etc/openldap/slapd.conf :**
+1. **Create and edit /etc/openldap/slapd.conf :**
 
     
     <code>include         /etc/openldap/schema/core.schema
@@ -66,7 +54,7 @@ This guide will help you setting up an LDAP directory under RHEL 4/CentOS 4 syst
 
 
 
-9. **Start the ldap service :**
+2. **Start the ldap service :**
 `[root@server](1034)# service ldap start    
 Checking configuration files for : config file testing succeeded
 Starting slapd:                                            [  OK  ]`

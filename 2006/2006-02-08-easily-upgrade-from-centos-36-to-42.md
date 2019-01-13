@@ -1,20 +1,6 @@
-
-
-
-date: 2006-02-08 20:55:18+00:00
-
-
 # Easily upgrade from CentOS 3.6 to 4.2
 
-categories:
-- Howto
-- Linux
-- Red Hat/CentOS
-
-
 To counter-strike all the rants and posts I have seen on the web about how difficult it was to upgrade from CentOS 3 to 4, this post is here to testify it was actually easy -at least for a friend and myself-.
-
-
 
 I've been wandering around trying to find people experiences about such an upgrade and all i found was complains, failures, rants and so. Until my friend said the night before, he had upgraded without any problem
 

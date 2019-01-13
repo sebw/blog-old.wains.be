@@ -1,20 +1,6 @@
-
-
-
-date: 2006-03-05 01:02:39+00:00
-
-
 # CentOS 4.2 + Orinoco Monitor/Scan
 
-categories:
-- Linux
-- Red Hat/CentOS
-- Wifi
-
-
 According to [http://blog.wains.be/?p=25](http://blog.wains.be/?p=25), it was quite a pain to get the orinoco drivers with scan and monitor capabilities..
-
-
 
 Being sick at the debianess of Ubuntu, I switched my laptop to the good old and lovely CentOS 4.2.
 

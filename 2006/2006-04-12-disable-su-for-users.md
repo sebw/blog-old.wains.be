@@ -1,16 +1,4 @@
-
-
-
-date: 2006-04-12 09:24:52+00:00
-
-
 # Disable su for users
-
-categories:
-- Howto
-- Linux
-- Security
-
 
 Uncomment the following line to only allow users in the "wheel" group to be able to su :
 

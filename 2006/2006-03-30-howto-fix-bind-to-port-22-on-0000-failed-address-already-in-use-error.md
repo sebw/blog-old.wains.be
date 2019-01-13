@@ -1,16 +1,4 @@
-
-
-
-date: 2006-03-30 21:53:56+00:00
-
-
 # 'Fix the "Bind to port 22 on 0.0.0.0 failed : Address already in use" error'
-
-categories:
-- Howto
-- Linux
-- SSH
-
 
 **The error when starting and restarting sshd :**
 `Mar 30 23:35:11 x sshd[9151]: Server listening on :: port 22.

@@ -1,14 +1,4 @@
-
-
-
-date: 2006-02-27 12:17:42+00:00
-
-
 # logwatch and logrotate might create a blind spot in reporting
-
-categories:
-- Linux
-
 
 From : [http://www.derkeiler.com/Mailing-Lists/securityfocus/bugtraq/2005-01/0295.html](http://www.derkeiler.com/Mailing-Lists/securityfocus/bugtraq/2005-01/0295.html)
 

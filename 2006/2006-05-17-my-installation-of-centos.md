@@ -1,17 +1,4 @@
-
-
-
-date: 2006-05-17 09:20:52+00:00
-
-
 # My installation of CentOS
-
-categories:
-- Howto
-- Linux
-- Red Hat/CentOS
-- Security
-
 
 Please pay attention this is my personal setup for a SERVER (running only CLI etc)
 

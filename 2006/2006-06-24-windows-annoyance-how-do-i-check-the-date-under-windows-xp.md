@@ -1,14 +1,4 @@
-
-
-
-date: 2006-06-24 11:26:10+00:00
-
-
 # 'Windows annoyance : how do I check the date under Windows XP ?'
-
-categories:
-- Windows
-
 
 For security reasons, I run my session as a limited user (Group "Users" under security settings).
 What if I want to check today's date ?

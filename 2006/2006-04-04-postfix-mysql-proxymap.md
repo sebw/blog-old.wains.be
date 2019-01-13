@@ -1,17 +1,4 @@
-
-
-
-date: 2006-04-04 21:56:01+00:00
-
-
 # Postfix + MySQL + proxymap
-
-categories:
-- Howto
-- Linux
-- Postfix
-- SQL
-
 
 I discovered I could improve Postfix performances when using MySQL as backend
 

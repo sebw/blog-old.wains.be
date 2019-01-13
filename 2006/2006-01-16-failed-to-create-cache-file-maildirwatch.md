@@ -1,15 +1,4 @@
-
-
-
-date: 2006-01-16 16:23:50+00:00
-
-
 # 'Failed to create cache file: maildirwatch'
-
-categories:
-- Linux
-- Postfix
-
 
 I got this error anytime i was consulting my IMAP mailbox running under courier-imap :
 
@@ -17,9 +6,6 @@ I got this error anytime i was consulting my IMAP mailbox running under courier-
 Jan 16 17:21:24 server imapd: Error: Input/output error
 Jan 16 17:21:24 server imapd: Check for proper operation and configuration
 Jan 16 17:21:24 server imapd: of the File Access Monitor daemon (famd).
-`
-
-
 
 Just add this line to /etc/xinetd.d/sgi_fam :
 `flags   = NOLIBWRAP`

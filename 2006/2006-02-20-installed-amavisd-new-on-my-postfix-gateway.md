@@ -1,17 +1,4 @@
-
-
-
-date: 2006-02-20 15:29:55+00:00
-
-
 # Installed amavisd-new on my postfix gateway
-
-categories:
-- Howto
-- Linux
-- Postfix
-- Red Hat/CentOS
-
 
 I may have been naive but mime_checks used to catch 100 % of any virus sent to us.
 Until I found out it was possible to bypass the checks by using special characters like "é", "� " and such in the filenames.. doh !

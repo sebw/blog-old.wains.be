@@ -1,16 +1,4 @@
-
-
-
-date: 2006-04-04 18:24:07+00:00
-
-
-# 'Apache : force SSL using a rewrite rule'
-
-categories:
-- Apache
-- Linux
-- Security
-
+# Apache: force SSL using a rewrite rule
 
 **This rewrite rule will redirect the requests to https (SSL) :**
 

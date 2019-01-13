@@ -1,20 +1,8 @@
-
-
-
-date: 2006-05-07 20:50:31+00:00
-
-
 # Get useful info about your hard drive
-
-categories:
-- Linux
-
 
 _(just because I'll forget the command again, [that's actually the whole point of this site :)] I needed to make a post about it :))_
 
 tune2fs -l /dev/XdXX
-
-
     
     <code>[root@localhost](1199)# tune2fs -l /dev/hda1
     tune2fs 1.35 (28-Feb-2004)

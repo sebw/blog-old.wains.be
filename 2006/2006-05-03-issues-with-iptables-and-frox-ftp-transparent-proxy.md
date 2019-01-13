@@ -1,17 +1,4 @@
-
-
-
-date: 2006-05-03 13:30:38+00:00
-
-
 # Issues with Iptables and frox (ftp transparent proxy)
-
-categories:
-- Howto
-- Iptables
-- Linux
-- Security
-
 
 If you set up a transparent ftp proxy using frox (as described here : [http://blog.wains.be/?p=46](http://blog.wains.be/?p=46)) with iptables along on your linux gateway, you'll probably stumble upon some issues...
 

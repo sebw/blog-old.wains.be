@@ -1,18 +1,4 @@
-
-
-
-date: 2006-04-04 21:45:30+00:00
-
-
 # CentOS 3.6 + Postfix 2.2.9 + TLS + Virtual Users + MySQL backend + ...
-
-categories:
-- Howto
-- Linux
-- Postfix
-- Red Hat/CentOS
-- SQL
-
 
 This article will review my current configuration,
 this is an update to a previous article : [CentOS + Postfix + virtual users + Squirrelmail + …](http://blog.wains.be/?p=7)

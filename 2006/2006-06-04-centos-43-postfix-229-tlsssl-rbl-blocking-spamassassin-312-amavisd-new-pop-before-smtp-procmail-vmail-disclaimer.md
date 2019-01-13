@@ -1,30 +1,12 @@
+# CentOS 4.3 + Postfix 2.2.9 + TLS/SSL + RBL blocking + SpamAssassin 3.1.2 + Amavisd-new + SPF + pop-before-smtp + procmail + vmail + disclaimer
 
-
-
-date: 2006-06-04 14:45:05+00:00
-
-
-# CentOS 4.3 + Postfix 2.2.9 + TLS/SSL + RBL blocking + SpamAssassin 3.1.2 +
-  Amavisd-new + SPF + pop-before-smtp + procmail + vmail + disclaimer
-
-categories:
-- Howto
-- Linux
-- Postfix
-- Red Hat/CentOS
-- Security
-- SQL
-
-
-`Edit 16 nov 2006 : please consider using SMTP AUTH instead of pop-before-smtp : http://blog.wains.be/?p=157`
+Edit 16 nov 2006 : please consider using SMTP AUTH instead of pop-before-smtp: [https://blog.wains.be/2013/2013-11-14-outbound-postfix-with-sasl-authentication-against-ldap-dovecot/](https://blog.wains.be/2013/2013-11-14-outbound-postfix-with-sasl-authentication-against-ldap-dovecot/)
 
 This is not aimed to be a step by step guide.. This is just a review of my current config with some helpful notes, it is probably meant for already advanced postfix users seeking for tips and tricks.
 
 WordPress may have reformated the code in some weird way.. don't do massive copy paste and hope it works fine straight away, please review everything carefully !!
 
 If you have troubles figuring out something, drop me a line..
-
-
 
 **/etc/postfix/access :**
 

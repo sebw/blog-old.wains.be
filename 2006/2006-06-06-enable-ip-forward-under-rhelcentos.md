@@ -1,15 +1,4 @@
-
-
-
-date: 2006-06-06 20:40:28+00:00
-
-
 # Enable IP forwarding under RHEL/CentOS
-
-categories:
-- Linux
-- Red Hat/CentOS
-
 
 **The regular way**
 

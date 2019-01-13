@@ -1,24 +1,10 @@
-
-
-
-date: 2006-01-24 11:46:11+00:00
-
-
 # Slow FTP logins under Proftpd using Xinetd
-
-categories:
-- Linux
-
 
 I was able to connect from european machines to my local FTP server located in Belgium (running proftpd from xinetd) very fast but some machines in North Carolina had very sloooow login prompt...
 
 I tried about anything from PAM to iptables, then i found out running proftpd as standalone fixed the problem. The issue was on the xinetd side.
 
 Finally found this out when googling around :
-
-
-
-
     
     <code>The USERID option tells xinetd to query the remote host for a username.
     To do that, it needs a TCP connection.

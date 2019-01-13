@@ -1,17 +1,4 @@
-
-
-
-date: 2006-05-07 14:50:10+00:00
-
-
 # Loading additional iptables modules under CentOS 4.x
-
-categories:
-- Howto
-- Iptables
-- Linux
-- Security
-
 
 If you need a recurrent iptables modules to be loaded (let's say the conntracking modules for FTP connections) you can either :
 - issue "modprobe ip_conntrack_ftp" at the CLI everytime you need it

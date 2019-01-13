@@ -1,15 +1,4 @@
-
-
-
-date: 2006-07-26 21:48:44+00:00
-
-
 # Screen help
-
-categories:
-- Howto
-- Linux
-
 
 Based on http://www.rackaid.com/resources/tips/linux-screen.cfm
 

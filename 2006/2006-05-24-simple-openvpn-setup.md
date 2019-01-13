@@ -1,12 +1,4 @@
-
 # Simple OpenVPN setup
-
-categories:  
-- Howto  
-- Linux  
-- Security  
-- VPN
-
 
 This will explain how to setup a simple OpenVPN tunnel between two computers (at a time). If someone attempts to connect while another person is already connected, that person will get bounced from the VPN tunnel..
 
