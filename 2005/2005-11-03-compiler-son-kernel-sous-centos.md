@@ -9,7 +9,7 @@ Example :
 lrwxrwxrwx    1 root     root           18 Sep 29 18:57 linux-2.4 -> linux-2.4.21-37.EL
 drwxr-xr-x   16 root     root         4096 Nov  2 15:33 linux-2.4.21-37.EL`
 
-<!-- more -->
+
 
 If not :
 `cd /usr/src

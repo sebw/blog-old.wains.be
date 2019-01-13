@@ -24,7 +24,7 @@ You can't run Postfix chrooted because the MySQL sock is not located in the chro
 
 **The fix : **
 
-<!-- more -->
+
 
 Edit /etc/my.cnf and add this line under the [mysqld] section :
 `bind-address = 127.0.0.1`

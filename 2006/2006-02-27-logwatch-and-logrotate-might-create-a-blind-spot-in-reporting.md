@@ -12,7 +12,7 @@ categories:
 
 From : [http://www.derkeiler.com/Mailing-Lists/securityfocus/bugtraq/2005-01/0295.html](http://www.derkeiler.com/Mailing-Lists/securityfocus/bugtraq/2005-01/0295.html)
 
-<!-- more -->
+
 
 Date: Tue, 25 Jan 2005 16:21:44 +0200 (EET)
 To: BUGTRAQ 

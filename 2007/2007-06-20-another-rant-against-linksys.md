@@ -16,7 +16,7 @@ As you may have read, I had some troubles with my Linksys ADSL Wireless router a
 At the end of this journey, I was still believing Linksys was a good company making good products.
 Read on.
 
-<!-- more -->
+
 
 My father in law switched from a DSL connection to cable lately. The cable company provided a cable modem (a Kathrein DCM 52i+, they have been distributing this model for years). As he needed a wireless connection, I went to the store with him to get the famous Linksys WRT54G wireless router (we got a V7 version, firmware 7.0.0.1).
 

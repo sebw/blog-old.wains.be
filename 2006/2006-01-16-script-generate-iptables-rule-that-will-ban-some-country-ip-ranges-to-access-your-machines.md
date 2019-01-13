@@ -21,7 +21,7 @@ E.g. : countries that have very shallow internet laws
 
 This script will parse the RIPE database and generate the iptables rules automatically..
 
-<!-- more -->
+
 
 Download the script here : [https://www.wains.be/pub/update_country_block_list](https://www.wains.be/pub/update_country_block_list)
 

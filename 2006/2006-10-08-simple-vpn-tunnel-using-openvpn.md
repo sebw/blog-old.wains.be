@@ -15,7 +15,7 @@ categories:
 
 I'll explain how I used a static key configuration to get a simple VPN tunnel to connect to my samba share at home from work.
 
-<!-- more -->
+
 
 **OpenVPN GUI for Windows :**
 Download at http://openvpn.se/download.html

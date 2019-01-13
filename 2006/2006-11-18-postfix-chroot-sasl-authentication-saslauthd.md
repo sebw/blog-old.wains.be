@@ -23,7 +23,7 @@ When chrooted, Postfix needs access to saslauthd sock file, which is not in the 
 
 **The fix :**
 
-<!-- more -->
+
 
 We consider Postfix chroot is under /var/spool/postfix
 

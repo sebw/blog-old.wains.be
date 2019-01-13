@@ -19,7 +19,7 @@ For test@domain.be, you'd type this :
 
 `perl -MMIME::Base64 -e 'print encode_base64("00test@domain.be00password")'`
 
-<!-- more -->
+
 
 Where "test@domain.be" is your username and "password" is.. your password
 Your username and password should start with the string "00"

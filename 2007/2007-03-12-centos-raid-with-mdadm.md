@@ -14,7 +14,7 @@ RHCE exam requires you to be able to create a RAID array on a running system, as
 
 I won't explain here how to deal with the installer as it's pretty easy.
 
-<!-- more -->
+
 
 **1. create the partitions**
 

@@ -16,7 +16,7 @@ I tried about anything from PAM to iptables, then i found out running proftpd as
 
 Finally found this out when googling around :
 
-<!-- more -->
+
 
 
     

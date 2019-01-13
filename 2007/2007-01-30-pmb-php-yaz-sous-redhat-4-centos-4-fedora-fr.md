@@ -18,7 +18,7 @@ Nous utilisons un serveur CentOS (équivalent Redhat Enterprise RHEL, voire Fedo
 Le problème se situait au niveau des RPM disponibles sur le site des développeurs de Yaz.
 En installant les RPM yaz et libyaz, ça ne fonctionnait pas, le module PHP (php-yaz.so ou yaz.so) était introuvable.
 
-<!-- more -->
+
 
 Comment procéder ?
 

@@ -19,7 +19,7 @@ You should use a VPN between the networks in order to do so (see : [http://blog.
 
 Otherwise, you can use the following way :
 
-<!-- more -->
+
 
 **1. Connect to the remote server and set up TCP forward**
 `client$ ssh -L 22222:127.0.0.1:22222 remote.server.be`

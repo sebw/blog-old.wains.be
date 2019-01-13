@@ -14,7 +14,7 @@ The bug is reported here :
 
 [https://launchpad.net/distros/ubuntu/edgy/+source/alsa-driver/+bug/47755](https://launchpad.net/distros/ubuntu/edgy/+source/alsa-driver/+bug/47755)
 
-<!-- more -->
+
 
 My onboard card was recognized as "Generic 14f1 ID 5047".
 `root@portable:~# head -5 /proc/asound/card0/codec*

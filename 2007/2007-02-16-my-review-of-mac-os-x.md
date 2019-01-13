@@ -13,7 +13,7 @@ categories:
 I'll describe here my experience with Mac OS X as my main OS after 5 days (installed it on Sun 11 Feb 2007).
 I'll keep this post updated with my latest discoveries.. Don't blame me if I'm complaining about something while I'm just missing the point, drop a comment if so, I'd love to have feedback from Mac users.
 
-<!-- more -->
+
 
 **Pros :**
 

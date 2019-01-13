@@ -14,7 +14,7 @@ Here are the steps to implementing quotas on a RedHat based system :
 
 We will enable quotas on /home on the /dev/hda3 partition.
 
-<!-- more -->
+
 
 **Create user :**
 `useradd user1

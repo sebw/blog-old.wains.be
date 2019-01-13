@@ -14,7 +14,7 @@ useradd [options] account
 usermod [options] account
 userdel [-r] account (-r would delete the home directory)
 
-<!-- more -->
+
 
 Default values when creating a user stored under /etc/default/useradd
 `# useradd defaults file

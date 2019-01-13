@@ -19,7 +19,7 @@ Munin is a monitoring tool for servers. It uses RRDtool to log and graph data fr
 This guide will walk you through installing and configuring Munin on CentOS 4.x. 
 The steps are pretty much the same for later releases of CEntOS, Red Hat, Fedora [Core] and/or Red Hat-based installations.
 
-<!-- more -->
+
 
 Munin works by polling your servers for the data hence two applications, Munin and Munin Node. The former periodically gathers data (cronned) and the latter serves the data to the former. Please refer to the following for our example configuration. You can make up a domain if you want Munin to group your servers similar to the live demo.
 

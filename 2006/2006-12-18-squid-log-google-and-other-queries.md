@@ -16,7 +16,7 @@ By default, the queries sent to google and other search engines are not logged i
 
 See below how to enable queries logging..
 
-<!-- more -->
+
 
 Add this to /etc/squid/squid.conf
 

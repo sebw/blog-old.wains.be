@@ -19,7 +19,7 @@ Client : client1.lab.local (10.0.0.1)
 
 Packages needed : yp-tools ypbind ypserv portmap
 
-<!-- more -->
+
 
 **Edit /etc/yp.conf :**
 `domain lab.local server server

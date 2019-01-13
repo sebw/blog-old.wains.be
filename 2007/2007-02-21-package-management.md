@@ -12,7 +12,7 @@ categories:
 
 Compilation of most common commands dealing with package management.
 
-<!-- more -->
+
 
 **up2date**
 

@@ -6,7 +6,7 @@ When starting the Red Hat/CentOS installer, it kept giving me an error, over and
 The installer was running very slow as well..
 It seemed to me IRQ 5 was bound to the DVD drive
 
-<!-- more -->
+
 
 I had to disable the "enhanced mode" of the IDE drives under the (AMI) BIOS :
 Steps :

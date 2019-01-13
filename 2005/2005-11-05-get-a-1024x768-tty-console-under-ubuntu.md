@@ -10,7 +10,7 @@ initrd          /boot/initrd.img-2.6.12-9-686
 savedefault
 boot`
 
-<!-- more -->
+
 
 Just in case, make a copy of the previous settings, so you would always be able to boot again if something had to go wrong
 

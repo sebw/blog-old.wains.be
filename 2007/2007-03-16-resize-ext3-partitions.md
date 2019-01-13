@@ -13,7 +13,7 @@ categories:
 
 Say we have a brand new already ext3 formatted disk on our system.. say it has a 300 GB partition and it is brand new, so not running anything on the system. DO NOT TRY RESIZING PARTITIONS ON SYSTEM DISKS UNLESS YOU KNOW WHAT YOU ARE DOING.
 
-<!-- more -->
+
 
 **We are gonna copy the old 100 GB partition to the new partition.**
 

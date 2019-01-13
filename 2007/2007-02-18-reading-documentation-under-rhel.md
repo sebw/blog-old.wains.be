@@ -13,7 +13,7 @@ categories:
 Several ways to get help quickly.
 Need to get used to finding the missing info as fast as possible (I'm already pretty fast usually, but need to improve if possible)..
 
-<!-- more -->
+
 
 `# whatis named
 named                (8)  - Internet domain name server

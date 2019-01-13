@@ -17,7 +17,7 @@ categories:
 
 I always find it difficult to download the script (site down, etc), so I put my current script online.
 
-<!-- more -->
+
 
 **Set the exec bit :**
 `chmod +x /usr/local/bin/rules_du_jour`

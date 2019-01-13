@@ -21,7 +21,7 @@ The NIC is an Intel Pro/1000 CT.
 
 Here's the result of a sniffing session : 
 
-<!-- more -->
+
 
 `[root@localhost]# tshark -i eth1 -n ether host 00:11:2f:a1:f4:2c    
 Capturing on eth1

@@ -15,7 +15,7 @@ categories:
 
 Please pay attention this is my personal setup for a SERVER (running only CLI etc)
 
-<!-- more -->
+
 
 **Edit /etc/sysconfig/network and add (disable zeroconf, allow routing) :**
 `NOZEROCONF=yes

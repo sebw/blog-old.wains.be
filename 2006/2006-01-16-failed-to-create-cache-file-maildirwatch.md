@@ -19,7 +19,7 @@ Jan 16 17:21:24 server imapd: Check for proper operation and configuration
 Jan 16 17:21:24 server imapd: of the File Access Monitor daemon (famd).
 `
 
-<!-- more -->
+
 
 Just add this line to /etc/xinetd.d/sgi_fam :
 `flags   = NOLIBWRAP`

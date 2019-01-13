@@ -14,7 +14,7 @@ categories:
 This is my personal vi reminder.
 Feel free to share your tips !
 
-<!-- more -->
+
 
 Search and replace a string globally in a document :
 `:.,$s/search_string/replacement_string/g`

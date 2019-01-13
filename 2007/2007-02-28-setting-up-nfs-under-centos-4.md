@@ -12,7 +12,7 @@ categories:
 
 Packages needed : nfs-utils
 
-<!-- more -->
+
 
 **Server side**
 

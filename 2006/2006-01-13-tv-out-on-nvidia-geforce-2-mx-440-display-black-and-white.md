@@ -1,20 +1,9 @@
-
-
-
-date: 2006-01-13 11:02:31+00:00
-
-
 # TV out on Nvidia displaying in black and white with scart & S-VHS
-
-categories:
-- Howto
-- Windows
-
 
 I've been scratching my head for a while on this issue but I finally found a fix !
 I tried about anything, knowing it used to work a while ago (like 2 years from now with older drivers).
 
-<!-- more -->
+
 
 My Nvidia Geforce 2 MX 440 was displaying a black and white output when using a S-VHS (or S-video) cable plugged into my scart TV 
 

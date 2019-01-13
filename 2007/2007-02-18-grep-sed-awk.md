@@ -14,7 +14,7 @@ Let's continue with the basics... Reviewing only the really useful, and not goin
 
 If you have some useful tips, please share ! :)
 
-<!-- more -->
+
 
 **Grep**
 

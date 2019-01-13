@@ -20,7 +20,7 @@ I'm not satisfied by SSH clients under Linux (like putty and the likes), the onl
 
 **SSH agent forwarding ?**
 
-<!-- more -->
+
 
 With SecureCRT, I was able to ssh from machines to machines flawlessly...
 

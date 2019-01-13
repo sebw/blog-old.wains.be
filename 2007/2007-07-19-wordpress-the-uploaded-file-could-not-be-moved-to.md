@@ -20,7 +20,7 @@ The easiest fix is to edit the value "safe_mode" to off in /etc/php.ini
 
 Read on..
 
-<!-- more -->
+
 
 **What is safe mode ?**
 

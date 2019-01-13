@@ -24,7 +24,7 @@ WordPress may have reformated the code in some weird way.. don't do massive copy
 
 If you have troubles figuring out something, drop me a line..
 
-<!-- more -->
+
 
 **/etc/postfix/access :**
 

@@ -15,7 +15,7 @@ categories:
 
 If you set up a transparent ftp proxy using frox (as described here : [http://blog.wains.be/?p=46](http://blog.wains.be/?p=46)) with iptables along on your linux gateway, you'll probably stumble upon some issues...
 
-<!-- more -->
+
 
 Let's say you run frox on port 2121 and redirect any request made on port 21 to frox, you should use this kind of rule : 
 

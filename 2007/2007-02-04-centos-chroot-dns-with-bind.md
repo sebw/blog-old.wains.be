@@ -17,7 +17,7 @@ I won't go into the details of what is DNS, or the difference between an A recor
 
 Howto available for CentOS 5 : [http://blog.wains.be/post/centos-5-chroot-dns-with-bind/](http://blog.wains.be/post/centos-5-chroot-dns-with-bind/)
 
-<!-- more -->
+
 
 **1. Install packages :**
 

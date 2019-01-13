@@ -15,7 +15,7 @@ categories:
 
 If you want to run svnserve through xinetd (documentation still refers to inetd) :
 
-<!-- more -->
+
 
 1. Create file /etc/xinetd.d/svnserve :
 

@@ -13,7 +13,7 @@ categories:
 
 This post will explain how I have rebuilt a software RAID array after a disk failure
 
-<!-- more -->
+
 
 I recently got a notification from the SMART daemon saying this : 
 

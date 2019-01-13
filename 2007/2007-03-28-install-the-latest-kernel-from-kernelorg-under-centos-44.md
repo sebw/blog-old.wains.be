@@ -21,7 +21,7 @@ The kernel provided by the CentOS team is just FINE for 99 % cases.
 
 USE AT YOUR OWN RISK.
 
-<!-- more -->
+
 
 `wget http://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.20.4.tar.bz2 -O /usr/src/linux-2.6.20.4.tar.bz2
 cd /usr/src

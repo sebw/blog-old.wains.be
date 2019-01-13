@@ -23,7 +23,7 @@ httpd_accel_port 80
 httpd_accel_with_proxy on
 httpd_accel_uses_host_header on`
 
-<!-- more -->
+
 
 To enable the transparent proxying, type this :
 

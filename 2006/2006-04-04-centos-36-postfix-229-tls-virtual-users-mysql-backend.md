@@ -21,7 +21,7 @@ What I stopped using since the previous article :
 - vacation message because the script I was using had a few annoying bugs that I haven't figured out yet.
 - squirrelmail replaced by roundcube webmail (still beta !!), I don't have many webmail users so I can afford using roundcube, which still has a lot of bugs. If you want a rock solid webmail, go for squirrelmail.
 
-<!-- more -->
+
 
 The current config : 
 - CentOS 3.6

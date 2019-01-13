@@ -18,7 +18,7 @@ I had downloaded the 4 ISO images of CentOS 4.4 overnight and burnt them.
 Please consider the following :
 I'm only building a local copy of the base and updates repo for CentOS 4.4 for the i386 architecture.
 
-<!-- more -->
+
 
 **Follow these steps :**
 

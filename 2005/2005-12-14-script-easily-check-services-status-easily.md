@@ -6,7 +6,7 @@ I found Nagios [http://www.nagios.org/](http://www.nagios.org/) but it was not r
 
 To do the job, I made this (very) little script that runs from a cron on a daily basis :
 
-<!-- more -->
+
 
 
     

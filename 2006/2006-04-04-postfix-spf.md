@@ -15,7 +15,7 @@ categories:
 Enable SPF if you believe you need it..
 For your information, SPF is not widely used
 
-<!-- more -->
+
 
 You'll need Mail::SPF::Query :
 `1. perl -MCPAN -e shell

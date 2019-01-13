@@ -15,7 +15,7 @@ categories:
 
 Among the many protections you can set to restrict connections to your server, there's tcp_wrappers that turns out to be pretty useful.
 
-<!-- more -->
+
 **Edit /etc/hosts.sshd**
 Put into this file all the IP's, hostnames (avoid this as much as possible) or ranges allowed to ssh into the machine
 

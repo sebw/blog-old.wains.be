@@ -18,7 +18,7 @@ categories:
 **Thanks to Luca Gibelli for [his document about Postfix SMTP AUTH](http://www.nervous.it/txt/Postfix-SMTP-AUTH-4-DUMMIES.html).
 It helped me a lot, this article is largely based on his work, I adapted it to match RHEL/CentOS systems.**
 
-<!-- more -->
+
 
 **Scenario**
 Your mail server hosts multiple domains.

@@ -7,7 +7,7 @@ yum install pkgconfig mysql-devel
 rpm -ihv proftpd-1.2.10-8.dag.src.rpm
 rpmbuild -ba --with-mysql /usr/src/redhat/SPECS/proftpd-1.2.10-dag.spec`
 
-<!-- more -->
+
 
 For the lazy asses out there, this is the compiled version : 
 `wget [http://blog.wains.be/pub/proftpd-1.2.10-8_mysql.dag.i386.rpm](http://blog.wains.be/pub/proftpd-1.2.10-8_mysql.dag.i386.rpm)

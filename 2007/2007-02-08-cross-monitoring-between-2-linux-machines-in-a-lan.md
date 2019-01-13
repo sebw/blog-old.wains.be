@@ -17,7 +17,7 @@ categories:
 You want 2 Linux machines in your network to monitor themselves.
 If one machines goes down, the other sends an email to the admin.
 
-<!-- more -->
+
 
 machine A has the IP 192.168.1.1 (machineA.local.domain.be)
 machine B has the IP 192.168.1.2 (machineB.local.domain.be)

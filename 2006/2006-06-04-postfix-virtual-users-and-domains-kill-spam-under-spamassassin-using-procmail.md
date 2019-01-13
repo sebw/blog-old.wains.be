@@ -24,7 +24,7 @@ If the email is marked as spam above a score of 4.0 (4 stars ****, check the hea
 
 You can combine many analysis.. such as procmail + amavis...
 
-<!-- more -->
+
 
 **Edit /etc/postfix/master.cf :**
 

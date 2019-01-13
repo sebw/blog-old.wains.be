@@ -14,7 +14,7 @@ categories:
 
 This has been tested under Ubuntu and a Cisco switch model Catalyst 2950 (IOS 12.1)
 
-<!-- more -->
+
 
 **1. Set up your TFTP server**
 

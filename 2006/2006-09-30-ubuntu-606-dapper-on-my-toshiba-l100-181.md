@@ -17,7 +17,7 @@ Basically, that would be my main activity on the laptop, the underlying OS would
 I tried hard to run VMW under Fedora Core 5 but always failed with kernel issues. (see [http://blog.wains.be/?p=122](http://blog.wains.be/?p=122))
 I had read VMW was supporting Ubuntu 6.06 which I installed.
 
-<!-- more -->
+
 
 Indeed, latest version of VMW is working great with no headache.
 Furthermore, Ubuntu fixed a few stuff I was having under FC5

@@ -25,7 +25,7 @@ When I tried to change the DDNS settings (for DynDNS), I was getting an error "S
 
 After googling the error out, I found out this error was fixed in a later release of the firmware.
 
-<!-- more -->
+
 
 Going to the download section of linksys.com, grabbing what seems to be the latest (version 1.01.15) firmware for my model (kind of a maze on their FTP by the way).
 

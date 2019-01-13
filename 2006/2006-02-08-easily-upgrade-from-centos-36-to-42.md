@@ -14,7 +14,7 @@ categories:
 
 To counter-strike all the rants and posts I have seen on the web about how difficult it was to upgrade from CentOS 3 to 4, this post is here to testify it was actually easy -at least for a friend and myself-.
 
-<!-- more -->
+
 
 I've been wandering around trying to find people experiences about such an upgrade and all i found was complains, failures, rants and so. Until my friend said the night before, he had upgraded without any problem
 

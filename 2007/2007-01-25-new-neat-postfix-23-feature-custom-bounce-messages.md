@@ -13,7 +13,7 @@ categories:
 Bounce messages sent by the postfix daemon used to be hardcoded until version 2.3.
 This is actually great news for non-english speaking or not email-litterate users.
 
-<!-- more -->
+
 
 This is an excerpt of my postfix config :
 `maximal_queue_lifetime = 1d

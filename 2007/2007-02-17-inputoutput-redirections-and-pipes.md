@@ -17,7 +17,7 @@ Feel free to drop a comment if you have any useful tip or trick !
 
 Let's begin with the basics..
 
-<!-- more -->
+
 
 Standard input (stdin) : 0 
 Standard output (stdout) : 1 

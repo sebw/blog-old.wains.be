@@ -14,7 +14,7 @@ http://www.zoneminder.com/
 
 ZoneMinder is intended for use in single or multi-camera video security applications, including commercial or home CCTV, theft prevention and child or family member or/ home monitoring and other care scenarios....
 
-<!-- more -->
+
 
 01. Disable SELinux (that's the easy way, I know.. please provide the steps in the comment if you kept SELinux on) :
 `Edit /etc/sysconfig/selinux`

@@ -17,7 +17,7 @@ categories:
 4. Formatting the Logical Volumes
 5. (optional) Resizing Logical Volumes
 
-<!-- more -->
+
 
 **1. Creation of Physical Volumes (PV)**
 

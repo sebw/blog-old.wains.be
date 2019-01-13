@@ -19,7 +19,7 @@ With this enabled, you can go backward and forward under Firefox (and probably o
 `Option "ButtonMapping" "1 2 3 6 7 4 5"
 Option "ZAxisMapping" "4 5"`
 
-<!-- more -->
+
 
 **sudo gedit /etc/X11/Xsession.d/63xmodmap (this is a new file) and add :**
 

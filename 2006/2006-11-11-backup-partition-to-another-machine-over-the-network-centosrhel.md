@@ -17,7 +17,7 @@ There are many ways to backup partitions between machines (CIFS, NFS, etc.)
 
 I'll describe what seems to be the easiest and quickest way, you don't need to setup services like Samba or NFS here.
 
-<!-- more -->
+
 
 Machine A (source) : 192.168.0.1
 /dev/hda1 /

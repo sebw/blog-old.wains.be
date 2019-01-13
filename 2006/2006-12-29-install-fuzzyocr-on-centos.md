@@ -22,7 +22,7 @@ Tested under CentOS 3.8 and CentOS 4.4, both running SpamAssassin 3.1.7 built fr
 **Untar : **
 `tar xvf fuzzyocr-latest.tar`
 
-<!-- more -->
+
 
 **Packages needed and found in the CentOS repositories :**
 `yum install netpbm netpbm-progs ImageMagick libungif libungif-progs`

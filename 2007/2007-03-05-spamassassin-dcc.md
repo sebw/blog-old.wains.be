@@ -16,7 +16,7 @@ I decided to give a try to DCC on our CentOS 3.8 mail gateway running Postfix.
 
 SpamAssassin 3.1.8 was already installed.
 
-<!-- more -->
+
 
 **Install package :**
 `rpm -ihv http://repo.securityteam.us/repository/redhat/el3/i386/RPMS/dcc-1.3.12-1.i386.rpm`

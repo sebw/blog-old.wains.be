@@ -12,7 +12,7 @@ categories:
 
 Query caching should improve MySQL performances..
 
-<!-- more -->
+
 
 **Edit /etc/my.cnf :**
 

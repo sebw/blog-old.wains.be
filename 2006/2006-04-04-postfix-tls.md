@@ -14,7 +14,7 @@ categories:
 
 This document describes how to install a mail server based on postfix that is capable of TLS. I tested it on CentOS 3.6 and 4.2.
 
-<!-- more -->
+
 
 **I'm not sure which packages are actually needed for Postfix using TLS.. these are the ones installed on my system :**
 `[root@server](1013)# rpm -qa | grep -i sasl

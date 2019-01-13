@@ -14,7 +14,7 @@ categories:
 I made this little script to get a daily report of the usage of our virtual mailboxes at work, the POP3 server is courier-imap.
 I don't need to run any quota on the accounts but I just want to make sure people regularly check their mailboxes.
 
-<!-- more -->
+
 
 
     

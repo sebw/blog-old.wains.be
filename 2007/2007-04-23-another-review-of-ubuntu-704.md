@@ -15,7 +15,7 @@ I first tried to update it but I was getting some slowliness issues for some unk
 
 **Let's start with the cons :**
 
-<!-- more -->
+
 
 - Graphic installation anyone ? You can have all those fancy CD sleeves and a nice logo reworked at every release but that text installer would scare anyone used to GUI environments. (this comment apparently applies to the alternate version of Ubuntu, the desktop one has a graphical installer available within the live cd)
 

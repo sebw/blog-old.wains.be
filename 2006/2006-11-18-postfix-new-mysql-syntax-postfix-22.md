@@ -16,7 +16,7 @@ I found out just yesterday that Postfix uses a new syntax for SQL lookups.
 It seems like my old syntax was still compatible with Postfix 2.2.8.
 I guess it will be backward compatible for a while.
 
-<!-- more -->
+
 
 **For Postfix 2.2 and later :**
 `user = someone

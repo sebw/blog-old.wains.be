@@ -16,7 +16,7 @@ This has been tested under CentOS 4.4.
 **Why would I need that ?**
 This is useful if you set up a server that will be located in a place where there's low chance to have a keyboard and a monitor around. Or useful, when, like me, you're given like 2 squared meters to store your servers.
 
-<!-- more -->
+
 
 **What you need :**
 Server : At least one serial port available on the linux box and the "util-linux" package installed.

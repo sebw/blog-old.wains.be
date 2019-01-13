@@ -21,7 +21,7 @@ This is not a bug ! Just a RTFM alert ! :)
 
 You should thoroughly follow the following procedure (as described [here ](http://www.modsecurity.org/documentation/modsecurity-apache/2.0.2/modsecurity2-apache-reference.html#02-installation)) to get modsecurity running :
 
-<!-- more -->
+
 
 ModSecurity installation consists of the following steps:
 

@@ -15,7 +15,7 @@ Source : [http://tredosoft.com/node/9](http://tredosoft.com/node/9)
 I wasn't able to get VMware Workstation working under FC5 using the following guide.
 It was painless to get it working under Ubuntu 6.06, see here : [http://blog.wains.be/?p=129](http://blog.wains.be/?p=129)
 
-<!-- more -->
+
 
 We want to install VMWare's free VMWare Player 1.0.1 build 19317 on Fedora Core 5. As far as I can tell this guide works with other VMWare products as well (eg. VMware Workstation/ ESX / GSX / Server etc.)
 

@@ -20,7 +20,7 @@ Let's say you own several domains :
 - mydomain.be
 - my_domain.be
 
-<!-- more -->
+
 
 Let's say all these domains point to the same MX server.
 

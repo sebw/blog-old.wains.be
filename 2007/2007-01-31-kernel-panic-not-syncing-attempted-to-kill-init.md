@@ -17,7 +17,7 @@ I decided it was time to reinstall CentOS before it was too late
 
 I had some important data on the old drive, I would recover the data by just pluging it when the new system would be installed on the new drive.
 
-<!-- more -->
+
 
 So, I installed CentOS 4.4 and partitioned the new drive pretty much like the old one..
 

@@ -18,7 +18,7 @@ Until I found out it was possible to bypass the checks by using special characte
 
 I decided to install amavisd-new along with clamav.
 
-<!-- more -->
+
 
 I'll try to explain how i got the whole thing working, including some personal tips..
 

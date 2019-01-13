@@ -17,7 +17,7 @@ I got my [DS-101](http://www.synology.com) (discontinued product) today and I'm 
 The Synology DS-101 is a Network Attached Storage unit.
 By default, it allows FTP and SMB connectivity.
 
-<!-- more -->
+
 
 It is running Linux and thus is easily hackable.
 See : http://www.nslu2-linux.org/wiki/DS101/HomePage

@@ -15,7 +15,7 @@ In order to make a backup of a database, you have to make sure it's not modified
 
 Let's see here how to lock a single table or a full database..
 
-<!-- more -->
+
 
 **Locking a table only :**
 

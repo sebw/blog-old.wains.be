@@ -20,7 +20,7 @@ First let's look what the docs says about setting up a custom error page :
 
 You would get an error 302 code.
 
-<!-- more -->
+
 
 `$ curl -I http://blog.wains.be/mlfkgldk
 HTTP/1.1 302 Found

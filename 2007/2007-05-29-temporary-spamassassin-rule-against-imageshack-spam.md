@@ -12,7 +12,7 @@ categories:
 
 This would help blocking the new imageshack spam while we are waiting for a rule to be directly integrated into SpamAssassin :
 
-<!-- more -->
+
 
 **Create the new rule in a separate file :**
 `$ vi /etc/mail/spamassassin/imageshack.cf`

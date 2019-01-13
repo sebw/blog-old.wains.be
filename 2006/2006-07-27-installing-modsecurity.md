@@ -17,7 +17,7 @@ From http://michael-and-mary.net/?q=node/1261
 
 Modsecurity is an open source web application firewall for the Apache server that helps to keep the malicious people at bay. To install Modsecurity, first install the package: httpd-devel (yum install httpd-devel) [as root]. Next, execute the following commands (as root) to install and configure Modsecurity:
 
-<!-- more -->
+
 
 cd /root
 

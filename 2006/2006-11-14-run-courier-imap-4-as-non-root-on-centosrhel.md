@@ -15,7 +15,7 @@ categories:
 
 What follows is an explanation on how I got courier-imap 4 running as non-root on my CentOS 3 system.
 
-<!-- more -->
+
 
 I run Postfix 2.2 with virtual domains/users and a mysql backend
 

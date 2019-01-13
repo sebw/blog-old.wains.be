@@ -21,7 +21,7 @@ I'm pretty sure they don't provide the root password at the RHCE exam and ask yo
     * 5 - Multi-user mode, graphical login
     * 6 - Reboot the system`
 
-<!-- more -->
+
 
 Switch runlevel while the system is running (example : switch to runlevel 5) :
 `telinit 5`

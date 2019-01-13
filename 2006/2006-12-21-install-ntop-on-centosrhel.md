@@ -19,7 +19,7 @@ Install the SecurityTeamUS repo :
 **Install ntop (dependencies (gd) included on the base repo) :**
 `yum install ntop`
 
-<!-- more -->
+
 
 ntop requires that you create a password for it to run, type ntop at the prompt : 
 `Thu Dec 21 19:53:54 2006  NOTE: Interface merge enabled by default

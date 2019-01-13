@@ -17,7 +17,7 @@ I'll explain how I enabled SSH on my Synology DS-101 box.
 
 This guide is based on Nicolas' work : [http://www.dotmana.com/index.php/?p=91](http://www.dotmana.com/index.php/?p=91)
 
-<!-- more -->
+
 
 **1. FIRMWARE UPGRADE**
 

@@ -15,7 +15,7 @@ Along with CentOS 4.2 came MySQL 4.1, great news ! BUT...
 
 My old Courier-Imap version was only compatible with MySQL 3.x..
 
-<!-- more -->
+
 
 I had to upgrade to Courier-imap 4. My buddy kindly compiled the packages for me and published it on his repository : [http://repo.securityteam.us/repository/](http://repo.securityteam.us/repository/)
 

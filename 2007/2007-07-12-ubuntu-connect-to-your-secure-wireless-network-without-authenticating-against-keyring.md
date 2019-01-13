@@ -23,7 +23,7 @@ Whenever I log in, I have to authenticate with my user and password, then Gnome 
 
 Now, you can avoid having to unlock the keyring, read on...
 
-<!-- more -->
+
 
 **1. Install libpam-keyring package :**
 `$ sudo apt-get install libpam-keyring`

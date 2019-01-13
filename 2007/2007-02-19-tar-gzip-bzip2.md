@@ -12,7 +12,7 @@ categories:
 
 Overview of the most common commands when it comes to compression...
 
-<!-- more -->
+
 
 **Tar**
 

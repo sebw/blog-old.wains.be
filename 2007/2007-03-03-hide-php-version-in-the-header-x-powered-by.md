@@ -14,7 +14,7 @@ categories:
 **Edit /etc/php.ini (under RHEL/CentOS) and set :**
 `expose_php = Off`
 
-<!-- more -->
+
 
 **Before :**
 `$ curl -I blog.wains.be

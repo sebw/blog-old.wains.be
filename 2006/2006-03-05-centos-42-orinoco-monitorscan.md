@@ -14,7 +14,7 @@ categories:
 
 According to [http://blog.wains.be/?p=25](http://blog.wains.be/?p=25), it was quite a pain to get the orinoco drivers with scan and monitor capabilities..
 
-<!-- more -->
+
 
 Being sick at the debianess of Ubuntu, I switched my laptop to the good old and lovely CentOS 4.2.
 

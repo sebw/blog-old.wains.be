@@ -17,7 +17,7 @@ From : [http://www.debian-administration.org/articles/449](http://www.debian-adm
 
 SSH has numerous uses beyond just logging into a remote system. In particular, SSH allows you to forward ports from one machine to another, tunnelling traffic through the secure SSH connection. This provides a convenient means of accessing a service hosted behind a firewall, or one blocked by an outgoing firewall.
 
-<!-- more -->
+
 
 However, forwarding an individual port still requires you to change where your program connects, telling it to use a non-standard port on localhost rather than the standard port on the remote machine, and it requires a separate port forward for each machine you want to access. Dynamic port forwarding via SOCKS provides a more convenient alternative.
 

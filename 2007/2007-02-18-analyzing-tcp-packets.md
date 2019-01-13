@@ -18,7 +18,7 @@ Command :
 `$ tshark -V -i eth0`
 
 Output :
-<!-- more -->
+
 `Frame 1 (91 bytes on wire, 91 bytes captured)
     Arrival Time: Feb 18, 2007 17:53:58.431551000
     [Time delta from previous packet: 0.000000000 seconds]

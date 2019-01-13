@@ -23,7 +23,7 @@ I made a loopback plug too and the short cross over cable too...
 
 Here's my kit :
 
-<!-- more -->
+
 
 ![Network kit](https://blog.wains.be/images/network_kit.jpg)
 - Passive network tap box

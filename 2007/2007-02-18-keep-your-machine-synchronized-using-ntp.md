@@ -18,7 +18,7 @@ Install the package :
 Make a backup of the default config
 `cp /etc/ntp.conf /etc/ntp.conf.default`
 
-<!-- more -->
+
 
 **Minimal and pretty safe /etc/ntp.conf :**
 `server 0.europe.pool.ntp.org

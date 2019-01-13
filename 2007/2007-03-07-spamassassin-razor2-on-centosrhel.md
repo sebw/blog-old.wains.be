@@ -18,7 +18,7 @@ categories:
 
 **Or from Razor homepage :** http://razor.sourceforge.net/
 
-<!-- more -->
+
 
 **Restart SpamAssassin :**
 `service spamassassin condrestart`

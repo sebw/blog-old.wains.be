@@ -20,7 +20,7 @@ Thus, the condition is this :
 - local network : unrestricted access
 - foreign network (in other words "web users") : http authentication
 
-<!-- more -->
+
 
 Here's the configuration I used on that virtual host :
 

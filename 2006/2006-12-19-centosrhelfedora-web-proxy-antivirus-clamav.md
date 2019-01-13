@@ -20,7 +20,7 @@ We will use these tools : Squid + ClamAV + a patched version of DansGuardian
 
 **The clamav packages provided are now outdated, I'm going to build an updated version as soon as I can**
 
-<!-- more -->
+
 
 Squid : [www.squid-cache.org](http://www.squid-cache.org)
 ClamAV : [www.clamav.net](http://www.clamav.net)

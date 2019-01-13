@@ -17,7 +17,7 @@ Original link : [http://polishlinux.org/apps/ssh-tricks/#](http://polishlinux.or
 
 Here's an excerpt about X forwarding...
 
-<!-- more -->
+
 
 One of the least known functions of SSH is X protocol forwarding. This enables us to run almost every X application remotely! It’s enough to connect to the remote server using the -X option:
 

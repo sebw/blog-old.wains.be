@@ -17,7 +17,7 @@ Where /dev/hda is your cdrom drive..
 
 How do I find that out ? (snippet)
 
-<!-- more -->
+
 
 `user@localhost:~$ mount
 ...

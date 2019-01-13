@@ -32,7 +32,7 @@ Let's say someone breaks into my wireless network with a linux laptop (pretty un
 
 To fill that breach, we need to block port tcp/25 for wireless clients.
 
-<!-- more -->
+
 
 **The iptables answer :**
 
