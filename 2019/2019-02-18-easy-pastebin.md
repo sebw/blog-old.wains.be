@@ -12,7 +12,7 @@ The **awesome** part is that a command line client exists!
 
 On your Linux workstation, just do a simple `gem install haste`.
 
-Then create an alias in your `.bashrc` or `.zshrc` config: `alias pastebin="HASTE_SERVER=https://your-haste-server.com haste"
+Then create an alias in your `.bashrc` or `.zshrc` config: `alias pastebin="HASTE_SERVER=https://your-haste-server.com haste"`.
 
 Then after restarting your session or sourcing your config file, you can start pasting from the CLI:
 
