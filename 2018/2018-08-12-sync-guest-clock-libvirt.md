@@ -2,7 +2,11 @@
 
 My host is RHEL7 running Gnome. Guest is Fedora 28 running i3 windows manager.
 
+I use **virt-manager** and not virsh to manage my VM's.
+
 TL;DR: it doesn't work for me, jump to **Conclusion** to read about my endeavour.
+
+Edit: my host is now running Fedora 29 and the guest F29 too. The issue persists.
 
 ### On the host you need:
 
