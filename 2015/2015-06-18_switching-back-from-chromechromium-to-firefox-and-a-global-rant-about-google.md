@@ -1,7 +1,7 @@
 
-# Switching back from Chrome/Chromium to Firefox and a global rant about Google 
-Date: 2015-06-18  
-Tags: Google, rant 
+# Switching back from Chrome/Chromium to Firefox and a global rant about Google
+
+Originally published 2015-06-18
 
 I have used Chrome (and Chromium, depending on the platform I'm working on, from now on I'll refer to it as Chrome) pretty much since it went out of beta.
 
@@ -50,3 +50,5 @@ They are forcing Hangouts for people who still use Google Talk and stopped XMPP 
 I'm done with the force-feeding attitude of Google that got so powerful that they think their vision of the web should be pushed (silently) to users with not a single care of what users think. They know it, a vast majority of users have no clue about privacy and don't question what they are given. They also have the right to pull the plug on popular services to serve their purpose of winning the social network business. Give up Google, 90% of users never posted anything on your G+ joke: [https://www.stonetemple.com/real-numbers-for-the-activity-on-google-plus/](https://www.stonetemple.com/real-numbers-for-the-activity-on-google-plus/)
 
 Update 2016-07-18: Interesting blog post by Maxime Kjaer regarding vulnerabilities in Chrome extensions (confirming Google can remove extensions as they want): [link](https://kjaer.io/extension-malware/)
+
+Update 2019-02-28: https://redalemeden.com/blog/2019/we-need-chrome-no-more
