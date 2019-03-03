@@ -1,9 +1,12 @@
 # Sebastien Wains
+
 A markdown based [wiki] about Linux, Open Source, VoIP and other geeky stuff.
 
-Sources of this site are available on [Github].
+The website sources are available on [Github].
 
 You can't comment here but you can open an issue or submit a merge request on Github if something is incorrect or requires clarification.
+
+This website doesn't use cookies.
 
 **Opinions expressed here represent my own and not those of my employer.**
 
