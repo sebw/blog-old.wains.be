@@ -36,11 +36,9 @@ I automate things at the personal level too! I'm a huge fan of **[Automagic]** o
 
 ## My work environment
 
-I work in a virtual machine running the latest Fedora with **[i3]** tiling window manager.
+I work in a libvirt virtual machine running the latest Fedora with **[i3]** tiling window manager. The host system is usually a Fedora latest.
 
-The VM runs on top of a Red Hat Enterprise Linux host running libvirt. 
-
-I'm a die-hard shortcut keyboard user.
+I'm a die-hard shortcut keyboard user. I use a Ducky One 2 Mini mechanical keyboard.
 
 ## Why a wiki?
 
