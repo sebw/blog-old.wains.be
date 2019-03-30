@@ -1,6 +1,6 @@
 # Wemo and Netatmo workflows for Alfred
 
-I just published my two first [Alfred](https://www.alfredapp.com/) workflows on [Packal](www.packal.org).
+I just published my two first [Alfred](https://www.alfredapp.com/) workflows on [Packal](http://www.packal.org).
 
 ### Wemo
 
