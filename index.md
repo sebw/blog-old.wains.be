@@ -16,9 +16,9 @@ This website doesn't use cookies.
 
 I'm a cloud and infrastructure senior consultant at Red Hat, the Open Source company.
 
-To learn more about our consulting service, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
+I'm a Red Hat Certified Architect (RHCA). [My certification ID is 110-643-822]](https://www.redhat.com/rhtapps/services/verify/?certId=110-643-822).
 
-To have a look at my certifications, go to [https://www.redhat.com/rhtapps/services/verify/?certId=110-643-822](https://www.redhat.com/rhtapps/services/verify/?certId=110-643-822).
+To learn more about our consulting service, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
 
 ## What I have been up to in the past
 
