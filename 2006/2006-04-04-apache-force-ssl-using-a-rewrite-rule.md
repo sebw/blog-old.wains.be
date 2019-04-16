@@ -2,9 +2,11 @@
 
 **This rewrite rule will redirect the requests to https (SSL) :**
 
-`RewriteEngine on
+```
+RewriteEngine on
 RewriteCond %{SERVER_PORT} !^443$
-RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]`
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+```
 
 The module mod_rewrite is needed.
 
