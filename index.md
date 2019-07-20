@@ -12,13 +12,13 @@ This website doesn't use cookies.
 
 ## What I'm up to today
 
-![](https://blog.wains.be/images/redhat.png)
+<img src="https://blog.wains.be/images/redhatibm.png" width="250"/>
 
 I'm a cloud and infrastructure senior consultant at Red Hat, the Open Source company.
 
 I'm a Red Hat Certified Architect (RHCA). [My certification ID is 110-643-822](https://www.redhat.com/rhtapps/services/verify/?certId=110-643-822).
 
-To learn more about our consulting service, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
+To learn more about our consulting services, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
 
 ## What I have been up to in the past
 
