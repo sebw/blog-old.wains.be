@@ -2,9 +2,7 @@
 
 A markdown based [wiki] about Linux, Open Source, VoIP and other geeky stuff.
 
-The website sources are available on [Github].
-
-You can't comment here but you can open an issue or submit a merge request on Github if something is incorrect or requires clarification.
+Since this is a static website, there is no comment function. Instead, you can open an issue or submit a merge request on [Github] if you have a comment or if something is incorrect or requires clarification.
 
 This website doesn't use cookies.
 
@@ -87,10 +85,6 @@ I'm an [INTJ]: INTJs are known as the "Systems Builders" of the types, perhaps i
 
 ## Contacts
 If you want to contact me, just look me [up].
-
-## Copyrights
-
-Red Hat, Red Hat Enterprise Linux, the Shadowman logo, and JBoss are trademarks or registered trademarks of Red Hat, Inc. or its subsidiaries in the United States and other countries.
 
 ## Found an error on this site?
 Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new)
