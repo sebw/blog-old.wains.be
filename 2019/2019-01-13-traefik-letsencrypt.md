@@ -64,11 +64,13 @@ docker run -d --name revproxy -p 80:80 -p 443:443 --restart=always -l traefik.en
 
 Then start any container (for example called `blah`), and make sure they have a label `traefik.enable=true`.
 
-After a couple of second, the `acme.json` should get updated. You can now go to `https://blah.example.org`.
+It should take a couple of seconds only for the certificate to get generated. The timestamp of `acme.json` is a good indicator. You should now be able to surf on `https://blah.example.org` with a valid certificate.
 
-If your container exposes a port other than `80` or `443`, then you should pass another label `traefik.port=444`.
+If your container exposes a port other than `80`, then you should pass the label `traefik.port`.
 
-Also if your container runs the service on TLS, pass `traefik.protocol=https`.
+Example: `docker run -d --name whoami -l traefik.port=8000 -t jwilder/whoami`
+
+For containers exposing their service on TLS, pass the label `traefik.protocol=https`.
 
 All options are documented here:
 
