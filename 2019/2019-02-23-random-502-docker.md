@@ -21,3 +21,17 @@ With a user defined bridge, you automatically get name resolution.
 After moving all my containers to the new bridge, I no longer have issues.
 
 **Conclusion:** don't put your container in the default bridge, create a user defined bridge, and don't use the `--link` option.
+
+**Edit September 2019:** 
+
+Since this article I have moved VPS provider (because I was still getting random network issues with Scaleway). 
+
+All went fine for about 6 months until I started getting random network connectivity issues again on the new VPS provider.
+
+I started investigating by running simple pings between containers in the same subnet, and I was getting **ICMP redirects!**
+
+Basically I was running pings between A and B, and every now and then C would answer "hey, the shortest past to B is to talk directly to B".
+
+I use **Portainer** to manage my containers, and Portainer is affected by a very severe bug, where it can create several containers with the same MAC address.
+
+See [https://github.com/portainer/portainer/issues/1645](https://github.com/portainer/portainer/issues/1645) for more info.
