@@ -16,7 +16,8 @@ The following errors can be found in the logs:
 - Freeipa domain: linux.example.org
 - AD User: test
 - userPrincipalName (UPN) for "test": firstname.lastname@example.com <--- UPN domain example.com is different than example.org!!!
-- Connection to RHEL client with: ssh test@example.org@server1.linux.example.org- IDM clients (in linux.example.org) can't resolve the example.com UPN domain
+- Connection to RHEL client with: ssh test@example.org@server1.linux.example.org
+- IDM clients (in linux.example.org) can't resolve the example.com UPN domain
 
 In the context above, IDM clients will try to use the example.com (derived from the UPN) realm to authenticate into Linux machines.
 
