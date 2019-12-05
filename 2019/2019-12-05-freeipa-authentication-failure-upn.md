@@ -39,6 +39,10 @@ Clear the cache on IDM servers and IDM clients with:
 
 `systemctl stop sssd && rm -fr /var/lib/sssd/db/* && systemctl start sssd`
 
+Restart ipa:
+
+`systemctl restart ipa`
+
 Attempt a connection with:
 
 `ssh test@example.org@server1.linux.example.org`
