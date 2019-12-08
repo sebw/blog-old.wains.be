@@ -30,7 +30,7 @@ I talked about [SaltStack] at [Jeudis du Libre] conference. Check my [Github] fo
 
 ## At the personal level
 
-I automate things at the personal level too! I'm a huge fan of **[Automagic]** on Android, **[Alfred]** on Mac, **[Albert]** on Linux, and hackable connected devices.
+I automate things at the personal level too! I'm a huge fan of **[Automagic]** on Android, **[Alfred]** on Mac, **[Ulauncher]** on Linux, and hackable connected devices.
 
 ## My work environment
 
@@ -110,3 +110,4 @@ Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new)
 [tig]: http://jonas.nitro.dk/tig/
 [Visual Studio Code]: https://code.visualstudio.com/
 [Jeudis du Libre]: http://www.jeudisdulibre.be
+[Ulauncher]: https://ulauncher.io/
