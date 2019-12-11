@@ -1,5 +1,7 @@
 # My Linux Desktop Environment
 
+**2019-12-11 POST IN PROGRESS**
+
 I have used Linux as a desktop environment since about 2006, mostly with Gnome or Cinnamon.
 
 Around 2016 I got bored of the general direction that most desktop environment ("DE" for short) were taking (what I would call "Apple-ization") and decided to tailor, hand craft, optimize and automate my Linux DE.
@@ -45,8 +47,8 @@ Advantages:
 - easy migration/restore of VM if laptop fails
 - VM is "portable" (should I change from Lenovo to a HP laptop wouldn't be a problem)
 - I have two almost similar VM: personal and work. The personal VM acts as "staging" for the work VM. If I'm trying to improve something in my DE, it is tested on the personal VM first, then is promoted to "production" on the work VM.
-- splitting personal and work in two VM prevents being tracked from social media in the work VM, for example
-- with the QEMU agent, performances are close to native (excluding video playing)
+- I have always split work and personal stuff. I don't see why customer should see private bookmarks when I demo something for them.
+- with the QEMU agent, performances can be close to native for a development or sysadmin machine
 
 Disadvantages:
 
@@ -54,7 +56,7 @@ Disadvantages:
 - you have to pause the VM before closing the lid
 - changing brightness/volume/etc requires you to get out of the VM
 - AFAIK multi screen is still not yet available in a VM, if you must present something on a projector, you have to project your VM
-- applications like video conference might act up or perform poorly, I install my work video conference app on the host
+- most audio/video applications perform poorly: video conference, Discord, VLC
 - when resuming the VM, the clock is not syncing automatically
 
 ## My Data
@@ -140,7 +142,7 @@ Keywords=tiling;wm;windowmanager;window;manager;
 
 **NOTE:** Some dotfiles managers can generate configuration files based on templates. This comes with the limitation that if you change something in the application GUI, the change would be overwritten the next time the configuration is rebuilt.
 
-## i3wm
+<!-- ## i3wm
 
 - tiling windows manager
 - monitor resolution
@@ -149,7 +151,7 @@ Keywords=tiling;wm;windowmanager;window;manager;
 
 ### i3blocks
 
-scripts
+scripts -->
 
 ## Terminator
 
