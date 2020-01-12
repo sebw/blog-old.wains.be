@@ -12,7 +12,7 @@ On Fedora, install the package:
 sudo dnf install swatch
 ```
 
-Create a configuration file `.swatchrc, for example:
+Create a configuration file `.swatchrc`, for example:
 
 ```
 watchfor /success/
