@@ -33,7 +33,7 @@ The exec line contains `$_`. `$_` contains the log line, so as you can see you c
 Now start `swatch`:
 
 ```
-swatch -c ~/.swatchrc /var/log/myapp.log
+swatch -c ~/.swatchrc -t /var/log/myapp.log
 ```
 
 This is the expected output as soon as something gets matched:
@@ -45,6 +45,8 @@ This is the expected output as soon as something gets matched:
 ```
 
 The color of the output would be green.
+
+You can run `swatch` as a daemon with the option `--daemon`.
 
 **Conclusion:**
 
