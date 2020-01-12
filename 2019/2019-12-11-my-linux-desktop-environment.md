@@ -24,39 +24,49 @@ I no longer have those concerns, and I will describe all the bits and pieces of 
 
 ## Disclaimer
 
-Part of my job is to automate stuff for my customers. I enjoy automating all the things and I understand many people are not interested in spending time automating their DE.
+Part of my job is to automate many different stuff for my customers. I enjoy automating all the things (even has a hobby) and I understand many people are not interested in spending time automating their DE.
 
-This post is here to give you ideas and would never be the _best_ DE for anyone. It's the one that works for me at this point in time, and I'm bringing changes and improvements to it on a very regular basis. NB: expect this post to be updated.
+I still believe, though, that with little efforts, one can improve their desktop experience tremendously.
+
+## This Desktop Environment is Probably not for You
+
+The DE matches my work environment and my own workflows, at this point in time.
+
+I don't expect anyone to think this DE is the absolute best approach to desktops.
+
+I just want to share what I came up with and that give you ideas.
 
 ## Computer
 
-A Lenovo Thinkpad T480s with 24GB of RAM and 1TB of SSD.
+A Lenovo Thinkpad T480s with 24GB of RAM and 1TB of SSD, currently running a regular and non customized Fedora Workstation 30 with Libvirt as virtualization layer.
 
 ![Thinkpad](https://blog.wains.be/images/desktop/thinkpad.png)
 
-It currently runs a Fedora 30 minimal with Libvirt as virtualization layer.
+## Virtual Machines (VM)
 
-## Virtual Machines
+I almost exclusively work inside Libvirt virtual machines and barely install anything on the host. I use `virt-manager` on the host to access the VM.
 
-I work inside Libvirt virtual machines and barely install anything on the host. I use `virt-manager` on the host to access the VM.
+I have worked in VM's for the past 3 years.
 
 Advantages:
 
 - VM snapshots
 - easy backups of VM on external disk
 - easy migration/restore of VM if laptop fails
-- VM is "portable" (should I change from Lenovo to a HP laptop wouldn't be a problem)
-- I have two almost similar VM: personal and work. The personal VM acts as "staging" for the work VM. If I'm trying to improve something in my DE, it is tested on the personal VM first, then is promoted to "production" on the work VM.
+- thanks to virtual hardware, VM is "portable" from one laptop to another, I don't have to think about different chipsets or such
+- I have two almost similar VM: **personal** and **work**. The personal VM acts as "staging" for the work VM. If I'm trying to improve something in my DE, it is first tested on the personal VM, then it is promoted to "production" on the work VM, if the feature is stable/useful/etc.
 - I have always split work and personal stuff. I don't see why customer should see private bookmarks when I demo something for them.
 - with the QEMU agent, performances can be close to native for a development or sysadmin machine
+- Multi-screen is managed by the Fedora host and never caused any problem
 
 Disadvantages:
 
 - you have to install the QEMU agent on the VM
 - you have to pause the VM before closing the lid
-- changing brightness/volume/etc requires you to get out of the VM
-- AFAIK multi screen is still not yet available in a VM, if you must present something on a projector, you have to project your VM
+- changing brightness/volume/etc requires you to get out of the VM (moving the mouse cursor at the top center to collapse the "Leave fullscreen" menu is enough)
+- AFAIK multi screen is still not yet available inside a VM, if you must present something on a projector, you have to mirror your host and project your VM
 - most audio/video applications perform poorly: video conference, Discord, VLC
+- don't expect to play games inside a VM
 - when resuming the VM, the clock is not syncing automatically
 
 ## My Data
@@ -212,6 +222,11 @@ xpad
 
 config + notes in cloud (not dotfiles)
 
+## Git
+
+Self hosted Gogs
+Git all the things
+
 ## Desktop Screenshots and GIF Recording
 
 Script
@@ -222,5 +237,15 @@ Flameshot
 gitg
 terminator
 vscode
+
+## Firefox
+
+Power Tabs
+
+## Bookmarks
+
+Shaarli
+
+## Tmux
 
 ## DNF / Flatpak / Snap / Pip -->
