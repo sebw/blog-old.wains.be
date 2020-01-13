@@ -222,6 +222,12 @@ xpad
 
 config + notes in cloud (not dotfiles)
 
+## tasks
+
+simple dmenu script
+i3wm shortcuts
+traybar count
+
 ## Git
 
 Self hosted Gogs
