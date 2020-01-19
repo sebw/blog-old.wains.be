@@ -79,9 +79,11 @@ I don't fret about losing any data.
 
 I install a minimal Fedora Workstation in latest version.
 
-## VM Provisioning
+I can PXE boot from my host machine but usually don't bother with it, installing Fedora is only a few clicks anyway.
 
-Once my OS is up and running, I install Ansible on it and run my `guest.yml` playbook.
+## VM post provisioning
+
+Once my OS is up and running, I install Ansible on it (`sudo dnf install ansible`) and run my `guest.yml` playbook.
 
 The playbook takes care of:
 
@@ -197,14 +199,140 @@ And here's a keyword triggering a Python script!
 
 This tool obviously implies that any sensitive data is kept for a while. You can filter out some content with regex rules.
 
-<!-- ## Zsh
+## task.sh
+
+For tasks/todo list, I use a tool I wrote myself.
+
+I couldn't find a simple and lightweight task app that integrates well with i3wm, so I wrote my own.
+
+![](https://raw.githubusercontent.com/sebw/task.sh/master/demo.gif)
+
+Download [task.sh](https://github.com/sebw/task.sh)
+
+## Zsh
+
+I use [powerlevel10k](https://github.com/romkatv/powerlevel10k) as my ZSH theme.
+
+I use the following ZSH plugins:
+
+- git
+- sudo
+- tmux
+- k
+- dirhistory
+- z 
+- zsh-autosuggestions
+- zsh-syntax-highlighting
+
+<!-- TODO detail what plugins do -->
+
+This is my configuration (be very careful, the order of options in your config is important):
+
+```
+export ZSH="${HOME}/.oh-my-zsh"
+export TERM="xterm-256color"
+
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+CASE_SENSITIVE="false"
+HYPHEN_INSENSITIVE="true"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+
+POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE="true"
+POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="yellow"
+POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND="black"
+
+POWERLEVEL9K_DIR_HOME_BACKGROUND="032"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="032"
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="244"
+POWERLEVEL9K_DIR_ETC_BACKGROUND="202"
+
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND="green"
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND="yellow"
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND="red"
+
+POWERLEVEL9K_STATUS_ERROR_BACKGROUND="red"
+POWERLEVEL9K_STATUS_OK_BACKGROUND="green"
+POWERLEVEL9K_STATUS_OK_FOREGROUND="black"
+
+POWERLEVEL9K_DIR_PATH_SEPARATOR="%F{black} $(print $'\uE0B1') %F{black}"
+POWERLEVEL9K_DIR_PATH_ABSOLUTE=true
+POWERLEVEL9K_DIR_OMIT_FIRST_CHARACTER=true
+
+POWERLEVEL9K_HOME_ICON=''
+POWERLEVEL9K_HOME_SUB_ICON=''
+POWERLEVEL9K_FOLDER_ICON=''
+POWERLEVEL9K_ETC_ICON=''
+
+# Plugins
+plugins=(git sudo tmux k dirhistory z zsh-autosuggestions)
+
+# Do not start Tmux, otherwise this would mess up vscode terminal and also on Mac
+ZSH_TMUX_AUTOSTART=false
+
+# Buffer
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=50
+
+# Editor
+export EDITOR='vim'
+
+# Custom alias zsh
+# Execute commands                                                              
+alias -s {yml,yaml}=ansible-playbook                                            
+alias -s {conf,adoc,md}=code
+
+# cd will show dotfiles
+# BUT will not suggest . and ..
+_comp_options+=(globdots)
+zstyle ':completion:*' special-dirs false
+
+# Mimicking fg behavior from bash (fg 1 instead of fg %1)
+# https://stackoverflow.com/questions/32614648/weird-jobs-behavior-within-zsh
+fg() {
+    if [[ $# -eq 1 && $1 = - ]]; then
+        builtin fg %-
+    else
+        builtin fg %"$@"
+    fi
+}
+
+# Oh my zsh stuff
+source $ZSH/oh-my-zsh.sh
+
+# Ctrl+Space to accept suggestion (MUST come after sourcing oh my zsh stuff see https://github.com/zsh-users/zsh-autosuggestions/issues/471#issuecomment-573500890)
+bindkey '^ ' autosuggest-accept
+
+# Syntax highlighting comes as RPM in Fedora. Must be sourced at the end
+if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+elif [ -f $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+	source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+# Custom aliases bash/zsh, must be at the end to override some stuff sourced before by zsh
+if [ -f ${HOME}/.bash_aliases ]; then
+	source ${HOME}/.bash_aliases
+fi
+```
 
 ## VS Code Editor
 
-Plugins:
+My editor of choice is vscode.
 
-- Sync Settings
-- Project Manager
+I use the following plugins:
+
+![code1](https://blog.wains.be/images/desktop/vscode1.gif)
+
+![code2](https://blog.wains.be/images/desktop/vscode2.gif)
+
+The most interesting ones are:
+
+- Project Manager: allows to open project directories very easily. Ulauncher also has a plugin using the same database.
+- Settings Sync: allows to sync your vscode settings in a Github gist
+
+<!-- 
 
 ## Ulauncher
 
@@ -222,11 +350,7 @@ xpad
 
 config + notes in cloud (not dotfiles)
 
-## tasks
 
-simple dmenu script
-i3wm shortcuts
-traybar count
 
 ## Git
 
