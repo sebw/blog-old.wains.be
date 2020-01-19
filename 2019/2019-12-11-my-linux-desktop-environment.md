@@ -323,22 +323,28 @@ My editor of choice is vscode.
 
 I use the following plugins:
 
-![code1](https://blog.wains.be/images/desktop/vscode1.gif)
+![code1](https://blog.wains.be/images/desktop/vscode1.png)
 
-![code2](https://blog.wains.be/images/desktop/vscode2.gif)
+![code2](https://blog.wains.be/images/desktop/vscode2.png)
 
 The most interesting ones are:
 
 - Project Manager: allows to open project directories very easily. Ulauncher also has a plugin using the same database.
 - Settings Sync: allows to sync your vscode settings in a Github gist
 
-<!-- 
-
 ## Ulauncher
 
-Desktop shortcuts
+My launcher of choice is Ulauncher, it used to be Alfred but development slowed down.
 
-- extensions
+Ulauncher comes with a ton of nice plugins available at [https://ext.ulauncher.io](https://ext.ulauncher.io).
+
+I wrote and open sourced two plugins to manage [TPLink smart plugs](https://ext.ulauncher.io/-/github-sebw-ulauncher-tplink-home-manager) and another one to [search in my self hosted bookmarks](https://ext.ulauncher.io/-/github-sebw-ulauncher-shaarli).
+
+![](https://raw.githubusercontent.com/sebw/ulauncher-tplink-home-manager/master/demo/demo.gif)
+
+![](https://raw.githubusercontent.com/sebw/ulauncher-shaarli/master/demo.gif)
+
+<!-- 
 
 ## Thunar
 
