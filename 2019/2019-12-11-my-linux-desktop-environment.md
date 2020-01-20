@@ -279,8 +279,8 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=50
 export EDITOR='vim'
 
 # Custom alias zsh
-# Execute commands                                                              
-alias -s {yml,yaml}=ansible-playbook                                            
+# Execute commands
+alias -s {yml,yaml}=ansible-playbook
 alias -s {conf,adoc,md}=code
 
 # cd will show dotfiles
