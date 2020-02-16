@@ -1,10 +1,8 @@
 # Sebastien Wains
 
-A markdown based [wiki] about Linux, Open Source, VoIP and other geeky stuff.
+A site about Linux, Open Source, VoIP and other nerd stuff.
 
-Since this is a static website, there is no comment function. Instead, you can open an issue or submit a merge request on [Github] if you have a comment or if something is incorrect or requires clarification.
-
-This website doesn't use cookies.
+Comments require a Telegram account. Isso might replace Telegram in the near future.
 
 **Opinions expressed here represent my own and not those of my employer.**
 
