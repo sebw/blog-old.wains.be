@@ -8,9 +8,9 @@ Comments require a Telegram account. [Isso] should replace Telegram in the near 
 
 ## Who am I
 
-<img src="https://blog.wains.be/images/redhatibm.png" width="250"/>
-
 I'm a cloud and infrastructure senior consultant at Red Hat, the Open Source company.
+
+<img src="https://blog.wains.be/images/redhatibm.png" width="250"/>
 
 I'm a Red Hat Certified Architect (RHCA). [My certification ID is 110-643-822](https://www.redhat.com/rhtapps/services/verify/?certId=110-643-822).
 
@@ -22,7 +22,7 @@ In the early age of this blog, I was really into **Linux**, **Postfix**, **OpenV
 
 After changing job I was in charge of several hundred servers. I spent a lot of time automating and orchestrating system administration and management tasks with tools such as [Salt], Salt Cloud, Python, Git/Gitlab, [Mkdocs], [Rundeck], Jenkins, Artifactory, Nexus, [Postman], Red Hat Satellite, iTop, [Graylog], Redmine, etc.
 
-I have talked about [SaltStack] at [Jeudis du Libre] conference. Check my [Github] for the decks.
+I have talked about [Salt] at [Jeudis du Libre] conference. Check my [Github] for the decks.
 
 ## At the personal level
 
@@ -32,7 +32,7 @@ Publishing on this site is also [automated](https://blog.wains.be/2020-02-17-mkd
 
 ## My desktop environment
 
-I use i3. I wrote about my desktop environment [here](https://blog.wains.be/2019/2019-12-11-my-linux-desktop-environment/)
+I use i3. I wrote about my desktop environment [here](https://blog.wains.be/2019/2019-12-11-my-linux-desktop-environment/).
 
 ## Nostalgy
 
@@ -44,7 +44,7 @@ This site has gone through five major design revisions:
 - [2015](https://blog.wains.be/Nostalgy/2015.png) (Running [Wikitten](https://github.com/victorstanciu/Wikitten))
 - [2017](https://blog.wains.be/Nostalgy/2017.png) (Running [Mkdocs])
 
-## About me
+## A bit more about me
 I like building simple, powerful, resilient, secure and automated infrastructures. Preferably based on open tools and protocols.
 
 I care about security and privacy.
