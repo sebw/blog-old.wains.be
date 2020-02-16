@@ -1,12 +1,12 @@
 # Sebastien Wains
 
-A site about Linux, Open Source, VoIP and other nerd stuff.
+A personal wiki about Linux, Open Source, VoIP and other nerdy stuff.
 
-Comments require a Telegram account. Isso might replace Telegram in the near future.
+Comments require a Telegram account. [Isso] should replace Telegram in the near future.
 
 **Opinions expressed here represent my own and not those of my employer.**
 
-## What I'm up to today
+## Who am I
 
 <img src="https://blog.wains.be/images/redhatibm.png" width="250"/>
 
@@ -18,64 +18,36 @@ To learn more about our consulting services, check [https://www.redhat.com/en/se
 
 ## What I have been up to in the past
 
-For those who have been following me from the start, you've heard that I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk** for some time, back when I was managing 5 Linux servers or so.
+In the early age of this blog, I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk**.
 
-Then I changed jobs a couple of times and, and eventually managed more than 330 servers. In my last position before starting at Red Hat, I spent a lot of time automating, centralizing and orchestrating system administration and management with those tools:
+After changing job I was in charge of several hundred servers. I spent a lot of time automating and orchestrating system administration and management tasks with tools such as [Salt], Salt Cloud, Python, Git/Gitlab, [Mkdocs], [Rundeck], Jenkins, Artifactory, Nexus, [Postman], Red Hat Satellite, iTop, [Graylog], Redmine, etc.
 
-[Saltstack], Salt Cloud, Python, Git, [Gitlab CE] and [tig], [Mkdocs], [Rundeck], Jenkins, Artifactory, Nexus, [Postman], Red Hat Satellite, iTop, [Graylog].
-
-I talked about [SaltStack] at [Jeudis du Libre] conference. Check my [Github] for the decks.
+I have talked about [SaltStack] at [Jeudis du Libre] conference. Check my [Github] for the decks.
 
 ## At the personal level
 
-I automate things at the personal level too! I'm a huge fan of **[Automagic]** on Android, **[Alfred]** on Mac, **[Ulauncher]** on Linux, and hackable connected devices.
+I automate things whenever I can! I'm a big fan of **[Automagic]** on Android, **[Alfred]** on Mac, **[Ulauncher]** on Linux, and hackable connected devices.
 
-## My work environment
+Publishing on this site is also [automated](https://blog.wains.be/2020-02-17-mkdocs-publishing-workflow/).
 
-I work in a libvirt virtual machine running the latest Fedora with **[i3]** tiling window manager. The host system is usually a Fedora latest.
+## My desktop environment
 
-I'm a die-hard shortcut keyboard user. I use a Ducky One 2 Mini mechanical keyboard.
+I use i3. I wrote about my desktop environment [here](https://blog.wains.be/2019/2019-12-11-my-linux-desktop-environment/)
 
-## Why a wiki?
+## Nostalgy
 
-Story time. I started this website in **June 2005** (but bought the domain in March of the same year). The idea was to save notes about my findings so I could look them up later. I figured that I would share them online so it would probably help someone else down the line. 
+This site has gone through five major design revisions:
 
-It all started as a self-hosted **Wordpress** blog as `www.wains.be` (changed to `blog.wains.be` around September 2011). I had a lot of times on my hands and I was able to interact with my readers. On the busiest months I was getting 20000 visits a month. After a while, **spam**, **bots** and **security** issues became problematic, and the maintenance became a burden (files and database backup, PHP and security upgrades, dist-upgrades, etc.). I became kind of bored of maintaining or even publishing anything.
-
-I needed something different. Something more automated and less cumbersome.
-
-I wanted to publish things quickly, from anywhere in the world. I wanted to be able to write offline, and see my content pushed online almost automagically as I was getting a connection.
-
-So here we are, **July 2015**, almost exactly 10 years later, the blog platform became a wiki platform. The (somewhat aging) content is still there and I hope you find useful stuff.
-
-This site has gone through five major design revisions: [2005](https://blog.wains.be/Nostalgy/2005.png), [2008](https://blog.wains.be/Nostalgy/2008.png), [2011](https://blog.wains.be/Nostalgy/2011.png), [2015](https://blog.wains.be/Nostalgy/2015.png) and [2017](https://blog.wains.be/Nostalgy/2017.png)
-
-In 2015, it was running [Wikitten](https://github.com/victorstanciu/Wikitten).
-
-In 2017 revision, I moved to [Mkdocs] as Wikitten didn't have a search engine and was not actively developed.
-
-## Why Markdown?
-
-I write articles on my personal computer.
-
-Markdown has some great advantages : 
-
-- stored as plain text on disk
-- content is indexed making it easy to find content with Alfred/Spotlight/grep
-- you can grep, sed, awk the hell out of them and bring corrections very quickly
-- can be stored in a Git repository
-
-This is my current publication workflow:
-
-- I edit articles locally with [Visual Studio Code] (yes, it is an open source Microsoft product, and it is very good)
-- I commit changes to my [GitHub] 
-- With an Alfred workflow, I connect to my VPS and do:
-    - a "git pull" to retrieve updates
-    - rebuild the doc (which is served as static files by the HTTP server)
-- Article is online
+- [2005](https://blog.wains.be/Nostalgy/2005.png) (Running Wordpress)
+- [2008](https://blog.wains.be/Nostalgy/2008.png) (Running Wordpress)
+- [2011](https://blog.wains.be/Nostalgy/2011.png) (Running Wordpress)
+- [2015](https://blog.wains.be/Nostalgy/2015.png) (Running [Wikitten](https://github.com/victorstanciu/Wikitten))
+- [2017](https://blog.wains.be/Nostalgy/2017.png) (Running [Mkdocs])
 
 ## About me
-I like building simple, powerful, resilient, secure and automated infrastructures. Preferably based on open tools and protocols. Privacy and security are a concern.
+I like building simple, powerful, resilient, secure and automated infrastructures. Preferably based on open tools and protocols.
+
+I care about security and privacy.
 
 When I'm not busy at the computer, I travel, hike, ski, camp out and take photos.
 
@@ -99,7 +71,7 @@ Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new)
 [Automagic]: https://automagic4android.com/
 [Rundeck]: http://www.rundeck.org
 [Gitlab CE]: https://about.gitlab.com/downloads/
-[Saltstack]: https://www.saltstack.com
+[Salt]: https://www.saltstack.com
 [iTop]: https://www.combodo.com/itop-193
 [INTJ]: https://en.wikipedia.org/wiki/INTJ
 [Graylog]: https://www.graylog.org/
@@ -109,3 +81,4 @@ Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new)
 [Visual Studio Code]: https://code.visualstudio.com/
 [Jeudis du Libre]: http://www.jeudisdulibre.be
 [Ulauncher]: https://ulauncher.io/
+[Isso]: https://posativ.org/isso/
