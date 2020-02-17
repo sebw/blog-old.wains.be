@@ -1,4 +1,4 @@
-# Hello, World!
+# Welcome!
 
 A blog about Linux, Open Source, VoIP and other nerdy stuff.
 
