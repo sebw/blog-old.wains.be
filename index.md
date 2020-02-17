@@ -2,7 +2,11 @@
 
 A blog about Linux, Open Source, VoIP and other nerdy stuff.
 
-**Opinions expressed here represent my own and not those of my employer.**
+## Disclaimers
+
+- Opinions expressed here represent my own and not those of my employer
+- This site uses cookies for the sole purpose of the commenting system
+- You can disable javascript on this site. Search and comments would be disabled, though
 
 ## Who am I
 
