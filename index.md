@@ -1,6 +1,6 @@
 # Sebastien Wains
 
-A personal wiki about Linux, Open Source, VoIP and other nerdy stuff.
+A blog about Linux, Open Source, VoIP and other nerdy stuff.
 
 Comments require a Telegram account. [Isso] should replace Telegram in the near future.
 
