@@ -1,4 +1,4 @@
-# Sebastien Wains
+# Hello, World!
 
 A blog about Linux, Open Source, VoIP and other nerdy stuff.
 
@@ -8,7 +8,9 @@ Comments require a Telegram account. [Isso] should replace Telegram in the near 
 
 ## Who am I
 
-I'm a cloud and infrastructure senior consultant at Red Hat, the Open Source company.
+My name is Sebastien Wains.
+
+I'm a cloud and infrastructure senior consultant at Red Hat, the world’s leading provider of enterprise open source solutions.
 
 <img src="https://blog.wains.be/images/redhatibm.png" width="250"/>
 
