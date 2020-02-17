@@ -38,13 +38,14 @@ I use i3. I wrote about my desktop environment [here](https://blog.wains.be/2019
 
 This site has gone through five major design revisions:
 
-- [2005](https://blog.wains.be/Nostalgy/2005.png) (Running Wordpress)
-- [2008](https://blog.wains.be/Nostalgy/2008.png) (Running Wordpress)
-- [2011](https://blog.wains.be/Nostalgy/2011.png) (Running Wordpress)
-- [2015](https://blog.wains.be/Nostalgy/2015.png) (Running [Wikitten](https://github.com/victorstanciu/Wikitten))
-- [2017](https://blog.wains.be/Nostalgy/2017.png) (Running [Mkdocs])
+- [2005 (Wordpress)](https://blog.wains.be/Nostalgy/2005.png)
+- [2008 (Wordpress)](https://blog.wains.be/Nostalgy/2008.png)
+- [2011 (Wordpress)](https://blog.wains.be/Nostalgy/2011.png)
+- [2015 (Wikitten)](https://blog.wains.be/Nostalgy/2015.png)
+- [2017 (Mkdocs)](https://blog.wains.be/Nostalgy/2017.png)
 
 ## A bit more about me
+
 I like building simple, powerful, resilient, secure and automated infrastructures. Preferably based on open tools and protocols.
 
 I care about security and privacy.
@@ -54,10 +55,12 @@ When I'm not busy at the computer, I travel, hike, ski, camp out and take photos
 I'm an [INTJ]: INTJs are known as the "Systems Builders" of the types, perhaps in part because they possess the unusual trait of combining imagination and reliability. ~ [Marina Margaret Heiss](http://typelogic.com/intj.html)
 
 ## Contacts
+
 If you want to contact me, just look me [up].
 
 ## Found an error on this site?
-Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new)
+
+Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new).
 
 [this]: https://github.com/sebw/blog.wains.be/search?utf8=%E2%9C%93&q=postfix
 [up]: https://duckduckgo.com/?q=Sebastien+Wains
