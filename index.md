@@ -2,8 +2,6 @@
 
 A blog about Linux, Open Source, VoIP and other nerdy stuff.
 
-Comments require a Telegram account. [Isso] should replace Telegram in the near future.
-
 **Opinions expressed here represent my own and not those of my employer.**
 
 ## Who am I
@@ -56,13 +54,13 @@ When I'm not busy at the computer, I travel, hike, ski, camp out and take photos
 
 I'm an [INTJ]: INTJs are known as the "Systems Builders" of the types, perhaps in part because they possess the unusual trait of combining imagination and reliability. ~ [Marina Margaret Heiss](http://typelogic.com/intj.html)
 
+## You found a mistake on this site
+
+Please open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new).
+
 ## Contacts
 
 If you want to contact me, just look me [up].
-
-## Found an error on this site?
-
-Open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new).
 
 [this]: https://github.com/sebw/blog.wains.be/search?utf8=%E2%9C%93&q=postfix
 [up]: https://duckduckgo.com/?q=Sebastien+Wains
