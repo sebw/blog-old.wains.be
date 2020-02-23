@@ -1,6 +1,6 @@
-# Remove Docker remove orphans
+# Remove Docker orphans
 
-## Volumes
+## Orphan volumes
 
 List mountpoints that are not in use:
 
@@ -16,7 +16,7 @@ done
 
 Now feel free to remove folder that you considered not needed anymore.
 
-## Images
+## Orphan images
 
 Removing unused images is possible directly from the Docker command:
 
