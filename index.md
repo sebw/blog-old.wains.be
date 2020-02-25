@@ -31,7 +31,7 @@ I have talked about [Salt] at [Jeudis du Libre] conference. Check my [Github] fo
 
 ## At the personal level
 
-I automate things whenever I can! I'm a big fan of **[Automagic]** on Android, **[Alfred]** on Mac, **[Ulauncher]** on Linux, and hackable connected devices.
+I automate things whenever I can! I'm a big fan of **[Node-RED]**, **[Automagic]** on Android, **[Alfred]** on Mac, **[Ulauncher]** on Linux, and hackable connected devices.
 
 Publishing on this site is also [automated](https://blog.wains.be/2020-02-17-mkdocs-publishing-workflow/).
 
@@ -90,3 +90,4 @@ If you want to contact me, just look me [up].
 [Jeudis du Libre]: http://www.jeudisdulibre.be
 [Ulauncher]: https://ulauncher.io/
 [Isso]: https://posativ.org/isso/
+[Node-RED]: https://nodered.org
