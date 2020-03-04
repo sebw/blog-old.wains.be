@@ -22,7 +22,7 @@ I no longer have those concerns, and I will describe all the bits and pieces of 
 
 ## Disclaimer
 
-Part of my job is to automate many different stuff for my customers. I enjoy automating all the things (even has a hobby) and I understand many people are not interested in spending time automating their DE.
+Part of my job is to automate many different stuff for my customers. I enjoy automating all the things (even as a hobby) and I understand many people are not interested in spending time automating their DE.
 
 I still believe, though, that with little efforts, one can improve their desktop experience tremendously.
 
@@ -32,19 +32,19 @@ The DE matches my work environment and my own workflows, at this point in time.
 
 I don't expect anyone to think this DE is the absolute best approach to desktops.
 
-I just want to share what I came up with and that give you ideas.
+I just want to share what I came up with and hope it give you ideas.
 
 ## Computer
 
-A Lenovo Thinkpad T480s with 24GB of RAM and 1TB of SSD, currently running a regular and non customized Fedora Workstation 30 with Libvirt as virtualization layer.
+A Lenovo Thinkpad T480s with 24GB of RAM and 1TB of SSD, currently running a regular and non customized Fedora Workstation 31 with Libvirt as virtualization layer.
 
 ![Thinkpad](https://blog.wains.be/images/desktop/thinkpad.png)
 
 ## Virtual Machines (VM)
 
-I almost exclusively work inside Libvirt virtual machines and barely install anything on the host. I use `virt-manager` on the host to access the VM.
+I almost work exclusively inside Libvirt virtual machines and barely install anything on the host. I use `virt-manager` to access the VM.
 
-I have worked in VM's for the past 3 years.
+I have worked in VM's for the past 3 or 4 years.
 
 Advantages:
 
@@ -53,7 +53,7 @@ Advantages:
 - easy migration/restore of VM if laptop fails
 - thanks to virtual hardware, VM is "portable" from one laptop to another, I don't have to think about different chipsets or such
 - I have two almost similar VM: **personal** and **work**. The personal VM acts as "staging" for the work VM. If I'm trying to improve something in my DE, it is first tested on the personal VM, then it is promoted to "production" on the work VM, if the feature is stable/useful/etc.
-- I have always split work and personal stuff. I don't see why customer should see private bookmarks when I demo something for them.
+- I have always split work and personal stuff. I don't see why customer should see private Firefox bookmarks when I demo something for them.
 - with the QEMU agent, performances can be close to native for a development or sysadmin machine
 - Multi-screen is managed by the Fedora host and never caused any problem
 
@@ -63,6 +63,7 @@ Disadvantages:
 - you have to pause the VM before closing the lid
 - changing brightness/volume/etc requires you to get out of the VM (moving the mouse cursor at the top center to collapse the "Leave fullscreen" menu is enough)
 - AFAIK multi screen is still not yet available inside a VM, if you must present something on a projector, you have to mirror your host and project your VM
+- but the lack of dual screen is not too annoying given my i3 workspaces and keyboard shortcuts, I'm more efficient on one screen in this setup that I ever was on a dual screen in Gnome
 - most audio/video applications perform poorly: video conference, Discord, VLC
 - don't expect to play games inside a VM
 - when resuming the VM, the clock is not syncing automatically
@@ -122,7 +123,7 @@ Basically you create a `dotfiles` directory in your `$HOME` folder.
 
 Say that you want to manage your ZSH configuration (located under `$HOME/.zshrc`). You simply need to create a folder `$HOME/dotfiles/zsh/` and move your `.zshrc` in the folder. Then from the dotfiles folder run `stow zsh`.
 
-A symling has been created:
+A symlink has been created:
 
 ![Stow](https://blog.wains.be/images/desktop/stow_link.png)
 
@@ -136,7 +137,9 @@ There are some application configurations that I want a bit different between th
 
 When the application doesn't support conditions in its config files, you should create (and maintain) two separate configuration files (eg: config-work and config-personal).
 
-In the case I have to figure out how to start the application with a different configuration file. My i3 configuration is one of those and I created a GDM service that starts i3 with `config-personal`:
+In that case I have to figure out how to start the application with a different configuration file. 
+
+My i3 configuration is one of those and I created a GDM service that starts i3 with `config-personal`:
 
 ```
 [Desktop Entry]
@@ -152,16 +155,155 @@ Keywords=tiling;wm;windowmanager;window;manager;
 
 **NOTE:** Some dotfiles managers can generate configuration files based on templates. This comes with the limitation that if you change something in the application GUI, the change would be overwritten the next time the configuration is rebuilt.
 
-<!-- ## i3wm
+## i3wm
 
-- tiling windows manager
-- monitor resolution
-- floating
-- scratchpad
+I install i3, the tiling window manager. I keep Gnome around even though I never use it.
+
+### Screen Resolution
+
+You can use `xrandr` to adjust your screen resolution.
+
+If I need to work on a larger display, I just create a script that I call with a keybinding.
+
+In this example, when I had to deal with a 2560x1440 display:
+
+```
+#!/bin/bash
+
+# Source: https://stafwag.github.io/blog/blog/2018/04/22/high-screen-resolution-on-a-kvm-virtual-machine-with-qxl/
+
+cvt 2560 1440
+xrandr --newmode "2560x1440_60.00"  312.25  2560 2752 3024 3488  1440 1443 1448 1493 -hsync +vsync
+xrandr --addmode Virtual-0 2560x1440_60.00
+xrandr --output Virtual-0 --mode 2560x1440_60.00
+xrandr -s 2560x1440
+```
+
+### Scratchpad
+
+One of the lesser known feature of i3.
+
+The scratchpad is a "hidden" workspace. You just don't want your music player to take one full workspace, right?
+
+So you just move it to the scratchpad and recall it when needed.
+
+In order to put it away/recall, I have this config in i3:
+
+```
+# away
+bindsym $meta+z move scratchpad
+# recall
+bindsym $meta+s exec "~/.i3/scripts/scratchpad.py" 
+```
+
+One of the inconvenient of recalling windows in the scratchpad is that windows are appearing in a random fashion.
+
+This is the reason for `scratchpad.py`:
+
+```
+#!/usr/bin/env python3
+
+import i3ipc
+import subprocess
+import re
+
+i3 = i3ipc.Connection()
+
+def get_scratchpad_windows():
+    scratchpad_containers = i3.get_tree().scratchpad().descendants()
+    return filter(lambda c: c.type == 'con' and c.name, scratchpad_containers)
+
+def dmenu_choose(options):
+    """ Show a dmenu to choose a string item from a list of *options*. """
+    dmenu_process = subprocess.Popen(["dmenu", "-nb","#586e75","-nf","#000000","-sb","#000000","-sf","#FFDC48","-fn","terminus-9","-i","-p","Retrieve from scratchpad > ","-l","10"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    stdoutdata, _ = dmenu_process.communicate("\n".join(options).encode())
+    return stdoutdata.decode('utf-8')
+
+def main():
+    # Count how many apps in scratchpad
+    list = []
+    for leaf in i3.get_tree().scratchpad().leaves():
+        listing = list.append(leaf)
+
+    # shows the only app immediately
+    if len(list) == 1:
+        i3.command('scratchpad show')
+    # otherwise show a dmenu
+    else:
+        scratchpad_windows = get_scratchpad_windows()
+        window_titles = [w.name for w in scratchpad_windows]
+        if window_titles:
+            window_to_restore = re.escape(dmenu_choose(window_titles).strip())
+            i3.command('[title="{}"] scratchpad show'.format(window_to_restore))
+
+if __name__ == '__main__':
+    main()
+```
+
+With this script, if only one window is in the scratchpad, it is recalled immediately.
+
+If there's more than one window, a dmenu menu appears and asks which window you want back.
 
 ### i3blocks
 
-scripts -->
+I use `i3blocks` as my menu bar.
+
+It is very easy to write scripts for it. I mostly write bash or python scripts.
+
+![i3blocks](https://blog.wains.be/images/desktop/i3blocks.png)
+
+In this screenshot we see "Pad 1" that shows how many windows I have in the scratchpad, this is the script:
+
+```
+#!/usr/bin/python
+
+import subprocess
+import simplejson
+
+def getNodes(data):
+    result = 0
+    if data['scratchpad_state'] != 'none': 
+        result += 1    
+    if (len(data['nodes']) > 0) or (len(data['floating_nodes']) > 0):
+        for node in (data['nodes'] + data['floating_nodes']):
+            result += getNodes(node)
+    return result
+
+r = subprocess.check_output(["i3-msg", "-t", "get_tree"])
+j = simplejson.loads(r)
+c = getNodes(j)
+
+if c > 0:
+    d = "<span color='#a3be8c'>" + str(c) + "</span>"
+else:
+    d = str(c)
+
+print("Pad " + d)
+```
+
+Next to it, the script shows the split mode (horizontal or vertical), a very important concept in i3. I do it with this script:
+
+```
+#!/usr/bin/env python3
+import i3ipc
+
+i3          = i3ipc.Connection()
+splitv_text = '↓'
+splith_text = '→'
+split_none  = '•'
+parent      = i3.get_tree().find_focused().parent
+
+if parent.layout   == 'splitv' :
+    print( splitv_text )
+elif parent.layout == 'splith' :
+    print( splith_text )
+else                           :
+    print( split_none  )
+```
+
+### Scratchpad
+
+
 
 ## Terminator
 
