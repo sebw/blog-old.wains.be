@@ -331,6 +331,11 @@ My launcher of choice is Ulauncher, it used to be Alfred but development slowed 
 
 Ulauncher comes with a ton of nice plugins available at [https://ext.ulauncher.io](https://ext.ulauncher.io).
 
+I use those:
+
+desktop-ulauncher-ext.png
+![uext](https://blog.wains.be/images/desktop-ulauncher-ext.png)
+
 I wrote and open sourced two plugins to manage [TPLink smart plugs](https://ext.ulauncher.io/-/github-sebw-ulauncher-tplink-home-manager) and another one to [search in my self hosted bookmarks](https://ext.ulauncher.io/-/github-sebw-ulauncher-shaarli).
 
 ![](https://raw.githubusercontent.com/sebw/ulauncher-tplink-home-manager/master/demo/demo.gif)
