@@ -211,7 +211,7 @@ Download [task.sh](https://github.com/sebw/task.sh)
 
 ## Zsh
 
-I use [powerlevel10k](https://github.com/romkatv/powerlevel10k) as my ZSH theme.
+I use [powerlevel10k](https://github.com/romkatv/powerlevel10k) as my ZSH theme. It is a fork of powerlevel9k, on steroid.
 
 I use the following ZSH plugins:
 
@@ -272,6 +272,16 @@ plugins=(git sudo tmux k dirhistory z zsh-autosuggestions)
 # Do not start Tmux, otherwise this would mess up vscode terminal and also on Mac
 ZSH_TMUX_AUTOSTART=false
 
+# Autosuggestions 
+# autosuggest-accept: Accepts the current suggestion.
+# autosuggest-execute: Accepts and executes the current suggestion.
+# autosuggest-clear: Clears the current suggestion.
+# autosuggest-fetch: Fetches a suggestion (works even when suggestions are disabled).
+# autosuggest-disable: Disables suggestions.
+# autosuggest-enable: Re-enables suggestions.
+# autosuggest-toggle: Toggles between enabled/disabled suggestions.
+
+
 # Buffer
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=50
 
@@ -279,8 +289,8 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=50
 export EDITOR='vim'
 
 # Custom alias zsh
-# Execute commands
-alias -s {yml,yaml}=ansible-playbook
+# Execute commands                                                              
+alias -s {yml,yaml}=ansible-playbook                                            
 alias -s {conf,adoc,md}=code
 
 # cd will show dotfiles
@@ -317,21 +327,6 @@ if [ -f ${HOME}/.bash_aliases ]; then
 fi
 ```
 
-## VS Code Editor
-
-My editor of choice is vscode.
-
-I use the following plugins:
-
-![code1](https://blog.wains.be/images/desktop/vscode1.png)
-
-![code2](https://blog.wains.be/images/desktop/vscode2.png)
-
-The most interesting ones are:
-
-- Project Manager: allows to open project directories very easily. Ulauncher also has a plugin using the same database.
-- Settings Sync: allows to sync your vscode settings in a Github gist
-
 ## Ulauncher
 
 My launcher of choice is Ulauncher, it used to be Alfred but development slowed down.
@@ -344,44 +339,342 @@ I wrote and open sourced two plugins to manage [TPLink smart plugs](https://ext.
 
 ![](https://raw.githubusercontent.com/sebw/ulauncher-shaarli/master/demo.gif)
 
-<!-- 
+## VS Code Editor
+
+My editor of choice is vscode.
+
+I use the following plugins:
+
+![code2](https://blog.wains.be/images/desktop/vscode2.png)
+![code1](https://blog.wains.be/images/desktop/vscode1.png)
+
+The most interesting ones are:
+
+- Project Manager: allows to open project directories very easily. You maintain a JSON file with your projects and in a click you can open a project.
+
+ Ulauncher also has a plugin taking advantage of the JSON file.
+
+![projectmgr](https://raw.githubusercontent.com/brpaz/ulauncher-vscode-projects/master/demo.gif)
+
+- Settings Sync: allows to sync your vscode settings in a Github gist
 
 ## Thunar
 
-Custom actions
+Thunar is a super lightweight file manager originally developed for XFCE.
+
+![thunar](https://blog.wains.be/images/desktop/desktop-thunar.png)
+
+You can create "custom actions" readily available from a right-click (for example, open VS code from this folder, or gitg).
 
 ## Taking notes
 
-xpad
+For quick notes I use `xpad`, a lightweight "post-it" app available in Fedora repository.
 
-config + notes in cloud (not dotfiles)
+Notes are stored under `~/.config/xpad`. I moved my notes to my cloud storage and symlinked.
 
-
+You can toggle notes to appear/disappear with `xpad --toggle`. Obviously I made a keyboard shortcut in i3 to toggle my notes.
 
 ## Git
 
-Self hosted Gogs
-Git all the things
+I run a self hosted Gogs instance in which I store my dotfiles, my Ansible playbooks, etc.
+
+This allows me to test a new i3 configuration on the personal machine, and when I'm happy with the result I can push to the git repository and "promote" to the work VM.
 
 ## Desktop Screenshots and GIF Recording
 
-Script
-Flameshot
+I use scripts to take care of screenshots and screencasts.
 
-## Custom Actions with Thunar
+For screenshots, the script uses Flameshot, available in Fedora repo.
 
-gitg
-terminator
-vscode
+Since my job consists in part of writing reports, anytime I take a screenshot, it asks if the screenshot is aimed for a report.
+
+If it is, I get a nice prompt with the asciidoc code.
+
+```
+#!/bin/bash                                                                     
+                                                                                
+zenity --question --default-cancel --text="Is the screenshot for an engagement journal?"
+ej=$?                                                                           
+                                                                                
+if [ "$ej" == "0" ]; then                                                       
+    DEST="${HOME}/Documents/ENGAGEMENT_REPORTS_CURRENT/images"                  
+    NAME_IMG=$(zenity --entry --text="Engagement Journal Image Name (do not add extension .png)")
+    if [ "$?" == "1" ]; then                                                    
+        notify-send 'Screenshot cancelled'                                      
+        exit 1                                                                  
+    fi                                                                          
+    PATH_IMG="${DEST}/${NAME_IMG}.png"                                          
+else                                                                            
+    DEST="${HOME}/Pictures/SCREENSHOTS"                                         
+    SCREENSHOT_DATE=`date +%Y-%m-%d_%H%M%S`                                     
+    PATH_IMG="${DEST}/${SCREENSHOT_DATE}.png"                                   
+fi                                                                              
+                                                                                
+if [ ! -d "${DEST}" ]; then                                                     
+    mkdir -p ${DEST}                                                            
+    notify-send Screenshot "Created the screenshot directory"                   
+fi                                                                              
+                                                                                
+if [ -e $PATH_IMG ]; then                                                       
+    zenity --warning --text="File exists!"                                      
+    exit 1                                                                      
+fi                                                                              
+                                                                                
+RESULT_CAP=$(sleep 0.2; flameshot gui -p $DEST -r > $PATH_IMG && head -n 1 $PATH_IMG)
+                                                                                
+if [[ $RESULT_CAP != "screenshot aborted" ]] ; then                             
+    xclip -selection clipboard -target image/png -i $PATH_IMG                   
+                                                                                
+    if [ "$ej" == "0" ]; then                                                   
+        notify-send "EJ screenshot taken ${PATH_IMG}"                           
+        zenity --entry --entry-text="image::/report/images/${NAME_IMG}.png[500,500,align=center]" --text="Copy-paste Asciidoc image path:"
+    else                                                                        
+        notify-send "Screenshot taken ${PATH_IMG}"                              
+    fi                                                                          
+else                                                                            
+    notify-send 'Screenshot aborted'                                            
+    rm -f $PATH_IMG                                                             
+fi                                                                              
+                                                                                
+exit 0
+```
+
+For screencasts, the script takes advantage of ffmpeg. You should run the script a first time, and run it again for the cast to stop.
+
+```
+#!/bin/bash
+
+# Requirements
+# - slop
+# - ffmpeg
+
+TMPFILE="$(mktemp -t screencast-XXXXXXX).mkv"
+OUTPUT="$HOME/Videos/screencast-$(date +%F-%H-%M-%S)"
+
+pgrep ffmpeg > /dev/null
+
+if [ "$?" != 0 ]; then
+
+    notify-send 'Starting screengrab. Choose the section to grab.'
+
+    read -r X Y W H G ID < <(slop -f "%x %y %w %h %g %i")
+
+    if [ -z "${X}" ]; then
+        notify-send "Screengrab aborted"
+        exit
+    fi
+
+    # This process should be killed before it continues
+    ffmpeg -f x11grab -s "$W"x"$H" -i ${DISPLAY}+${X},${Y} "$TMPFILE"
+    
+    # Generating the GIF
+    ffmpeg -y -i "$TMPFILE"  -vf fps=10,palettegen /tmp/palette.png
+    ffmpeg -i "$TMPFILE" -i /tmp/palette.png -filter_complex "paletteuse" $OUTPUT.gif
+
+    mv $TMPFILE $OUTPUT.mkv
+    notify-send "$OUTPUT.gif: $(du -h $OUTPUT.gif | awk '{print $1}')"
+    
+    trap "rm -f '$TMPFILE'" 0
+
+else
+
+    notify-send 'Stopping screengrab.'
+    killall ffmpeg
+
+fi
+```
 
 ## Firefox
 
-Power Tabs
+Firefox is my default browser.
+
+I use only a few extensions. 
+
+The most interesting is [Power Tabs](https://addons.mozilla.org/en-US/firefox/addon/power-tabs/).
 
 ## Bookmarks
 
-Shaarli
+For bookmarks I use a self-hosted [Shaarli](https://github.com/shaarli/Shaarli) instance.
+
+Over the years I've used Delicious, Pinboard and some others, but Shaarli is so much better. It also comes with a nice API.
+
+I actually developed a Shaarli [extension](https://ext.ulauncher.io/-/github-sebw-ulauncher-shaarli) for Ulauncher:
+
+![shaarli](https://raw.githubusercontent.com/sebw/ulauncher-shaarli/master/demo.gif)
 
 ## Tmux
 
-## DNF / Flatpak / Snap / Pip -->
+I use tmux, admittedly not enough.
+
+This is my config:
+
+```
+# Default shortcut: Ctrl + b
+#    --> Conflicts with vim
+
+# Useful
+# https://github.com/lucasfcosta/dotfiles/blob/master/.tmux.conf
+# http://www.deanbodenham.com/learn/tmux-conf-file.html
+
+# Notation:
+# C-b = Ctrl+b
+# M-b = Alt+b
+
+# Cheatsheet (Ctrl + b followed by)
+# ? = list of shortcuts
+# q = show pane numbers
+# o = swap panes
+# space = toggle between layouts
+# * = switch session
+# x = kill pane
+# t = clock
+# s = rename-session
+# $ = rename-window
+
+# Sync panes
+# prefix then ":set synchronize-panes on"
+
+# setw = alias for set-window-option
+
+# Unbinding the default that we will use below
+unbind C-Space
+unbind Space
+unbind s
+unbind '"'
+unbind %
+unbind r
+unbind m
+
+# Setting the prefix Ctrl-Space
+#set -g prefix C-Space
+# Alt-Space
+set -g prefix M-Space
+unbind C-b
+#bind-key Space send-prefix
+
+# Disable mouse, otherwise conflicts for copy-paste
+setw -g mouse off
+
+## Start numbering at 1
+set -g base-index 1
+setw -g pane-base-index 1
+
+# Choose session with everything down to panes are collapsed and sorted by last time used https://thanks.to.sheerio
+# Also set to 0/à
+bind w choose-tree -G
+
+# Do not ask for confirmation to kill pane https://unix.stackexchange.com/questions/30270/tmux-disable-confirmation-prompt-on-kill-window
+bind-key x kill-pane
+
+# Scroll History
+set -g history-limit 30000
+
+# Set ability to capture on start and restore on exit window data when running an application
+setw -g alternate-screen on
+
+# Lower escape timing from 500ms to 50ms for quicker response to scroll-buffer access.
+set -s escape-time 50
+
+# split panes using | and - and unbinding the default
+bind | split-window -h
+bind - split-window -v
+
+# F12 to switch between windows
+bind -n F12 next-window
+
+# C-b 1-9 to change window for belgian keyboard (actual numbers still work)
+bind '&' select-window -t 1
+bind 'é' select-window -t 2
+bind '"' select-window -t 3
+bind "'" select-window -t 4
+bind '(' select-window -t 5
+bind '§' select-window -t 6
+bind 'è' select-window -t 7
+bind '!' select-window -t 8
+bind 'ç' select-window -t 9
+# Key 0 for choosing between windows and panes
+bind 'à' choose-tree -G
+
+# Choose between layouts
+bind m next-layout
+
+# reload config file (change file location to your the tmux.conf you want to use)
+bind r source-file ~/.tmux.conf \; display "tmux.conf reloaded!"
+
+# Move panes around
+bind > swap-pane -D # swap current pane with the next one
+bind < swap-pane -U # swap current pane with the previous one
+
+######################
+### DESIGN CHANGES ###
+######################
+
+# Active/Inactive color panes
+set -g window-active-style 'fg=colour250,bg=black' # active
+set -g window-style 'fg=colour247,bg=colour235' # inactive
+
+# quiet
+set-option -g visual-activity off
+set-option -g visual-bell off
+set-option -g visual-silence off
+set-option -g bell-action none
+
+set -g default-terminal "screen-256color"
+
+# C-a t
+setw -g clock-mode-colour colour1
+
+# Custom CPU color (cpu plugin)
+set -g @cpu_low_fg_color "#[fg=black]"
+set -g @cpu_medium_fg_color "#[fg=black]"
+set -g @cpu_high_fg_color "#[fg=black]"
+set -g @cpu_low_bg_color "#[bg=#00ff00]"
+set -g @cpu_medium_bg_color "#[bg=#ffff00]"
+set -g @cpu_high_bg_color "#[bg=#ff0000]"
+
+
+# Status bar (using cpu plugin stuff)
+# DO NOT CHANGE ORDER, IMPORTANT FOR BLINK
+set -g status-interval 2
+set -g status-bg black # status bar bg color
+set -g status-fg white # status bar fg color
+set -g status-left '#[fg=colour233,bg=colour245] %H:%M:%S #[fg=colour245,bg=colour240] #S #[fg=colour240,bg=black] '
+set -g status-left-length 30
+
+# For Mac
+if-shell 'test "$(uname)" = "Darwin"' 'set -g status-right "#[bg=black,fg=brightgreen] #{cpu_bg_color}#{cpu_fg_color} CPU: #{cpu_percentage} #[fg=colour241]#[fg=colour233,bg=colour241,bold] #(sysctl -n vm.loadavg) "'
+# For anything but Mac
+if-shell 'test "$(uname)" != "Darwin"' 'set -g status-right "#[bg=black,fg=brightgreen] #{cpu_bg_color}#{cpu_fg_color} CPU: #{cpu_percentage} #[fg=colour241]#[fg=colour233,bg=colour241,bold] #(tmux-load.sh) "'
+
+set -g status-right-length 50
+set -g status-position bottom
+set -g status-justify left
+setw -g window-status-current-format '#[bg=black,fg=green] #I> #[fg=colour255]#W ' # status bar for active window
+setw -g window-status-format '#[bg=black,fg=red] #I_ #[fg=colour250]#W ' # status bar for non active window
+set -g window-status-activity-style 'bg=colour232,fg=colour247,blink' # blink on activity
+set -g window-status-bell-style 'bg=colour232,fg=colour01,blink' # blink on bell
+set -g monitor-activity on
+
+# pane borders
+# https://www.markneuburger.com/git-statuses-in-tmux-panes/
+set -g pane-border-status bottom
+set -g pane-active-border-style fg=green
+set -g pane-border-style fg=red
+set -g pane-border-format "#[fg=red,bg=black]#{?client_prefix,[ ● ],[   ]}#{?window_zoomed_flag,[ Z ],}"
+
+# Tmux Plugin Manager (must be at the end of the conf)
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-cpu'
+run '~/.tmux/plugins/tpm/tpm'
+
+```
+
+## DNF / Flatpak / Snap / Pip
+
+My environment is automated with Ansible.
+
+When a package is not available, I usually find it as a Flatpak, Snap, or at the very least pip.
+
+Ansible has modules for all of those, so it is very easy to maintain your env.
