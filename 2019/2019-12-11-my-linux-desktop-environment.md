@@ -1,7 +1,5 @@
 # My Linux Desktop Environment
 
-**2019-12-11 POST IN PROGRESS**
-
 I have used Linux as a desktop environment since about 2006, mostly with Gnome or Cinnamon.
 
 Around 2016 I got bored of the general direction that most desktop environment ("DE" for short) were taking (what I would call "Apple-ization") and decided to tailor, hand craft, optimize and automate my Linux DE.
@@ -362,7 +360,7 @@ The most interesting ones are:
 
 Thunar is a super lightweight file manager originally developed for XFCE.
 
-![thunar](https://blog.wains.be/images/desktop/desktop-thunar.png)
+![thunar](https://blog.wains.be/images/desktop-thunar.png)
 
 You can create "custom actions" readily available from a right-click (for example, open VS code from this folder, or gitg).
 
