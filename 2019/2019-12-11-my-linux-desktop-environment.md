@@ -676,3 +676,17 @@ My environment is automated with Ansible.
 When a package is not available, I usually find it as a Flatpak, Snap, or at the very least pip.
 
 Ansible has modules for all of those, so it is very easy to maintain your env.
+
+## Notifications
+
+For pretty much everything (backup, anything that needs my attention), I use a self-hosted [Gotify](https://gotify.net/).
+
+You can imagine a script that checks your battery level of your laptop, and notifies your Android phone.
+
+Example:
+
+```
+curl "https://push.example.de/message?token=<apptoken>" -F "title=my title" -F "message=my message" -F "priority=5"
+```
+
+For example, when I build the sources of this blog, I use Ulauncher to trigger the job through a script, and the script notifies me when the blog is updated.
