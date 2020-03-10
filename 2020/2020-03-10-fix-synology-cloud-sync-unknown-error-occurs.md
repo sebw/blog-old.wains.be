@@ -1,26 +1,27 @@
 # How to fix the Synology Cloud Sync "Unknown error occurs" non sense
 
-I sync my data back from my Seafile instance back to my NAS. Well, when it works.
+I sync my data from my Seafile instance back to my NAS. Well, when it works.
 
-In the most random fashion, my Synology NAS "Cloud Sync" enjoys to take a break every now and then. And it seemed impossible to get it back to sync.
+In the most random fashion, my Synology NAS "Cloud Sync" enjoys to take a break. And up until now, it seemed impossible to get it back to sync.
 
 ![](https://blog.wains.be/images/synologysucks1.png)
 
 ![](https://blog.wains.be/images/synologysucks2.png)
 
-The only option was to unlinking and relinking stuff, which means reconfiguring. A massive pain when Cloud Sync fails every two weeks.
+You would expect that restarting the app would trigger a resync, but alas, no, it doesn't. We're talking about Synology here, right.
+
+The only option was to unlinking and relinking stuff, which meant reconfiguring. A massive pain when Cloud Sync fails every couple of weeks.
 
 After an hour of digging in the logs, searching the dark corner of the internet, I finally found the solution by one brave man called @mback2k on Github.
 
 [https://github.com/nextcloud/server/issues/10123#issuecomment-412640597](https://github.com/nextcloud/server/issues/10123#issuecomment-412640597)
 
-So yeah, there it is. When Cloud Sync gets stuck (let's say if Seafile is down for maintenance or something), Cloud Sync will NEVER try to sync again.
+So yeah, there it is. When Cloud Sync gets stuck, Cloud Sync will NEVER try to sync again.
 
-Procedure:
+Procedure to fix this non sense:
 
-SSH as root on your NAS.
-
-Then open up the DB for Cloud Sync and update the session_table table:
+- SSH as root on your NAS.
+- Then open up the DB for Cloud Sync and update the session_table table:
 
 ```
 root@crappynas:/volume1/@cloudsync/db# sqlite3 
@@ -40,10 +41,12 @@ sqlite> SELECT sync_folder,error FROM session_table;
 /DATA|0
 ```
 
-Restart the Cloud Sync app by navigating to the Package Center, click stop:
+- Restart the Cloud Sync app by navigating to the Package Center, click stop:
 
 ![](https://blog.wains.be/images/synologysucks3.png)
 
-Then when it's stopped, click "Run".
+- Then when it's stopped, click "Run".
 
 Syncing should resume.
+
+Thank you Synology, you never disappoint.
