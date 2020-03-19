@@ -14,6 +14,8 @@ Gotify is:
 - written in Go
 - building docker images at every release
 
+![Gotify](https://blog.wains.be/images/gotify.png)
+
 It comes with a nice Android application available on the [Play Store](https://play.google.com/store/apps/details?id=com.github.gotify) and [F-Droid](https://gotify.net/img/fdroid.png), that listens for events over a websocket.
 
 I have been using it for about 10-12 days now, without noticeable impact on battery.
