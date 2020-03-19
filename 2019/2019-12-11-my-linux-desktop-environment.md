@@ -301,10 +301,6 @@ else                           :
     print( split_none  )
 ```
 
-### Scratchpad
-
-
-
 ## Terminator
 
 My terminal emulator of choice since 2010.
@@ -339,7 +335,7 @@ And here's a keyword triggering a Python script!
 
 This tool obviously implies that any sensitive data is kept for a while. You can filter out some content with regex rules.
 
-## task.sh
+## task.sh (deprecated, see "Todo List")
 
 For tasks/todo list, I use a tool I wrote myself.
 
@@ -348,6 +344,24 @@ I couldn't find a simple and lightweight task app that integrates well with i3wm
 ![](https://raw.githubusercontent.com/sebw/task.sh/master/demo.gif)
 
 Download [task.sh](https://github.com/sebw/task.sh)
+
+## Todo List
+
+I use a self-hosted [Kanboard](https://kanboard.org) for my todo list (and groceries list, etc.).
+
+I made an i3blocks script to retrieve the number of tasks in each column of the todo board:
+
+![Kanboard](https://blog.wains.be/images/desktop/kanboard.png)
+
+This is the script:
+
+```
+#!/bin/bash
+curl --silent \
+-u "USERNAME:TOKEN" \
+-d '{"jsonrpc": "2.0", "method": "getBoard", "id": 1, "params": {"project_id": 6}}' \
+https://kanboard.example.org/jsonrpc.php  | jq '.result[].columns[]|" ",.title,":",.nb_open_tasks," "' | tr -d '\n' | sed -e 's/"//g'
+```
 
 ## Zsh
 
