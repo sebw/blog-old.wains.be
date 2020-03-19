@@ -9,7 +9,7 @@ Gotify is:
 - a simple server for sending and receiving messages
 - self-hosted
 - free and open source under MIT license
-- a simple API
+- a simple [API](https://gotify.net/api-docs)
 - a simple GUI
 - written in Go
 - building docker images at every release
@@ -20,16 +20,21 @@ It comes with a nice Android application available on the [Play Store](https://p
 
 I have been using it for about 10-12 days now, without noticeable impact on battery.
 
+EDIT 03/2020: still using the Android app, and still no battery impact.
+
 It is easy to send messages to Gotify:
 
 ```
 $ curl -X POST "https://notifications.example.org/message?token=<apptoken>" -F "title=my title" -F "message=my message"
+```
+
+```
 $ http -f POST "https://notifications.example.org/message?token=<apptoken>" title="my title" message="my message"
 ```
 
-The token can be generated from the GUI.
+The token can be generated from the GUI or API.
 
-Your Android will immediately notify you of any message.
+When receiving a message, your Android will immediately notify you of any message.
 
 The developers are very active, looks like a promising project!
 
