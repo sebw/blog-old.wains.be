@@ -20,6 +20,8 @@ Here we go!
 
 ### Requirements
 
+- a Kanboard instance, obviously
+- an API token for Kanboard (Settings > API)
 - a NodeRED instance
 - `node-red-contrib-telegrambot` version 7.1.1+
 - a Telegram account
@@ -37,6 +39,10 @@ Configure the bot:
 ![](https://blog.wains.be/images/nodered/bot.png)
 
 ### Nodes
+
+The query to Kanboard API should be done with the http request node:
+
+![](https://blog.wains.be/images/nodered/query.png)
 
 `getAllTasks` node:
 
