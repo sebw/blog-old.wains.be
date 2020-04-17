@@ -1,5 +1,7 @@
 # Traefik reverse proxy for containers with Let's Encrypt
 
+IMPORTANT: This blog post covers Traefik version 1.
+
 With Traefik, you can easily reverse proxy your containers, and automatically generate a Let's Encrypt certificate for them. It's pretty awesome. No more complicated Nginx containers coupled with another Let's Encrypt companion!
 
 In the following setup, the name of the container will be used for the certificate generation.
@@ -71,7 +73,3 @@ If your container exposes a port other than `80`, then you should pass the label
 Example: `docker run -d --name whoami -l traefik.port=8000 -t jwilder/whoami`
 
 For containers exposing their service on TLS, pass the label `traefik.protocol=https`.
-
-All options are documented here:
-
-[https://docs.traefik.io/configuration/backends/docker/](https://docs.traefik.io/configuration/backends/docker/)
