@@ -19,14 +19,14 @@ http:
     redir:
       redirectRegex:
         permanent: true
-        regex: "https://old.wains.be/(.*)"
+        regex: "http://old.wains.be/(.*)"
         replacement: "https://new.wains.be/${1}"
 
   routers:
     redir:
       rule: "HostRegexp(`old.wains.be`)"
       entrypoints:
-      - https
+      - http
       middlewares: 
       - redir
       tls:
@@ -41,6 +41,8 @@ http:
 ```
 
 As you can notice, we have to declare a dummy service, otherwise the redirect will never work.
+
+NOTE: if your old address used to be as https, Traefik should have a valid certificate for the URL.
 
 ## Docker labels
 
