@@ -31,16 +31,20 @@ http:
       - redir
       tls:
         certresolver: "letsencrypt"
-      service: "ThisWillNeverBeUsedByNeedsToBeThere"
+      service: "ThisWillNeverBeUsedButNeedsToBeThere"
 
   services:
-    ThisWillNeverBeUsedByNeedsToBeThere:
+    ThisWillNeverBeUsedButNeedsToBeThere:
       loadBalancer:
         servers:
           - url: "http://127.0.0.1"
 ```
 
-But if you want to make the same with labels on Docker containers:
+As you can notice, we have to declare a dummy service, otherwise the redirect will never work.
+
+## Docker labels
+
+If you want to make the same with labels on Docker containers, apply those:
 
 ```
 traefik.http.routers.prsite.rule: "HostRegexp(`old.wains.be`)"
