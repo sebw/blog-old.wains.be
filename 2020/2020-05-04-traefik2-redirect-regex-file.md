@@ -44,16 +44,33 @@ As you can notice, we have to declare a dummy service, otherwise the redirect wi
 
 ## Docker labels
 
-If you want to make the same with labels on Docker containers, apply those:
+If you want to make the same with labels on Docker containers, you have to apply labels to a dedicated dummy container.
 
-```
-traefik.http.routers.prsite.rule: "HostRegexp(`old.wains.be`)"
-traefik.http.routers.prsite.entrypoints: "https"
-traefik.http.routers.prsite.tls: "true"
-traefik.http.routers.prsite.middlewares: "pr-redirect"
-traefik.http.middlewares.pr-redirect.redirectregex.regex: "^https://old.wains.be/(.*)"
-traefik.http.middlewares.pr-redirect.redirectregex.replacement: "https://new.wains.be/$1"
-traefik.http.middlewares.pr-redirect.redirectregex.permanent: "true" 
+Here's an Ansible playbook I've used to create the dummy container using `whoami` image.
+
+```yaml
+---
+- name: redirect
+  hosts: vps
+  become: true
+  tasks:
+  - name: whoami
+    docker_container:
+      name: whoami
+      image: 'containous/whoami'
+      networks:
+        - name: UserDefinedBridge
+      purge_networks: yes
+      labels:
+        traefik.enable: "true"
+        ansible: "true"
+        traefik.http.routers.prsite.rule: "HostRegexp(`old.wains.be`)"
+        traefik.http.routers.prsite.middlewares: "pr-redirect"
+        traefik.http.routers.prsite.entrypoints: "https"
+        traefik.http.routers.prsite.tls: "true"
+        traefik.http.middlewares.pr-redirect.redirectregex.regex: "^https://old.wains.be/(.*)"
+        traefik.http.middlewares.pr-redirect.redirectregex.replacement: "https://new.wains.be/$1"
+        traefik.http.middlewares.pr-redirect.redirectregex.permanent: "true"
 ```
 
 The service part should not be defined since the labels are applied to the container which is the service.
