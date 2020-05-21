@@ -7,7 +7,7 @@ A blog about Linux, Open Source, VoIP and other nerdy stuff.
 - Opinions expressed here represent my own and not those of my employer
 - This site uses cookies for the sole purpose of the self hosted commenting system
 - This site doesn't use third party cookies
-- You can disable javascript on this site. Search and comments would be disabled, though
+- This site uses javascript for search and comments. Disabling Javascript won't break the site
 
 ## Who am I
 
