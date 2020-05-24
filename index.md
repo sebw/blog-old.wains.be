@@ -34,7 +34,7 @@ I like building simple, fast, powerful, resilient, secure and automated infrastr
 
 I care about security and privacy.
 
-I automate things whenever I can! I'm a big fan of [Ansible], **[Node-RED]**, **[Automagic]** on Android, **[Ulauncher]** on Linux, and hackable connected devices. For example, this website is [automated](https://blog.wains.be/2020-02-17-mkdocs-publishing-workflow/).
+I automate things whenever I can! I'm a big fan of [Ansible], **[Node-RED]**, **[Automagic]** on Android, **[Ulauncher]** on Linux, and hackable connected devices. For example, this website is [automated](https://blog.wains.be/2020/2020-02-17-mkdocs-publishing-workflow/).
 
 I'm a heavy keyboard user and as such, [i3wm] is my window manager. I wrote about my desktop environment [here](https://blog.wains.be/2019/2019-12-11-my-linux-desktop-environment/).
 
