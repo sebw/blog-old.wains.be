@@ -1,19 +1,20 @@
 # Welcome!
 
-A blog about Linux, Open Source, VoIP and other nerdy stuff.
+My notes about Open Source.
 
 ## Disclaimers
 
 - Opinions expressed here represent my own and not those of my employer
-- This site uses cookies for the sole purpose of the self hosted commenting system
 - This site doesn't use third party cookies
-- This site uses javascript for search and comments. Disabling Javascript won't break the site
+- Search function requires Javascript
+- Comment function requires Javascript and cookies
+- Javascript and cookies can be disabled, the site won't break
 
 ## Who am I
 
 My name is Sebastien Wains.
 
-I'm a cloud and infrastructure senior consultant at Red Hat, the world’s leading provider of enterprise open source solutions.
+I'm a cloud and infrastructure senior consultant at Red Hat, the leading provider of enterprise open source solutions.
 
 <img src="https://blog.wains.be/images/redhatibm.png" width="250"/>
 
@@ -21,25 +22,27 @@ I'm a Red Hat Certified Architect (RHCA). [My certification ID is 110-643-822](h
 
 To learn more about our consulting services, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
 
-## What I have been up to in the past
-
-In the early age of this blog, I was really into **Linux**, **Postfix**, **OpenVPN** and **Asterisk**.
-
-After changing job I was in charge of several hundred servers. I spent a lot of time automating and orchestrating system administration and management tasks with tools such as [Salt], Salt Cloud, Python, Git/Gitlab, [Mkdocs], [Rundeck], Jenkins, Artifactory, Nexus, [Postman], Red Hat Satellite, iTop, [Graylog], Redmine, etc.
+## Talks
 
 I have talked about [Salt] at [Jeudis du Libre] conference. Check my [Github] for the decks.
 
-## At the personal level
+I will give a talk about open source orchestration with Ansible at [Ansible Automates EMEA 2020](https://events.redhat.com/profile/form/index.cfm?PKformID=0x165149abcd&sc_cid=7013a000002DeY9AAK).
 
-I automate things whenever I can! I'm a big fan of **[Node-RED]**, **[Automagic]** on Android, **[Alfred]** on Mac, **[Ulauncher]** on Linux, and hackable connected devices.
+## A bit more about me
 
-Publishing on this site is also [automated](https://blog.wains.be/2020-02-17-mkdocs-publishing-workflow/).
+I like building simple, fast, powerful, resilient, secure and automated infrastructures. Preferably based on open tools and protocols.
 
-## My desktop environment
+I care about security and privacy.
 
-I use i3. I wrote about my desktop environment [here](https://blog.wains.be/2019/2019-12-11-my-linux-desktop-environment/).
+I automate things whenever I can! I'm a big fan of [Ansible], **[Node-RED]**, **[Automagic]** on Android, **[Ulauncher]** on Linux, and hackable connected devices. For example, this website is [automated](https://blog.wains.be/2020-02-17-mkdocs-publishing-workflow/).
 
-## Nostalgy
+I'm a heavy keyboard user and as such, [i3wm] is my window manager. I wrote about my desktop environment [here](https://blog.wains.be/2019/2019-12-11-my-linux-desktop-environment/).
+
+When I'm not busy at the computer, I travel, hike, ski, camp out and take photos.
+
+I'm an [INTJ]: INTJs are known as the "Systems Builders" of the types, perhaps in part because they possess the unusual trait of combining imagination and reliability. ~ [Marina Margaret Heiss](http://typelogic.com/intj.html)
+
+## Website iterations
 
 This site has gone through five major design revisions:
 
@@ -49,16 +52,6 @@ This site has gone through five major design revisions:
 - [2015 (Wikitten)](https://blog.wains.be/Nostalgy/2015.png)
 - [2017 (Mkdocs)](https://blog.wains.be/Nostalgy/2017.png)
 
-## A bit more about me
-
-I like building simple, powerful, resilient, secure and automated infrastructures. Preferably based on open tools and protocols.
-
-I care about security and privacy.
-
-When I'm not busy at the computer, I travel, hike, ski, camp out and take photos.
-
-I'm an [INTJ]: INTJs are known as the "Systems Builders" of the types, perhaps in part because they possess the unusual trait of combining imagination and reliability. ~ [Marina Margaret Heiss](http://typelogic.com/intj.html)
-
 ## You found a mistake on this site
 
 Please open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/new).
@@ -67,6 +60,7 @@ Please open an [issue on Github](https://github.com/sebw/blog.wains.be/issues/ne
 
 If you want to contact me, just look me [up].
 
+[Ansible]: https://www.ansible.com
 [this]: https://github.com/sebw/blog.wains.be/search?utf8=%E2%9C%93&q=postfix
 [up]: https://duckduckgo.com/?q=Sebastien+Wains
 [wiki]: http://www.mkdocs.org/
@@ -83,7 +77,7 @@ If you want to contact me, just look me [up].
 [iTop]: https://www.combodo.com/itop-193
 [INTJ]: https://en.wikipedia.org/wiki/INTJ
 [Graylog]: https://www.graylog.org/
-[i3]: https://i3wm.org/
+[i3wm]: https://i3wm.org/
 [Postman]: https://www.getpostman.com/
 [tig]: http://jonas.nitro.dk/tig/
 [Visual Studio Code]: https://code.visualstudio.com/
