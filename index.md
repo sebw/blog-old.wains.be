@@ -2,14 +2,6 @@
 
 My notes about Open Source.
 
-## Disclaimers
-
-- Opinions expressed here represent my own and not those of my employer
-- This site doesn't use third party cookies
-- Search function requires Javascript
-- Comment function requires Javascript and cookies
-- Javascript and cookies can be disabled, the site won't break
-
 ## Who am I
 
 My name is Sebastien Wains.
@@ -21,6 +13,14 @@ I'm a cloud and infrastructure senior consultant at Red Hat, the leading provide
 I'm a Red Hat Certified Architect (RHCA). [My certification ID is 110-643-822](https://www.redhat.com/rhtapps/services/verify/?certId=110-643-822).
 
 To learn more about our consulting services, check [https://www.redhat.com/en/services/consulting](https://www.redhat.com/en/services/consulting).
+
+## Disclaimers
+
+- Opinions expressed here represent my own and not those of my employer
+- This site doesn't use third party cookies
+- Search function requires Javascript
+- Comment function requires Javascript and store a cookie to work
+- Javascript and cookies can be disabled, the site won't break, only search and comment won't be available
 
 ## Talks
 
